@@ -1,0 +1,38 @@
+[versions]
+# https://kotlinlang.org/docs/home.html
+kotlin = "2.1.20"
+# https://github.com/Kotlin/kotlinx.coroutines
+coroutines = "1.10.2"
+kotlinx-serialization = "1.8.1"
+
+# ====libraries====
+[libraries]
+runtime = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+symbol = { module = "org.jetbrains.kotlin:kotlin-symbol-processing-api", version.ref = "kotlin" }
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+compose-gradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+
+serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinx-serialization" }
+serialization-runtime = { module = "org.jetbrains.kotlinx:kotlinx-serialization-runtime", version = "0.20.0" }
+
+
+# ====plugins====
+[plugins]
+android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kapt = { id = "kotlin-kapt" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+# ====bundles====
+[bundles]
+android = [
+    "runtime",
+    "reflect",
+    "coroutines-core",
+    "coroutines-android",
+]

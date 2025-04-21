@@ -1,0 +1,33 @@
+[versions]
+pytorch = '2.1.0'
+ijkplayer = '0.8.8'
+
+
+# ====libraries====
+[libraries]
+pytorch = { module = "org.pytorch:pytorch_android", version.ref = "pytorch" }
+pytorch-lite = { module = "org.pytorch:pytorch_android_lite", version.ref = "pytorch" }
+pytorch-vision = { module = "org.pytorch:pytorch_android_torchvision", version.ref = "pytorch" }
+
+log-xlog = { module = "com.tencent.mars:mars-xlog", version = "1.2.6" }
+log-logan = { module = "com.dianping.android.sdk:logan", version = "1.2.4" }
+
+ijkplayer-java = { module = "tv.danmaku.ijk.media:ijkplayer-java", version.ref = "ijkplayer" }
+ijkplayer-armv7a = { module = "tv.danmaku.ijk.media:ijkplayer-armv7a", version.ref = "ijkplayer" }
+ijkplayer-vidoeCache = { module = "com.danikula:videocache", version = "2.7.1" }
+
+javaParser = { module = "com.github.javaparser:javaparser-core", version = "3.26.4" }
+# github: https://github.com/bm-x/PhotoView
+photoView = { module = "com.bm.photoview:library", version = "1.4.1" }
+jsoup = { module = "org.jsoup:jsoup", version = "1.19.1" }
+# https://github.com/mylhyl/Android-Zxing
+zxing_ex = { module = "com.mylhyl:zxingscanner", version = "2.2.0" }
+crypto = { module = "cn.hutool:hutool-crypto", version = "5.8.37" }
+oss = { module = "com.aliyun.dpa:oss-android-sdk", version = "2.9.21" }
+
+hiya-jacoco = { module = "com.hiya:jacoco-android", version = "0.2" }
+
+disklrucache = { module = "com.jakewharton:disklrucache", version = "2.0.2" }
+
+tts-bytedance = { module = "com.bytedance.speechengine:speechengine_tts_tob", version = "5.4.5" }
+tts-azure = { module = "com.microsoft.cognitiveservices.speech:client-sdk", version = "1.43.0" }

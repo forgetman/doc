@@ -1,0 +1,24 @@
+# https://developer.android.google.cn/jetpack/androidx/releases/hilt
+# https://developer.android.google.cn/training/dependency-injection/hilt-android
+[versions]
+# https://central.sonatype.com/artifact/com.google.dagger/hilt-android
+hilt = "2.56.2"
+hiltExt = "1.2.0"
+compose = "1.2.0"
+
+# ====libraries====
+[libraries]
+android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
+
+compose-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "compose" }
+
+ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+
+# ====plugins====
+[plugins]
+android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+dagger = { id = "dagger.hilt.android.plugin" }

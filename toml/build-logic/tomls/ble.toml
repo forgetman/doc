@@ -1,0 +1,13 @@
+[versions]
+# github: https://github.com/NordicSemiconductor/Android-BLE-Library
+ble = '2.10.0'
+# https://github.com/NordicSemiconductor/Android-Scanner-Compat-Library
+ble-scanner = '1.6.0'
+
+# ====libraries====
+[libraries]
+core = { module = "no.nordicsemi.android:ble", version.ref = "ble" }
+ktx = { module = "no.nordicsemi.android:ble-ktx", version.ref = "ble" }
+common = { module = "no.nordicsemi.android:ble-common", version.ref = "ble" }
+livedata = { module = "no.nordicsemi.android:ble-livedata", version.ref = "ble" }
+scanner = { module = "no.nordicsemi.android.support.v18:scanner", version.ref = "ble-scanner" }

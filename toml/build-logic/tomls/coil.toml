@@ -1,0 +1,20 @@
+[versions]
+# https://github.com/coil-kt/coil/blob/master/README-zh.md
+coil = '3.1.0'
+
+# ====libraries====
+[libraries]
+core = { module = "io.coil-kt.coil3:coil", version.ref = "coil" }
+gif = { module = "io.coil-kt.coil3:coil-gif", version.ref = "coil" }
+svg = { module = "io.coil-kt.coil3:coil-svg", version.ref = "coil" }
+video = { module = "io.coil-kt.coil3:coil-video", version.ref = "coil" }
+okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
+compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+
+# ====bundles====
+[bundles]
+coil = [
+    "core",
+    "gif",
+    "svg",
+]

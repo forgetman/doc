@@ -1,0 +1,9 @@
+[versions]
+# https://github.com/airbnb/lottie-android/
+lottie = '6.6.6'
+lottie-compose = '6.6.6'
+
+# ====libraries====
+[libraries]
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie-compose" }

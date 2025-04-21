@@ -1,0 +1,12 @@
+[versions]
+# https://github.com/bumptech/glide
+glide = '5.0.0-rc01'
+webpdecoder = '2.7.4.16.0'
+
+# ====libraries====
+[libraries]
+runtime = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+okhttp3 = { module = "com.github.bumptech.glide:okhttp-integration", version.ref = "glide" }
+# glide原生支持webp有问题, 暂时用第三方的(包名一样) https://github.com/zjupure/GlideWebpDecoder
+webp = { module = "com.github.zjupure:webpdecoder", version.ref = "webpdecoder" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
