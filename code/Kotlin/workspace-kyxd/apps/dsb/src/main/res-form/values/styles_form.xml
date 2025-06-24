@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="View.Form">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+        <item name="android:paddingEnd">19dp</item>
+        <item name="android:paddingStart">19dp</item>
+    </style>
+
+    <style name="View.Form.Me">
+        <item name="android:paddingEnd">@dimen/margin</item>
+        <item name="android:paddingStart">@dimen/margin</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--展示性的使用白背景-->
+    <style name="View.Form.Display">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="View.Divider.Form">
+        <item name="android:layout_height">7dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="View.Form.Policy">
+        <item name="android:layout_width">106dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">125dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/shape_form_bg_policy</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple android:color="@color/blue_focus">
+            <item>
+                <shape>
+                    <corners android:radius="17dp" />
+                    <gradient android:endColor="#0764FA" android:startColor="#2CA6FE" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="17dp" />
+            <solid android:color="#b1b1b1" />
+        </shape>
+    </item>
+</selector>

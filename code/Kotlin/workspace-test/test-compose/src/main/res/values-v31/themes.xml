@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <!-- 背景色（支持动态颜色，Android 14+ 自动适配系统主题） -->
+<!--        <item name="windowSplashScreenBackground">?attr/colorPrimaryContainer</item>-->
+        <item name="windowSplashScreenBackground">@android:color/holo_blue_bright</item>
+        <!-- 启动图标（支持静态图/矢量动画，Android 14+ 支持 PathMotion 动画） -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- 图标背景（可选，覆盖图标周围区域） -->
+        <item name="windowSplashScreenIconBackgroundColor">@android:color/white</item>
+        <!-- 动画时长（默认 500ms，Android 14+ 支持更复杂的插值器） -->
+        <item name="windowSplashScreenAnimationDuration">0</item>
+        <!-- 主界面主题（启动后跳转的主题） -->
+        <item name="postSplashScreenTheme">@style/Theme.App.Default</item>
+    </style>
+
+</resources>

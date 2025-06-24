@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.activity.LogoutActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="17dp"
+            android:text="重要提醒："
+            android:textColor="@color/text_333"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:lineSpacingExtra="8dp"
+            android:text="    注销账号是不可恢复的操作，操作之前，请确认相关的所有服务均已妥善处理。\n    请谨记：账号注销后，与该账号相关的、该单项服务项下的全部服务资料和数据将依照单项服务协议约定删除或处理。"
+            android:textColor="@color/text_75"
+            android:textSize="14dp" />
+
+        <View
+            style="@style/View.Divider.Form"
+            android:layout_marginTop="@dimen/margin_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin"
+            android:orientation="horizontal"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注销账户"
+                android:textColor="@color/text_75"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{owner.mobile}"
+                android:textColor="@color/text_333"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View style="@style/View.Divider" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/selector_bg_blue_corner_2"
+            android:gravity="center"
+            android:text="申请注销"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:view_onClick="@{owner.onLogoutClick}" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="View" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="View.List">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="View.Image" />
+
+    <style name="View.Text" />
+
+    <style name="View.Edit" />
+
+    <style name="View.Button" />
+
+    <style name="View.Button.Radio" />
+
+</resources>

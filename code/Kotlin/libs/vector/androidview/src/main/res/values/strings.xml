@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- swipe list -->
+    <string name="swipe_refresh_hint_normal">下拉刷新</string>
+    <string name="swipe_refresh_hint_ready">松开刷新</string>
+    <string name="swipe_refresh_hint_loading">加载中…</string>
+
+    <string name="network_click_retry">网络加载出错, 点击屏幕重试</string>
+
+    <string name="list_view_empty_content">暂无数据</string>
+
+    <!-- toast -->
+    <string name="toast_network_abort">加载失败</string>
+
+</resources>

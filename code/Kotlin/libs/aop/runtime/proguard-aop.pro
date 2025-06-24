@@ -1,0 +1,2 @@
+-dontwarn aop.**
+-keep class aop.** {*;}

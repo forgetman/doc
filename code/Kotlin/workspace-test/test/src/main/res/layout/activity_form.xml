@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="test.ui.activity.FormActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editText_validator="@{owner.notEmptyValidator1}"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editText_validator="@{owner.notEmptyValidator2}"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editText_validator="@{owner.customValidator}"
+            android:hint="1111"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editText_validator="@{owner.phoneValidator}"
+            android:hint="请输入电话"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="@{owner.enable}"
+            android:text="测试可用性"
+            android:view_onClick="@{owner.onClick}" />
+
+    </LinearLayout>
+</layout>

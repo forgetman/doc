@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="fund.design.ui.frag.MeFrag" />
+
+        <variable
+            name="viewModel"
+            type="fund.design.viewModel.MeViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText, ContentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <vector.image.NImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="52dp"
+                android:imageView_placeholder="@{@drawable/ic_avatar_default}"
+                android:imageView_shaper="@{owner.shaper}"
+                android:imageView_url="@{viewModel.avatar}"
+                android:view_onClick="@{owner.onNameClick}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="26dp"
+                android:clickable="@{viewModel.login ? false : true}"
+                android:text="@{viewModel.name}"
+                android:textColor="@color/text_21"
+                android:textSize="14dp"
+                android:view_onClick="@{owner.onAvatarClick}" />
+        </LinearLayout>
+
+        <vector.widget.scrollable.ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listView_adapter="@{owner.adapter}"
+            android:listView_itemData="@{viewModel.data}"
+            android:listView_onItemClick="@{owner.onItemClick}" />
+    </LinearLayout>
+</layout>

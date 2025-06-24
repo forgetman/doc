@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.activity.inputpiece.IdCardPieceActivity" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.inputpiece.IdCardPieceViewModel" />
+
+        <import type="vector.ext.StringKt" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="Autofill,SpUsage,UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_horizontal">
+
+                <include layout="@layout/layout_item_piece_header" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/piece_idcard_upload_id"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_id_card"
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="155dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/piece_bg_id_card_top"
+                        android:enabled="@{!viewModel.idCardLoading}"
+                        android:imageView_error="@{@drawable/piece_layer_id_card_error}"
+                        android:imageView_listener="@{viewModel.idCardListener}"
+                        android:imageView_placeholder="@{@drawable/piece_bg_id_card_top}"
+                        android:imageView_source="@{viewModel.idCardSource}"
+                        android:imageView_transformation="@{owner.uploadTransformation}"
+                        android:view_onDebounceClick="@{owner.onIdCardFrontClick}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="37dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/piece_ic_camera"
+                        android:view_visible="@{viewModel.idCardSource == null}"
+                        bind:layout_constraintTop_toTopOf="@id/iv_id_card" />
+
+                    <TextView
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/piece_bg_id_card_bottom"
+                        android:gravity="center"
+                        android:paddingVertical="2dp"
+                        android:text="@string/piece_idcard_front"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="@id/iv_id_card"
+                        app:layout_constraintStart_toStartOf="@id/iv_id_card"
+                        bind:layout_constraintBottom_toBottomOf="@id/iv_id_card" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@{viewModel.idCardUploadResult == true ? @drawable/piece_ic_upload_success : @drawable/piece_ic_upload_error}"
+                        android:view_visible="@{viewModel.idCardUploadResult != null}"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_id_card"
+                        app:layout_constraintEnd_toEndOf="@id/iv_id_card"
+                        tools:src="@drawable/piece_ic_upload_success" />
+
+                    <vector.app.decor.LoadingView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/ic_image_loading"
+                        android:view_onDebounceClick="@{owner.onIdCardFrontClick}"
+                        android:view_visible="@{viewModel.idCardLoading}"
+                        app:layout_constraintEnd_toEndOf="@id/iv_id_card"
+                        app:layout_constraintStart_toStartOf="@id/iv_id_card"
+                        app:layout_constraintTop_toTopOf="@id/iv_id_card"
+                        tools:visibility="gone" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_id_number"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_idcard_id_number" />
+
+                    <EditText
+                        android:id="@+id/et_id_number"
+                        style="@style/View.Edit.Info.Content"
+                        android:digits="@string/id_card_alphabet_and_number"
+                        android:editText_inputFilter="@{owner.idInputFilter}"
+                        android:inputType="number"
+                        android:paddingEnd="22dp"
+                        android:text="@={viewModel.idNumber}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_id_number"
+                        tools:ignore="LabelFor" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onIdNumberClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.idNumber)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_id_number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_id_number" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/bg_corner_blue_middle"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginEnd="10dp"
+                        android:maxLines="2"
+                        android:text="@string/piece_idcard_id_number_tip"
+                        android:textColor="@color/red"
+                        android:textSize="13dp"
+                        app:layout_constraintEnd_toStartOf="@id/tv_sample"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_sample"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_corner_blue"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="9dp"
+                        android:text="@string/piece_idcard_sample_btn"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:view_onDebounceClick="@{owner.onSampleClick}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="201dp"
+                        android:layout_height="124dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/piece_ic_id_sample"
+                        android:view_visible="@{viewModel.sampleExpand}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_sample" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/piece_idcard_upload_face"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_face"
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="189dp"
+                        android:layout_height="106dp"
+                        android:background="@drawable/piece_bg_id_card_top"
+                        android:enabled="@{!viewModel.faceLoading}"
+                        android:imageView_error="@{@drawable/piece_layer_id_card_error}"
+                        android:imageView_listener="@{viewModel.faceListener}"
+                        android:imageView_placeholder="@{@drawable/piece_bg_id_card_top}"
+                        android:imageView_source="@{viewModel.faceSource}"
+                        android:imageView_transformation="@{owner.uploadTransformation}"
+                        android:view_onDebounceClick="@{owner.onFaceClick}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="45dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/piece_ic_camera"
+                        android:view_visible="@{viewModel.faceSource == null}"
+                        app:layout_constraintEnd_toEndOf="@id/iv_face"
+                        app:layout_constraintStart_toStartOf="@id/iv_face"
+                        bind:layout_constraintTop_toTopOf="@id/iv_face" />
+
+                    <vector.app.decor.LoadingView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/ic_image_loading"
+                        android:view_onDebounceClick="@{owner.onFaceClick}"
+                        android:view_visible="@{viewModel.faceLoading}"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@id/iv_face"
+                        app:layout_constraintStart_toStartOf="@id/iv_face"
+                        bind:layout_constraintTop_toTopOf="@id/iv_face" />
+
+                    <TextView
+                        style="@style/ConstraintLayout.Align.CenterHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/piece_bg_id_card_bottom"
+                        android:gravity="center"
+                        android:paddingVertical="2dp"
+                        android:text="@string/piece_idcard_click_upload"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="@id/iv_face"
+                        app:layout_constraintStart_toStartOf="@id/iv_face"
+                        bind:layout_constraintBottom_toBottomOf="@id/iv_face" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@{viewModel.faceUploadResult == true ? @drawable/piece_ic_upload_success : @drawable/piece_ic_upload_error}"
+                        android:view_visible="@{viewModel.faceUploadResult != null}"
+                        app:layout_constraintBottom_toBottomOf="@id/iv_face"
+                        app:layout_constraintEnd_toEndOf="@id/iv_face"
+                        tools:src="@drawable/piece_ic_upload_success" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include
+                    layout="@layout/layout_item_piece_next"
+                    bind:item="@{owner.nextStep}" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

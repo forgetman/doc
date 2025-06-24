@@ -1,0 +1,37 @@
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+
+android {
+    namespace 'lib.jg'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-jg.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    /**
+     * kotlin
+     */
+    compileOnly deps.kotlin.runtime
+    compileOnly deps.kotlin.reflect
+
+    compileOnly project(deps.lib.vector.core)
+
+    api 'cn.jiguang.sdk:jpush:3.8.5'
+    api 'cn.jiguang.sdk:jcore:2.5.5'
+}

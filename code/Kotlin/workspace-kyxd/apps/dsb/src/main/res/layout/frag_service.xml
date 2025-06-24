@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.frag.ServiceFrag" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/View.Text.Service.Main"
+                android:text="服务中"
+                android:view_isSelected="@{owner.currItem == 0}"
+                android:view_onClick="@{owner.onServingClick}" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="14dp"
+                android:background="#b0b9ca" />
+
+            <TextView
+                style="@style/View.Text.Service.Main"
+                android:text="服务完成"
+                android:view_isSelected="@{owner.currItem == 1}"
+                android:view_onClick="@{owner.onServCompleteClick}" />
+        </LinearLayout>
+
+        <vector.pageindicator.widget.UnderlinePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:underlinePageIndicator_lineWidth="@{20}"
+            app:selectedPageColor="@color/blue" />
+
+        <vector.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:viewPager_currentItem="@={owner.currItem}"
+            android:viewPager_indicator="@{@id/indicator}"
+            android:viewPager_fragPager="@{owner.pager}" />
+    </LinearLayout>
+
+
+</layout>

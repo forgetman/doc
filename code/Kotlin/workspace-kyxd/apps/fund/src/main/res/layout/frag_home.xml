@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="fund.design.ui.frag.HomeFrag" />
+
+        <variable
+            name="viewModel"
+            type="fund.design.viewModel.HomeViewModel" />
+    </data>
+
+    <vector.widget.scrollable.ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listView_adapter="@{owner.adapter}"
+        android:listView_itemData="@{viewModel.data}"
+        android:listView_onItemClick="@{viewModel.onItemClick}" />
+
+</layout>

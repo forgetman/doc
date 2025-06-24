@@ -1,0 +1,45 @@
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+apply plugin: plugs.kotlin.kapt
+apply plugin: plugs.hilt
+
+android {
+    namespace 'lib.base'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.jniLibs.srcDirs = ['libs']
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+//    implementation project(deps.lib.tool.logger.impl)
+
+    api project(deps.lib.vector.core)
+    api project(deps.lib.vector.databinding)
+    kapt project(deps.lib.apt.compiler)
+
+    /**
+     * kotlin
+     */
+    implementation deps.kotlin.runtime
+
+    /**
+     * hilt
+     */
+    implementation deps.hilt.runtime
+    kapt deps.hilt.compiler
+}

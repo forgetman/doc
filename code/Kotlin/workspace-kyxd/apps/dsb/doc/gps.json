@@ -1,0 +1,11 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1548243763,
+  "data": {
+    "city_info": {
+      "city_id": 440100,
+      "city_name": "广州"
+    }
+  }
+}

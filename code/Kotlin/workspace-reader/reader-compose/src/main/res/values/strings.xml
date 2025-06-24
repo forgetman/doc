@@ -1,0 +1,16 @@
+<resources>
+    <string name="author">作者：</string>
+    <string name="intro">简介：</string>
+    <string name="newest_chapter">最新章节：</string>
+    <string name="read_chapter">章节：</string>
+    <string name="book_type">类型：</string>
+    <string name="last_update_time">最后更新时间：</string>
+    <string name="book_status">状态：</string>
+    <string name="score">评分：</string>
+
+    <string name="caching">正在缓存：</string>
+
+    <string name="chapter_short">章</string>
+    <string name="page">页</string>
+    <string name="sort">第</string>
+</resources>

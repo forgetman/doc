@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/app_bg"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        style="@style/ConstraintLayout.Match.All"
+        app:constraint_referenced_ids="btn_home,btn_order,btn_me,btn_login,btn_piece,btn_dialog,btn_camera_front"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="首页" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="订单" />
+
+    <Button
+        android:id="@+id/btn_me"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="我的" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/btn_piece"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="进件页流程" />
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="弹窗" />
+
+    <Button
+        android:id="@+id/btn_camera_front"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="摄像头-前" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.activity.city.SearchCityActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="@drawable/bg_comment_et"
+            android:textView_textChanged="@{owner.textChanged}"
+            android:gravity="center_vertical"
+            android:hint="请输入城市名称或拼音"
+            android:paddingStart="@dimen/margin"
+            android:paddingEnd="@dimen/margin"
+            android:textColor="@color/text_58"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</layout>

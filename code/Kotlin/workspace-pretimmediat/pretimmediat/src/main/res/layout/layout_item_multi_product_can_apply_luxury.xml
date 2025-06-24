@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.adapter.MultiProductAdapter.Binder.CanApplyLuxury" />
+
+        <variable
+            name="item"
+            type="pretimmediat.adapter.MultiProductAdapter.CanApplyLuxury" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:background="@drawable/bg_stoke_corner_gray"
+        tools:ignore="MissingConstraints,SpUsage,HardcodedText">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/home_ic_multi_level_1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:imageView_source="@{item.product.logoUrl}"
+            android:imageView_transformation="@{owner.transformation}"
+            app:layout_constraintStart_toEndOf="@id/iv_level"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:text="@{item.product.appName}"
+            android:textColor="@color/text_primary"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_logo"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="@id/iv_logo"
+            tools:text="APPNAME" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@{@string/xof_prefix + item.product.maxCAmountText}"
+            android:textColor="@color/text_primary"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/iv_logo"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"
+            tools:text="XOF 3,650" />
+
+        <TextView
+            style="@style/ConstraintLayout.Align.CenterHorizontal"
+            android:layout_width="222dp"
+            android:layout_height="48dp"
+            android:layout_marginVertical="15dp"
+            android:background="@drawable/bg_corner_blue"
+            android:gravity="center"
+            android:onClick="@{() -> owner.listener.onClick(item.product)}"
+            android:text="@string/home_multi_can_apply_button"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_amount" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

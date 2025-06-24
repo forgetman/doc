@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="reader.pattern.viewModel.BookshelfViewModel" />
+
+        <variable
+            name="owner"
+            type="reader.pattern.frag.main.BookshelfFrag" />
+
+        <import type="vector.widget.scrollable.adapter.ItemCompare" />
+    </data>
+
+    <vector.widget.scrollable.ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listView_decoration="@{viewModel.decoration}"
+        android:listView_itemBinder="@{owner.binders}"
+        android:listView_itemBinderEmpty="@{owner.emptyBinder}"
+        android:listView_itemCompare="@{ItemCompare.DATASET_CHANGED}"
+        android:listView_itemData="@{viewModel.data}"
+        android:listView_layoutManager="@{viewModel.manager}"
+        android:listView_onItemClick="@{viewModel.onItemClick}"
+        android:listView_onItemLongClick="@{viewModel.onItemLongClick}"
+        android:listView_trigger="@{viewModel.trigger}"
+        tools:listitem="@layout/layout_bookshelf_item_style_linear" />
+
+</layout>

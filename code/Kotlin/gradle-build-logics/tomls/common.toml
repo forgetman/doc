@@ -1,0 +1,20 @@
+[versions]
+minSdk = '21'
+compileSdk = '36'
+targetSdk = '36'
+buildTools = '36.0.0'
+androidDesuger = '2.1.4'
+agp = '8.10.0' # https://developer.android.google.cn/build/releases/gradle-plugin?hl=en
+
+# ====libraries====
+[libraries]
+android-desugar = { module = "com.android.tools:desugar_jdk_libs", version.ref = "androidDesuger" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+
+# ====plugins====
+[plugins]
+android-app = { id = "com.android.application", version.ref = "agp" }
+android-lib = { id = "com.android.library", version.ref = "agp" }
+android-base = { id = "com.android.base" }
+android-lint = { id = "com.android.lint" }
+java = { id = "java-library" }

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,SpUsage,MissingConstraints">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.activity.ReadActivity" />
+
+        <variable
+            name="viewModel"
+            type="reader.pattern.viewModel.ReadViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="vector.app.util.Screen" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_marginTop="@{owner.titleMarginTop}"
+            android:ellipsize="marquee"
+            android:paddingStart="@dimen/margin_level_1"
+            android:paddingEnd="@dimen/margin_level_1"
+            android:singleLine="true"
+            android:text="@{owner.title}"
+            android:textColor="@{owner.titleTextColor}"
+            android:textSize="13dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="第一章 XXXX"
+            tools:visibility="visible" />
+
+        <reader.widget.MeasuredViewPager
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:viewPager_currentItem="@={viewModel.currItem}"
+            android:viewPager_offscreenPageLimit="@{1}"
+            android:viewPager_onPageIntent="@{owner.onPageIntent}"
+            android:viewPager_fragPager="@{viewModel.pager}"
+            android:viewPager_transformer="@{owner.pageTransformer}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:visibility="gone" />
+
+        <vector.app.appbar.AppBar
+            android:id="@+id/layout_app_bar"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="wrap_content"
+            android:view_visible="@{owner.systemBarVisible}"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/layout_dark_background"
+            style="@style/ConstraintLayout.Match.All"
+            android:background="#32000000"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/layout_read_option_chapter"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="-4dp"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:viewHolder="@{owner.optionChapterViewHolder}"
+            tools:visibility="visible" />
+
+        <include
+            style="@style/ConstraintLayout.Match.Horizontal"
+            layout="@layout/layout_read_option_cache"
+            app:layout_constraintBottom_toTopOf="@id/flow_navigation_bar"
+            app:viewHolder="@{owner.optionCacheViewHolder}"
+            tools:visibility="visible" />
+
+        <include
+            style="@style/ConstraintLayout.Match.Horizontal"
+            layout="@layout/layout_read_option_theme"
+            app:layout_constraintBottom_toTopOf="@id/flow_navigation_bar"
+            app:viewHolder="@{owner.optionThemeViewHolder}"
+            tools:visibility="gone" />
+
+        <include
+            style="@style/ConstraintLayout.Match.Horizontal"
+            layout="@layout/layout_read_option_setup"
+            app:layout_constraintBottom_toTopOf="@id/flow_navigation_bar"
+            app:viewHolder="@{owner.optionSetupViewHolder}"
+            tools:visibility="gone" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/frag_container_catalog"
+            android:name="reader.pattern.frag.CatalogFrag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/flow_navigation_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="@drawable/ic_shadow"
+            android:view_visible="@{owner.systemBarVisible}"
+            app:layout_constraintBottom_toTopOf="@id/flow_navigation_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_navigation_bar"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_primary"
+            android:paddingBottom="@{owner.navigationBarMarginBottom}"
+            android:view_visible="@{owner.systemBarVisible}"
+            app:constraint_referenced_ids="tv_chapter,tv_download,tv_theme,tv_setup"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_chapter"
+            style="@style/View.Text.Read.NavigationBar"
+            android:text="目录"
+            android:view_isSelected="@{owner.chapterDetailViewHolder.visible}"
+            android:view_onClick="@{owner.onChapterClick}"
+            app:drawableTopCompat="@drawable/selector_read_navigation_menu" />
+
+        <TextView
+            android:id="@+id/tv_download"
+            style="@style/View.Text.Read.NavigationBar"
+            android:text="缓存"
+            android:view_isSelected="@{owner.optionCacheViewHolder.visible}"
+            android:view_onClick="@{owner.onCacheClick}"
+            app:drawableTopCompat="@drawable/selector_read_navigation_cache" />
+
+        <TextView
+            android:id="@+id/tv_theme"
+            style="@style/View.Text.Read.NavigationBar"
+            android:text="主题亮度"
+            android:view_isSelected="@{owner.optionThemeViewHolder.visible}"
+            android:view_onClick="@{owner.onThemeClick}"
+            app:drawableTopCompat="@drawable/selector_read_navigation_theme" />
+
+        <TextView
+            android:id="@+id/tv_setup"
+            style="@style/View.Text.Read.NavigationBar"
+            android:text="设置"
+            android:view_isSelected="@{owner.optionSetupViewHolder.visible}"
+            android:view_onClick="@{owner.onSetupClick}"
+            app:drawableTopCompat="@drawable/selector_read_navigation_setup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

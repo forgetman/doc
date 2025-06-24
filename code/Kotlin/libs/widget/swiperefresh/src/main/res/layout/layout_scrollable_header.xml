@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints,ContentDescription,SpUsage">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/scrollable_header_layout_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="scrollable_header_iv_arrow,scrollable_header_tv_hint"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/scrollable_header_iv_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/swipe_refresh_ic_arrow"
+        app:layout_constraintBottom_toBottomOf="@id/scrollable_header_tv_hint"
+        app:layout_constraintEnd_toStartOf="@id/scrollable_header_tv_hint"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/scrollable_header_tv_hint" />
+
+    <TextView
+        android:id="@+id/scrollable_header_tv_hint"
+        style="@style/ConstraintLayout.Align.BottomRight"
+        android:layout_marginBottom="10dp"
+        android:text="@string/swipe_refresh_hint_normal"
+        android:textColor="@color/text_scrollable_header"
+        android:textSize="@dimen/scrollable_extend_text"
+        app:layout_constraintStart_toEndOf="@id/scrollable_header_iv_arrow" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/scrollable_header_layout_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="scrollable_header_progress_view,scrollable_header_tv_loading"
+        tools:visibility="visible" />
+
+    <vector.widget.ProgressView
+        android:id="@+id/scrollable_header_progress_view"
+        style="@style/ConstraintLayout.Align.BottomLeft"
+        android:layout_width="@dimen/scrollable_extend_loading_size"
+        android:layout_height="@dimen/scrollable_extend_loading_size"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_loading"
+        app:layout_constraintEnd_toStartOf="@id/scrollable_header_tv_loading"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/scrollable_header_tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe_refresh_hint_loading"
+        android:textColor="@color/text_scrollable_header"
+        android:textSize="@dimen/scrollable_extend_text"
+        app:layout_constraintBottom_toBottomOf="@id/scrollable_header_progress_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/scrollable_header_progress_view"
+        app:layout_constraintTop_toTopOf="@id/scrollable_header_progress_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

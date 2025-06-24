@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/app_bg">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        style="@style/ConstraintLayout.Match.All"
+        app:constraint_referenced_ids="btn_info,btn_contact,btn_id_card,btn_bank,btn_bank_update,btn_trial"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="信息" />
+
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="联系人" />
+
+    <Button
+        android:id="@+id/btn_id_card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="证件" />
+
+    <Button
+        android:id="@+id/btn_bank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="银行" />
+
+    <Button
+        android:id="@+id/btn_bank_update"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="银行(更新)" />
+
+    <Button
+        android:id="@+id/btn_trial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="试算页" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

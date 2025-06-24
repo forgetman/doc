@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.Banner" />
+
+        <variable
+            name="listener"
+            type="dsb.design.ui.adapter.BaseBannerItemBinder.Listener" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <vector.widget.ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imageView_foreground="@{@drawable/selector_cover}"
+            android:imageView_source="@{item.icon}"
+            android:onClick="@{() -> listener.onImageClick(item)}"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+</layout>

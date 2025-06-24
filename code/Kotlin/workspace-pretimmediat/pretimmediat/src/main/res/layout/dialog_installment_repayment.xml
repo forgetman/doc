@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.dialog.InstallmentRepaymentDialog" />
+
+        <variable
+            name="item"
+            type="pretimmediat.model.loan.InstallmentPlan" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:background="@color/gray">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="14dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/radius"
+            app:layout_constraintBottom_toTopOf="@id/iv_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/installment_payment_title"
+                        android:textColor="@color/text_primary"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="17dp"
+                        android:layout_marginTop="6dp"
+                        android:text="@{owner.content}"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14dp"
+                        tools:text="@string/installment_payment_content" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/layout_order_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:background="@color/blue_light"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/tv_order_number_title"
+                            style="@style/ConstraintLayout.Align.CenterVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="67dp"
+                            android:text="@string/order_number"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            style="@style/ConstraintLayout.Align.CenterVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{owner.plan.orderNo}"
+                            android:textColor="@color/text_primary"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@id/tv_order_number_title"
+                            tools:text="sdfsdfssdfsdfsdfsdfasdfasdfasdfasdfasdf" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            style="@style/ConstraintLayout.Align.CenterVertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:src="@drawable/home_ic_copy"
+                            android:view_onClick="@{owner.onCopyClick}"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/blue_middle" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        tools:ignore="MissingConstraints">
+
+                        <TextView
+                            android:id="@+id/tv_delayed_date_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:text="@string/installment_payment_delayed_date_title"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_date_content"
+                            app:layout_constraintEnd_toStartOf="@id/tv_delayed_date_content"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_date_content" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_date_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="26dp"
+                            android:text="@{item.extendDate}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="2021-08-01" />
+
+                        <View
+                            android:id="@+id/divider_1"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_date_content" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_cost_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_cost_title"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_1" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_cost_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.afterExtendOrderAmtText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_cost_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_cost_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_2"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_cost_title" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_interest_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_interest_title"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_2" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_interest_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.interestText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_interest_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_interest_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_3"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_interest_title" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_penalty_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_penalty_title"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_3" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_penalty_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.lateFeeNullableText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:view_visible="@{item.lateFeeNullableText != null}"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_penalty_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_penalty_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_4"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_penalty_title" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_tax_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_tax_title"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_4" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_tax_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.ivaText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_tax_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_tax_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_5"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_tax_title" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_discount_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_discount_title"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_5" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_discount_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.deductionFeeNullableText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:view_visible="@{item.deductionFeeNullableText != null}"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_discount_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_discount_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_6"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_discount_title" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_should_pay_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/installment_payment_should_pay"
+                            android:textSize="14dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_6" />
+
+                        <TextView
+                            android:id="@+id/tv_delayed_shoud_pay_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{@string/xof_prefix + item.repayAmountText}"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/tv_delayed_should_pay_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/tv_delayed_should_pay_title"
+                            tools:text="XOF 3650" />
+
+                        <View
+                            android:id="@+id/divider_7"
+                            style="@style/ConstraintLayout.Match.Horizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_divider_dash_blue_middle"
+                            app:layout_constraintTop_toBottomOf="@id/tv_delayed_should_pay_title" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_channels"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:orientation="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider_7" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_close"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_close"
+            android:view_onClick="@{owner.onCloseClick}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view" />
+    </LinearLayout>
+</layout>

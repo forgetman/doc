@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_plan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loan_bg_installment_plan"
+    android:gravity="center"
+    android:paddingVertical="5dp"
+    android:textColor="@color/loan_installment_plan"
+    android:textSize="13dp"
+    tools:ignore="SpUsage"
+    tools:layout_width="match_parent"
+    tools:text="3 期\n(1 天)" />

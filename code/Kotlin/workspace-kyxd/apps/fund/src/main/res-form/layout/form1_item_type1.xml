@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form1_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form1_bg_type1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/form1_item_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="全国公积金一键查询"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/form1_item_tv_btn"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center"
+        android:text="查询公积金"
+        android:textColor="@color/blue"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/form1_item_tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="12,125,122人已查询成功"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+</LinearLayout>

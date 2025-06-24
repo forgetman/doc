@@ -1,0 +1,41 @@
+{
+  "name": "3.0",
+  "author": "rain",
+  "desc": "1",
+  "info": {
+    "day": {
+      "hasFg": true,
+      "useShadow": true,
+      "textColor": "edf8f0",
+      "shadowColor": "0",
+      "shadowOffsetX": 1,
+      "shadowOffsetY": 1,
+      "elem": [
+        {
+          "type": 0,
+          "name": "WHOLE_DATE_EXCEPT_DAY",
+          "x": 608,
+          "y": 108,
+          "align": "RIGHT",
+          "size": 78
+        },
+        {
+          "type": 0,
+          "name": "WEEK_NUMBER",
+          "x": 415,
+          "y": 300,
+          "align": "RIGHT",
+          "size": 50
+        },
+        {
+          "type": 0,
+          "name": "WEEK_NUMBER",
+          "x": 415,
+          "y": 300,
+          "align": "RIGHT",
+          "size": 50
+        }
+      ]
+    }
+  }
+}

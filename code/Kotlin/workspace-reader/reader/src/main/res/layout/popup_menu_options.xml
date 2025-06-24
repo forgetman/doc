@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.popup.MenuPopup" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="更新全部"
+                android:view_onClick="@{owner.onClickUpdate}"
+                app:drawableStartCompat="@drawable/menu_ic_option_update" />
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="切换网格"
+                android:view_onClick="@{owner.onClickSwitchToGrid}"
+                app:drawableStartCompat="@drawable/menu_ic_option_grid" />
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="切换列表"
+                android:view_onClick="@{owner.onClickSwitchToList}"
+                app:drawableStartCompat="@drawable/menu_ic_option_list" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

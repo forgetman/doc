@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="View.List.Group" tools:ignore="ResourceName">
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@drawable/transparent</item>
+        <item name="android:scrollingCache">false</item>
+
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:childDivider">@drawable/divider</item>
+    </style>
+
+</resources>

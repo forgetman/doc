@@ -1,0 +1,73 @@
+<resources>
+
+    <style name="View.Condition" />
+
+    <style name="View.Condition.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+    </style>
+
+    <style name="View.Condition.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="View.Text.Condition">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+    </style>
+
+    <style name="View.Edit.Condition">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+    </style>
+
+    <style name="View.Text.Result">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+    </style>
+
+    <style name="View.Text.Result.Value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+    </style>
+
+    <style name="View.Result" />
+
+    <style name="View.Result.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="View.Result.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+</resources>

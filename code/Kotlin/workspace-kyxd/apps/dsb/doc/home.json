@@ -1,0 +1,569 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1548902513,
+  "data": [
+    {
+      "list": [
+        {
+          "view_type": 38,
+          "title": "立即缴纳社保",
+          "track": "home_banner_social_security",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/440100\/navbar\/1\/mobile\/18511003538",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png",
+          "need_login": "true",
+          "list": [
+            {
+              "title": "距广州",
+              "subtitle": "2月社保代缴截止日期还剩",
+              "content": "15天",
+              "date": "2019年2月15日 12:00",
+              "view_type": 30,
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_social_buy.png"
+            },
+            {
+              "view_type": 31,
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/1.png"
+            },
+            {
+              "view_type": 31,
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/2.png"
+            },
+            {
+              "view_type": 31,
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/android_3.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 33,
+          "title": "缴纳头条",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_social_buy.png",
+          "list": [
+            {
+              "title": "157xxxx3232周先生成功办理十个月社保"
+            },
+            {
+              "title": "136xxxx7827郑先生成功办理一个月公积金"
+            },
+            {
+              "title": "138xxxx6230杨女士成功办理七个月社保"
+            },
+            {
+              "title": "157xxxx6639王先生成功办理二个月社保"
+            },
+            {
+              "title": "130xxxx3944王先生成功办理五个月社保"
+            },
+            {
+              "title": "134xxxx3453卫先生成功办理六个月社保"
+            },
+            {
+              "title": "152xxxx4452蒋先生成功办理七个月社保"
+            },
+            {
+              "title": "131xxxx4354蒋女士成功办理十个月公积金"
+            },
+            {
+              "title": "132xxxx8218孙先生成功办理五个月社保"
+            },
+            {
+              "title": "130xxxx4684周女士成功办理六个月社保"
+            },
+            {
+              "title": "136xxxx6315沈女士成功办理五个月公积金"
+            },
+            {
+              "title": "138xxxx5841马先生成功办理三个月公积金"
+            },
+            {
+              "title": "130xxxx9494卫女士成功办理六个月社保"
+            },
+            {
+              "title": "151xxxx3349卫女士成功办理七个月社保"
+            },
+            {
+              "title": "189xxxx8218孙女士成功办理二个月公积金"
+            },
+            {
+              "title": "134xxxx4841沈先生成功办理五个月社保"
+            },
+            {
+              "title": "131xxxx6203沈先生成功办理七个月公积金"
+            },
+            {
+              "title": "132xxxx7405陈女士成功办理二个月社保"
+            },
+            {
+              "title": "135xxxx7216吴先生成功办理二个月社保"
+            },
+            {
+              "title": "136xxxx3632沈先生成功办理六个月公积金"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 19,
+          "list": [
+            {
+              "title": "查社保",
+              "track": "menu_check_social_security",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/cha_shebao_icon.png",
+              "url": "https:\/\/search.dashebao.com?token=a536fb5480db8bdbb84daffe345c675b5aab5&city_id=440100&type=1&is_app=1",
+              "need_login": "true"
+            },
+            {
+              "title": "缴社保(补缴)",
+              "track": "home_menu_social_security",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/jiao_shebao_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/440100\/mobile\/18511003538\/navbar\/1",
+              "need_login": "true"
+            },
+            {
+              "title": "算社保",
+              "track": "menu_calculate_social_security",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/suan_shebao_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/jsq\/socialIndex\/navbar\/1",
+              "need_login": "false"
+            },
+            {
+              "title": "天天领红包",
+              "track": "menu_check_hospital",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/redbag.gif",
+              "url": "https:\/\/api.dashebao.com\/dsbapi\/v1\/relocation\/stats\/key\/tuiapp",
+              "need_login": "false"
+            },
+            {
+              "title": "查公积金",
+              "track": "menu_check_fund",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/cha_gongjijin_icon.png",
+              "url": "https:\/\/search.dashebao.com?token=a536fb5480db8bdbb84daffe345c675b5aab5&city_id=440100&type=2&is_app=1",
+              "need_login": "true"
+            },
+            {
+              "title": "缴公积金(补缴)",
+              "track": "menu_contributed_contribution",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/jiao_gongjijin_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/payGongSecurity_a\/city_id\/440100\/mobile\/18511003538\/navbar\/1",
+              "need_login": "true"
+            },
+            {
+              "title": "公积金提取",
+              "track": "menu_extraction",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/tiqu_gongjijin_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/form\/tq\/navbar\/1\/user_token\/OGE2YzY5ZjNiNWE5MzhiZDljY2VkY2E1YzhmZjc3YWM=",
+              "need_login": "true"
+            },
+            {
+              "title": "更多",
+              "track": "menu_more",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/more_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/form\/index\/navbar\/1\/user_token\/OGE2YzY5ZjNiNWE5MzhiZDljY2VkY2E1YzhmZjc3YWM=",
+              "need_login": "true"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 40,
+          "list": [
+            {
+              "id": 1,
+              "track": "banner_activity",
+              "title": "春节放假通知",
+              "url": "http:\/\/testm.luobohr.com\/dsbapi\/activity\/newYear",
+              "icon": "http:\/\/img.dashebao.com\/WechatIMG254.jpeg"
+            },
+            {
+              "id": 2,
+              "track": "banner_activity",
+              "title": "众安保险",
+              "url": "http:\/\/api.dashebao.com\/dsbapi\/v1\/relocation\/stats?key=zhongan",
+              "icon": "http:\/\/img.dashebao.com\/dsa-2%201.jpg"
+            },
+            {
+              "id": 3,
+              "track": "banner_activity",
+              "title": "融袋",
+              "url": "https:\/\/api.dashebao.com\/dsbapi\/v1\/relocation\/stats\/key\/rongdai",
+              "icon": "http:\/\/img.dashebao.com\/WechatIMG27.jpeg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 34,
+          "title": "推荐服务"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 35,
+          "list": [
+            {
+              "title": "查定点医院",
+              "track": "menu_check_hospital",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/fixed_hospital_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/user\/fixedHospital\/navbar\/1",
+              "need_login": "false"
+            },
+            {
+              "title": "北京工作居住证",
+              "track": "menu_paperwork",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/juzhuzheng_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/form\/jzz\/navbar\/1\/user_token\/OGE2YzY5ZjNiNWE5MzhiZDljY2VkY2E1YzhmZjc3YWM=",
+              "need_login": "true"
+            },
+            {
+              "title": "广州积分落户",
+              "track": "menu_points_settled",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/jifen_icon.png",
+              "url": "https:\/\/m.dashebao.com\/dsbapi\/form\/lh\/navbar\/1\/user_token\/OGE2YzY5ZjNiNWE5MzhiZDljY2VkY2E1YzhmZjc3YWM=",
+              "need_login": "true"
+            },
+            {
+              "title": "社保补充险",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/tuijian_4.png",
+              "url": "http:\/\/api.dashebao.com\/dsbapi\/v1\/relocation\/stats?key=zhongan",
+              "need_login": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 34,
+          "title": "社保政策解读"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 35,
+          "list": [
+            {
+              "title": "买房",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/buy_hosue_icon.png",
+              "url": "https:\/\/api.dashebao.com\/static\/shebaoFang.html?source=hideHeader",
+              "need_login": "true"
+            },
+            {
+              "title": "买车",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/buy_car_icon.png",
+              "url": "https:\/\/api.dashebao.com\/static\/shebaoCar.html?source=hideHeader",
+              "need_login": "false"
+            },
+            {
+              "title": "上学",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/school_icon.png",
+              "url": "https:\/\/api.dashebao.com\/static\/shebaoSchool.html?source=hideHeader",
+              "need_login": "false"
+            },
+            {
+              "title": "落户",
+              "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/luohu_icon.png",
+              "url": "https:\/\/api.dashebao.com\/static\/shebaoLuohu.html?source=hideHeader",
+              "need_login": "false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 34,
+          "title": "普通贷款"
+        },
+        {
+          "view_type": 24,
+          "title": "融袋",
+          "subtitle": "低息高额 审批快 选择多",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/loan_rongdai.png",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/three\/index\/city_id\/110100",
+          "range": "0.1 ~ 100万",
+          "apply_num": 1092003
+        },
+        {
+          "view_type": 24,
+          "title": "好贷网-快速在线申请贷款",
+          "subtitle": "让天下没有难贷的款",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/loan_haodai.png",
+          "url": "https:\/\/loan.rongba.com\/h5tuiguang\/jff?ref=hd_11016006",
+          "range": "0.1 ~ 100万",
+          "apply_num": 1092003
+        },
+        {
+          "view_type": 24,
+          "title": "读秒",
+          "subtitle": "最快当天放款",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/loan_dumiao.png",
+          "url": "http:\/\/api.dashebao.com\/dsbapi\/v1\/relocation\/stats?key=dumiao",
+          "range": "0.1 ~ 5万",
+          "apply_num": 1093222
+        },
+        {
+          "view_type": 25,
+          "title": "更多贷款",
+          "url": "http:\/\/api.dashebao.com\/static\/shebaodai.html"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 39
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 34,
+          "title": "常见问题"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "想在北京申请积分落户？看这里！",
+          "url": "http:\/\/cmsapi.dashebao.com\/index.php?article_id=168"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "工伤保险如何处理，流程有哪些？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=158"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "公积金贷款和商业贷款的差别",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=157"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "退休时候的养老金是怎么算出来的？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=156"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "我大伯刚刚退休，就因为突发性疾病去世了，他交的社保，我们该怎么继承下来？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=155"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "工作来回换，交了15年的养老金在哪领取？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=154"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "跳槽导致社保断掉，HR说可以补缴，我想知道这种补缴有连续记录吗？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=153"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "北京连续五年纳税交社保，但是中间断了一个月，还能买房么？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=152"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "如何办理异地转移？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=151"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "完全丧失劳动能力与单位解除劳动关系，如何提取住房公积金？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=150"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "进城务工人员（农业户口）离职后是否可以办理住房公积金销户提取？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=149"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "北京住房公积金指南",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=148"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "非本地人社保如何缴纳？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=147"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "做跨省转移是只做养老保险就可以吗？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=146"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "两地交社保能累计年限吗？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=145"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "断缴社保，你的社保待遇不仅清零，还有很多你不知道的！",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=144"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "生育津贴可以报销多少钱？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=143"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "职工生育保险报销攻略详解",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=142"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "社保断缴一个月影响大吗？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=141"
+        }
+      ]
+    },
+    {
+      "list": [
+        {
+          "view_type": 36,
+          "title": "社保要不要交？哪些钱能返还？",
+          "url": "https:\/\/cmsapi.dashebao.com\/index.php?article_id=140"
+        }
+      ]
+    }
+  ]
+}

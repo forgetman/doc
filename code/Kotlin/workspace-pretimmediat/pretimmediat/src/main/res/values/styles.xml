@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="View.Me" />
+
+    <style name="View.Me.Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/bg_stoke_corner_gray</item>
+    </style>
+
+
+</resources>

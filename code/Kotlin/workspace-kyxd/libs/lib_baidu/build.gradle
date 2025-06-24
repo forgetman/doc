@@ -1,0 +1,29 @@
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+
+android {
+    namespace 'lib.baidu'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(deps.lib.tool.logger.impl)
+
+    /**
+     * kotlin
+     */
+    implementation deps.kotlin.runtime
+}

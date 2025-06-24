@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="radius">4dp</dimen>
+    <dimen name="gap_vertical">14dp</dimen>
+    <dimen name="gap_horizontal">17dp</dimen>
+</resources>

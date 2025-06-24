@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.frag.EachServiceFrag" />
+
+        <variable
+            name="viewModel"
+            type="dsb.design.viewModel.EachServiceViewModel" />
+    </data>
+
+    <vector.widget.scrollable.ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listView_itemBinder="@{owner.itemBinder}"
+        android:listView_itemBinderEmpty="@{owner.emptyBinder}"
+        android:listView_itemData="@{viewModel.data}"
+        android:listView_preload="@{true}" />
+</layout>

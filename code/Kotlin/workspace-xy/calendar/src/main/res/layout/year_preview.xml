@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/year_iv_fg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/year_iv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/year_iv_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/year_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <include layout="@layout/year_single_item" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:gravity="right" >
+
+        <ImageView
+            android:id="@+id/year_iv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/year_preview_line_margin_bottom"
+            android:layout_weight="1" >
+
+            <include
+                android:id="@+id/year_layout_line_0"
+                layout="@layout/year_preview_items" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/year_preview_line_margin_bottom"
+            android:layout_weight="1" >
+
+            <include
+                android:id="@+id/year_layout_line_1"
+                layout="@layout/year_preview_items" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <include
+                android:id="@+id/year_layout_line_2"
+                layout="@layout/year_preview_items" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    -->
+
+</AbsoluteLayout>

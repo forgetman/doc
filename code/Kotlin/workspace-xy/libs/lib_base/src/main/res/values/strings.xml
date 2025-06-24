@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">XyCalendarLib</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Toast -->
+    <string name="toast_prepare_exit">再按一下返回键退出程序!</string>
+    <string name="toast_charging">进入台历模式，您的屏幕将会保持常亮</string>
+    <string name="toast_not_charging">退出台历模式</string>
+    <string name="app_crash">很抱歉，程序出现异常，即将退出</string>
+
+    <!-- 农历尽头提示 -->
+    <string name="lunar_end_first">你已到达历史道路的尽头，请原路返回</string>
+    <string name="lunar_end_last">世界末日！</string>
+
+    <!-- 默认皮肤信息 -->
+    <string name="skin_error">当前皮肤有错误，请重新安装！</string>
+    <string name="skin_using">当前皮肤正在使用中，无法删除!</string>
+    <string name="skin_switch_succeed">皮肤装载成功!</string>
+    <string name="skin_del_succeed">删除成功</string>
+    <string name="skin_switch_failed_part1">由于</string>
+    <string name="skin_switch_failed_part2">皮肤装载失败，自动装载默认皮肤成功!</string>
+    <string name="skin_install_succeed">皮肤安装成功!</string>
+    <string name="skin_install_failed">皮肤安装失败，皮肤包可能存在错误</string>
+    <string name="skin_version_invalid">很抱歉，当前皮肤版本较低，无法使用</string>
+    <string name="network_invalid">您的设备尚未打开网络，请手动开启网络后再进行下载</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title">闲云提示</string>
+    <string name="dialog_checking_update">正在检查新版本，请稍后…</string>
+    <string name="dialog_skin_reloading">正在装载皮肤，请稍后…</string>
+    <string name="dialog_skin_deleting">正在删除皮肤，请稍后…</string>
+    <string name="dialog_skin_installing">安装中，请稍后…</string>
+    <string name="dialog_skin_del_confirm">从手机中删除以下皮肤?</string>
+    <string name="dialog_btn_skin_del_confirm">确认删除</string>
+    <string name="dialog_btn_confirm">确定</string>
+    <string name="dialog_btn_download">下载</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_quit_when_has_task">有皮肤正在下载中，确定退出？</string>
+
+</resources>

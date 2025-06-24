@@ -1,0 +1,15 @@
+[plugins]
+android-app = { id = "convention.android.application" }
+android-lib = { id = "convention.android.library" }
+android-flavors = { id = "convention.android.application.flavors" }
+android-firebase = { id = "convention.android.application.firebase" }
+android-lint = { id = "convention.android.lint" }
+
+jvmLibrary = { id = "convention.jvm.library" }
+initial = { id = "convention.initial" }
+
+# androidx
+androidx-hilt = { id = "convention.androidx.hilt" }
+androidx-room = { id = "convention.androidx.room" }
+androidx-media3 = { id = "convention.androidx.media3" }
+androidx-compose = { id = "convention.androidx.compose" }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="17dp"
+        android:gravity="bottom|center_horizontal">
+        <shape>
+            <size android:height="3dp" />
+            <solid android:color="@color/blue" /> <!--颜色无效, 仅供预览-->
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+</layer-list>

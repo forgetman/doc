@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">闲云日历</string>
+
+    <string name="week_desc1">日</string>
+    <string name="week_desc2">一</string>
+    <string name="week_desc3">二</string>
+    <string name="week_desc4">三</string>
+    <string name="week_desc5">四</string>
+    <string name="week_desc6">五</string>
+    <string name="week_desc7">六</string>
+
+    <!-- 设置_setting -->
+    <string name="setting_skin_title">当前皮肤</string>
+    <string name="setting_skin_default">默认皮肤</string>
+    <string name="setting_firstday_title">周首日</string>
+    <string name="setting_firstday_monday">周一</string>
+    <string name="setting_firstday_sunday">周日</string>
+    <string name="setting_check_title">检查更新"</string>
+    <string name="setting_check_action">点击检查"</string>
+    <string name="setting_entry_about">关于闲云日历</string>
+    <string name="setting_dynamic_bg">动态背景</string>
+    <string name="setting_dynamic_bg_switcher_open">开启</string>
+    <string name="setting_dynamic_bg_switcher_close">关闭</string>
+
+    <!-- 设置_about -->
+    <string name="setting_about_version">闲云日历 v3.2</string>
+    <string name="setting_about_program_release_date">2013.4.25</string>
+    <string name="setting_about_title">关于</string>
+    <string name="setting_about_homepage">欢迎关注: @闲云创作组</string>
+    <string name="setting_about_desp">精致是一种态度</string>
+
+    <!-- Umeng update -->
+    <string name="umeng_update_timeout">连接超时!</string>
+    <string name="umeng_update_none">当前已经是最新版本!</string>
+
+    <string name="widget_loading">载入桌面中，请稍后……</string>
+    <string name="main_loading">载入中，请稍后……</string>
+
+    <!-- 桌面名称 -->
+    <string name="widget_name_4x1_clear_water">(4x1)闲云_清水</string>
+    <string name="widget_name_4x1_cloud">(4x1)闲云_云端</string>
+    <string name="widget_name_4x2_eye">(4x2)闲云_大眼睛</string>
+    <string name="widget_name_4x2_lcd">(4x2)闲云_Lcd液晶</string>
+    <string name="widget_name_4x4_black">(4x4)闲云_烙印</string>
+    <string name="widget_name_4x4_crystal">(4x4)闲云_水晶</string>
+    <string name="widget_name_8x4_god_left">(8x4)闲云_门神敬德 左</string>
+    <string name="widget_name_8x4_god_right">(8x4)闲云_门神叔宝 右</string>
+
+    <!-- 默认皮肤信息 -->
+    <string name="skin_name">默认竖版</string>
+    <string name="skin_author">作者：rain</string>
+    <string name="skin_version">版本：1.0</string>
+    <string name="skin_date">日期：2013/2/27</string>
+    <string name="skin_no_package">未检测到安装包，请将.xys文件手动复制到SD卡的xianyun目录下</string>
+    <string name="setting_group_title_local_skin">本地皮肤包</string>
+    <string name="setting_group_title_download_skin">皮肤下载</string>
+
+</resources>

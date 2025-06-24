@@ -1,0 +1,202 @@
+apply plugin: plugs.android.app
+apply plugin: plugs.kotlin.android
+apply plugin: plugs.kotlin.kapt
+
+android {
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId "kyxd.fund.app"
+
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+
+        versionCode 100
+        versionName "1.0.0"
+
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+
+        flavorDimensions configs.dimension
+
+        proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                // libs-databindings混淆, 相对路径为3级
+                '../../../libs-databindings/kotlin/vector-dpi/proguard-vector.pro',
+                '../../../libs-databindings/kotlin/vector-dpi/proguard-glide.pro',
+                '../../../libs-databindings/kotlin/eth/proguard-eth.pro',
+                '../../../libs-databindings/kotlin/compiler/proguard-injection.pro',
+
+                // libs混淆, 相对路径为2级
+                '../../libs/lib_umeng/proguard-um.pro',
+                '../../libs/lib_udesk/proguard-udesk.pro',
+                '../../libs/lib_jg/proguard-jg.pro',
+                '../../libs/lib_baidu/proguard-baidu.pro',
+                '../../libs/lib_base/proguard-base.pro',
+
+                // 本身的混淆
+                'proguard-rules.pro'
+
+        manifestPlaceholders = [
+                app_name: "快查公积金",
+                logo    : "@mipmap/ic_launcher",
+                qqappid : "1105889298",
+                channel : "KCGJJ",
+
+                host    : "https://api.dashebao.com/dsbapi/",
+                host_h5 : "http://m.dashebao.com/dsbapi/",
+        ]
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'dsb'
+            keyPassword 'dsb2016'
+            storeFile file('./dsb.jks')
+            storePassword 'dsb2016'
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            buildConfigField "boolean", "DEBUG_LOG", "true"
+            buildConfigField "boolean", "TEST", "true"
+
+            signingConfig signingConfigs.release
+
+            shrinkResources false
+            zipAlignEnabled false
+            minifyEnabled false
+        }
+        release {
+            debuggable false
+            buildConfigField "boolean", "DEBUG_LOG", "false"
+            buildConfigField "boolean", "TEST", "false"
+
+            signingConfig signingConfigs.release
+
+            shrinkResources true
+            zipAlignEnabled true
+            minifyEnabled true
+
+            ndk {
+                abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+    }
+
+    productFlavors {
+        flavors_debug {
+            manifestPlaceholders = [
+                    app_name: "快查公积金(B)",
+                    host    : "http://testapi.luobohr.com/dsbapi/"
+            ]
+        }
+        fund {
+        }
+        cYingyongbao {
+            manifestPlaceholders = [
+                    channel: "cYingyongbao",
+            ]
+        }
+        c360 {
+            manifestPlaceholders = [
+                    channel: "c360",
+            ]
+        }
+        cXiaomi {
+            manifestPlaceholders = [
+                    channel: "cXiaomi",
+            ]
+        }
+        cVivo {
+            manifestPlaceholders = [
+                    channel: "cVivo",
+            ]
+        }
+        cHuawei {
+            manifestPlaceholders = [
+                    channel: "cHuawei",
+            ]
+        }
+        cBaidu {
+            manifestPlaceholders = [
+                    channel: "cBaidu",
+            ]
+        }
+        cOppo {
+            manifestPlaceholders = [
+                    channel: "cOppo",
+            ]
+        }
+        cMeizu {
+            manifestPlaceholders = [
+                    channel: "cMeizu",
+            ]
+        }
+        cSougou {
+            manifestPlaceholders = [
+                    channel: "cSougou",
+            ]
+        }
+        cWandoujia {
+            manifestPlaceholders = [
+                    channel: "cWandoujia",
+            ]
+        }
+        cGplay {
+            manifestPlaceholders = [
+                    channel: "cGplay",
+            ]
+        }
+    }
+
+    lintOptions {
+        abortOnError configs.abortOnError
+    }
+
+    //在生成的apk文件，修改下命名
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "快查公积金(${variant.buildType.name})_v${variant.versionName}.apk"
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.res.srcDirs += 'src/main/res-form'
+    }
+
+    compileOptions {
+        sourceCompatibility versions.java
+        targetCompatibility versions.java
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+    kapt project(deps.lib.apt.compiler)
+
+    implementation project(deps.lib.rxbus)
+
+    implementation project(deps.dsb.lib.base)
+    implementation project(deps.dsb.lib.umeng)
+}
+
+kapt {
+    useBuildCache = true
+}

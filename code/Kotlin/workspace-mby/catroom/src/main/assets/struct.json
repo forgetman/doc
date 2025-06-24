@@ -1,0 +1,252 @@
+{
+  "version": "1.0",
+  "properties": [
+    {
+      "id": "lac",
+      "name": "地区区域码",
+      "desc": "地区区域码",
+      "required": true,
+      "mode": "r",
+      "define": {
+        "type": "int",
+        "unit": "",
+        "step": "1",
+        "min": "0",
+        "max": "32",
+        "start": "0"
+      }
+    },
+    {
+      "id": "cid",
+      "name": "基站码",
+      "desc": "基站码",
+      "required": true,
+      "mode": "r",
+      "define": {
+        "type": "int",
+        "unit": "",
+        "step": "1",
+        "min": "0",
+        "max": "32",
+        "start": "0"
+      }
+    },
+    {
+      "id": "mnc",
+      "name": "移动网号",
+      "desc": "移动网号",
+      "required": false,
+      "mode": "r",
+      "define": {
+        "type": "int",
+        "unit": "",
+        "step": "1",
+        "min": "0",
+        "max": "5",
+        "start": "0"
+      }
+    },
+    {
+      "id": "mcc",
+      "name": "移动国家号码",
+      "desc": "移动国家号码",
+      "required": false,
+      "mode": "r",
+      "define": {
+        "type": "int",
+        "unit": "",
+        "step": "1",
+        "min": "0",
+        "max": "5",
+        "start": "0"
+      }
+    },
+    {
+      "id": "networkType",
+      "name": "网络制式",
+      "desc": "网络制式",
+      "required": false,
+      "mode": "r",
+      "define": {
+        "type": "enum",
+        "mapping": {
+          "1": "GSM",
+          "2": "CDMA",
+          "3": "WCDMA",
+          "4": "TD_WCDMA",
+          "5": "LTE"
+        }
+      }
+    },
+    {
+      "id": "quantity_of_electricity",
+      "name": "电池电量",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "int",
+        "min": "0",
+        "max": "100",
+        "start": "0",
+        "step": "1",
+        "unit": ""
+      },
+      "required": false
+    },
+    {
+      "id": "feeding",
+      "name": "投粮",
+      "desc": "cat:猫屋，freeze:冻干",
+      "mode": "rw",
+      "define": {
+        "type": "string",
+        "min": "0",
+        "max": "2048"
+      },
+      "required": false
+    },
+    {
+      "id": "light_status",
+      "name": "照明开关",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "ambient_type",
+      "name": "环境",
+      "desc": "1白天 0夜晚",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "food_cat_type",
+      "name": "猫粮仓状态",
+      "desc": "1有粮、0粮少",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "food_freeze_type",
+      "name": "冻干仓状态",
+      "desc": "1有 0少",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "induction_type",
+      "name": "感应状态",
+      "desc": "1有猫 0无猫",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "init",
+      "name": "远程初始化",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "reboot",
+      "name": "重启",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "bool",
+        "mapping": {
+          "0": "关",
+          "1": "开"
+        }
+      },
+      "required": false
+    },
+    {
+      "id": "apk_url",
+      "name": "下载链接",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "string",
+        "min": "0",
+        "max": "2048"
+      },
+      "required": false
+    },
+    {
+      "id": "app_version",
+      "name": "app版本",
+      "desc": "",
+      "mode": "rw",
+      "define": {
+        "type": "int",
+        "min": "0",
+        "max": "10000",
+        "start": "0",
+        "step": "1",
+        "unit": ""
+      },
+      "required": false
+    },
+    {
+      "id": "system_version",
+      "name": "设备版本",
+      "desc": "设备版本 app签名",
+      "mode": "rw",
+      "define": {
+        "type": "string",
+        "min": "0",
+        "max": "2048"
+      },
+      "required": false
+    }
+  ],
+  "events": [],
+  "actions": [],
+  "profile": {
+    "ProductId": "8PPB9W3H4G",
+    "CategoryId": "1"
+  }
+}

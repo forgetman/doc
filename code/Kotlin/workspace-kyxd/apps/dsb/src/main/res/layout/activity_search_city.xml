@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.activity.city.SearchCityActivity" />
+    </data>
+
+    <vector.widget.scrollable.ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:listView_itemBinder="@{owner.itemBinder}"
+        android:listView_itemData="@{owner.data}"
+        android:listView_onItemClick="@{owner.onItemClick}"
+        tools:listitem="@layout/layout_city_item_search" />
+
+</layout>

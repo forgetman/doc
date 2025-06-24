@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.Default" parent="Theme.App">
+        <item name="android:windowBackground">@color/app_bg</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>

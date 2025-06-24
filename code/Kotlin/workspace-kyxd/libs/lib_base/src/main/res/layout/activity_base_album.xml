@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="lib.base.design.ui.activity.BaseAlbumActivity" />
+
+        <variable
+            name="viewModel"
+            type="lib.base.design.ui.viewModel.AlbumViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <vector.widget.scrollable.ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listView_itemBinder="@{owner.itemBinder}"
+            android:listView_itemData="@{viewModel.data}"
+            android:listView_layoutManager="@{owner.layoutManager}"
+            android:listView_onItemClick="@{owner.onItemClick}" />
+
+    </LinearLayout>
+</layout>

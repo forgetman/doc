@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App.Default"
+        android:usesCleartextTraffic="true"
+        tools:ignore="DataExtractionRules,GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.activity.LottieActivity" />
+        <activity android:name=".ui.activity.WebActivity" />
+        <activity android:name=".ui.activity.PageActivity" />
+        <activity android:name=".ui.activity.FragStateActivity" />
+        <activity android:name=".ui.activity.DiffActivity" />
+        <activity android:name=".ui.activity.ComposeActivity" />
+        <activity
+            android:name=".ui.activity.FormActivity"
+            android:process=":other" />
+
+        <!--动画相关-->
+        <activity android:name=".ui.activity.anim.AnimActivity" />
+        <activity android:name=".ui.activity.anim.FrameActivity" />
+        <activity android:name=".ui.activity.anim.InterpolatorActivity" />
+        <activity android:name=".ui.activity.anim.TypeActivity" />
+
+        <service android:name=".service.TestServCommon" />
+    </application>
+
+</manifest>

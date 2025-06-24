@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bg_item">
+
+        <vector.widget.ImageView
+            android:id="@+id/form_iv"
+            android:layout_width="86dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:imageView_placeholder="@{@drawable/layer_bg_placeholder}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="19dp"
+            android:layout_toEndOf="@id/form_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话问律师"
+                android:textColor="@color/text_444"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="劳动纠纷、工伤赔偿 111婚姻家事 房产债务婚劳动纠纷、工伤赔偿 婚姻家事 房产债务婚"
+                android:textColor="@color/text_97"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            style="@style/View.Divider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin" />
+    </RelativeLayout>
+</layout>

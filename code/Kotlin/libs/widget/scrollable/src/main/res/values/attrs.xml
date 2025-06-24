@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LibsWidgetScrollableGroupListView">
+        <!--看需求情况加入以下几种情况-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_groupIndicator-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_indicatorLeft-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_indicatorRight-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childIndicator-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childIndicatorLeft-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childIndicatorRight-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childDivider-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_indicatorStart-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_indicatorEnd-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childIndicatorStart-->
+        <!--        * @attr ref android.R.styleable#ExpandableListView_childIndicatorEnd-->
+        <attr name="android:groupIndicator" format="reference" />
+        <attr name="android:childDivider" format="reference" />
+    </declare-styleable>
+
+</resources>

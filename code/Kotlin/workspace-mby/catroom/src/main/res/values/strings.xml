@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">猫屋</string>
+
+    <string name="light_state">照明:\ </string>
+    <string name="environment">环境:\ </string>
+    <string name="food">猫粮:\ </string>
+    <string name="freeze_dried">冻干:\ </string>
+    <string name="induced_state">感应状态:\ </string>
+    <string name="ble_state">蓝牙状态:\ </string>
+    <string name="iot_state">iot状态:\ </string>
+
+    <string name="camera_state_open">开关: 开</string>
+    <string name="camera_state_close">开关: 关</string>
+
+    <string name="version">版本:\ </string>
+</resources>

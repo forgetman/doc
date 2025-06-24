@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.frag.EachServiceFrag" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/service_empty_ic_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="尚无委托，看看需要什么服务？"
+            android:textColor="@color/text_97"
+            android:textSize="14dp" />
+
+        <View
+            style="@style/View.Divider"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="21dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/View.Text.Service.Empty"
+                android:drawableTop="@drawable/service_empty_ic_fund"
+                android:text="社保公积金"
+                android:view_onClick="@{owner.onFundClick}" />
+
+            <TextView
+                style="@style/View.Text.Service.Empty"
+                android:drawableTop="@drawable/service_empty_ic_document"
+                android:text="证件档案"
+                android:view_onClick="@{owner.onDocumentClick}" />
+
+            <TextView
+                style="@style/View.Text.Service.Empty"
+                android:drawableTop="@drawable/service_empty_ic_law"
+                android:text="法律咨询"
+                android:view_onClick="@{owner.onLawClick}" />
+
+            <TextView
+                style="@style/View.Text.Service.Empty"
+                android:drawableTop="@drawable/service_empty_ic_insurance"
+                android:text="社保补充险"
+                android:view_onClick="@{owner.onInsuranceClick}" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

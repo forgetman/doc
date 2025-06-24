@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage,MissingConstraints,HardcodedText">
+
+    <data>
+
+        <variable
+            name="item"
+            type="reader.model.Book" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            style="@style/ConstraintLayout.Align.TopLeft"
+            android:layout_width="99dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="@dimen/book_shelf_margin"
+            android:layout_marginTop="@dimen/margin_level_2"
+            android:imageView_source="@{item.img}"
+            android:imageView_transformation="@{item.ui.transformation}"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/radius"
+            android:background="@color/blue"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="@{item.status}"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:view_visible="@{item.ui.statusVisible}"
+            app:layout_constraintEnd_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="@id/iv_cover"
+            tools:text="完结" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/radius"
+            android:background="@color/btn_bg_red"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:text="更新"
+            android:textColor="@color/white"
+            android:textSize="8dp"
+            android:view_visible="@{item.ui.hasNewChapters}"
+            app:layout_constraintStart_toStartOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="@id/iv_cover" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="38dp"
+            android:text="@{item.name}"
+            android:textColor="@color/text_primary"
+            android:textSize="18dp"
+            android:textView_bold="@{true}"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="名字" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/book_shelf_margin"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{item.intro}"
+            android:textColor="@color/text_secondary"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="这是简介1111222123123123123123131aa123123123123123123123123123123123123123123adsfadsfasdfasdfasdfadfadfadfadfasdfadfasdfadsfasdfasdfasdasdfasdfasdfasdfasdfasdf" />
+
+        <TextView
+            android:id="@+id/tv_read_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:text="@{item.ui.currReadProgress}"
+            android:textColor="@color/text_primary"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toBottomOf="@id/tv_intro"
+            tools:text="50%" />
+
+        <TextView
+            android:id="@+id/tv_read_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
+            android:text="@{item.ui.currReadIndex}"
+            android:textColor="@color/text_secondary"
+            android:textSize="12dp"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toBottomOf="@id/tv_read_progress"
+            tools:text="123/1000" />
+
+        <View
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/book_style3_divider"
+            app:layout_constraintTop_toBottomOf="@id/iv_cover" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            style="@style/ConstraintLayout.Align.TopRight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:lottie_visibility="@{item.ui.updateState}"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/lottie_book_updating" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

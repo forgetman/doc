@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.activity.inputpiece.bank.BankPieceActivity" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.inputpiece.BankPieceViewModel" />
+
+        <import type="vector.ext.StringKt" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="Autofill,SpUsage,UselessParent,MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_horizontal">
+
+                <include layout="@layout/layout_item_piece_header" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_bank_type"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_bank_type" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.bankTypeText}"
+                        android:view_onDebounceClick="@{owner.onBankTypeClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_bank_type" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tv_bank_account"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_bank_account" />
+
+                    <EditText
+                        android:id="@+id/et_bank_account"
+                        style="@style/View.Edit.Info.Content"
+                        android:hint="@string/enter"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:text="@={viewModel.bankAccount}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_bank_account" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onBankAccountClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.bankAccount)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_bank_account"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_bank_account" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_bank_confirm"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_bank_confirm" />
+
+                    <EditText
+                        android:id="@+id/et_bank_confirm"
+                        style="@style/View.Edit.Info.Content"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:text="@={viewModel.bankAccountConfirm}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_bank_confirm" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onBankAccountConfirmClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.bankAccountConfirm)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_bank_confirm"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_bank_confirm" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include
+                    layout="@layout/layout_item_piece_next"
+                    bind:item="@{owner.nextStep}" />
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+</layout>

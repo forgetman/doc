@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="radius">4dp</dimen>
+    <dimen name="radius_large">17dp</dimen>
+    <dimen name="margin_vertical">14dp</dimen>
+    <dimen name="margin">12dp</dimen>
+    <dimen name="margin2">15dp</dimen>
+
+    <dimen name="banner_height">124dp</dimen>
+    <dimen name="banner2_height">169dp</dimen>
+    <dimen name="banner3_height">48dp</dimen>
+
+    <dimen name="margin_small">10dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+</resources>

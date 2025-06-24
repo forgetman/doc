@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Setting -->
+
+    <dimen name="setting_left_side_marginleft">60dp</dimen>
+    <dimen name="setting_right_side_marginright">30dp</dimen>
+    <dimen name="setting_text_size_main">18dp</dimen>
+    <dimen name="setting_abtou_text_size_small">13dp</dimen>
+    <dimen name="setting_title_icon_size">50dp</dimen>
+    <dimen name="setting_text_size_web">10dp</dimen>
+    <dimen name="setting_text_size_homepage">15dp</dimen>
+    <dimen name="setting_text_size_release_date">14dp</dimen>
+    <dimen name="setting_layout_gap_height">7dp</dimen>
+    <dimen name="setting_title_icon_margin_bottom">15dp</dimen>
+    <dimen name="setting_padding_left">15dp</dimen>
+    <dimen name="setting_padding_right">15dp</dimen>
+    <dimen name="setting_margin_bottom">25dp</dimen>
+
+    <dimen name="setting_about_big_gap">20dp</dimen>
+    <dimen name="setting_about_title_margin_bottom">15dp</dimen>
+
+    <!-- 设置里如果右边部分有两部分文字. 右边文字要空出一部分距离不然贴在一起 -->
+    <dimen name="setting_tab_set_right_part_second_margin_left">5dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="dialog_download_padding">25dp</dimen>
+    <dimen name="dialog_download_title_text_size">20dp</dimen>
+    <dimen name="dialog_download_content_text_size">14dp</dimen>
+    <dimen name="dialog_download_content_margin">10dp</dimen>
+    <dimen name="dialog_download_btn_text_size">24dp</dimen>
+    <dimen name="dialog_download_logo_size">50dp</dimen>
+
+
+</resources>

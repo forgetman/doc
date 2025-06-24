@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.design.ui.itembinder.me.FormMe.Header" />
+
+        <variable
+            name="listener"
+            type="dsb.design.ui.itembinder.me.FormMe.ItemBinder.Header.Listener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@color/blue" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="@dimen/radius">
+
+            <LinearLayout
+                android:id="@+id/me_header_layout_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:view_visible="@{!item.visibility}">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <vector.widget.ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="17dp"
+                        android:imageView_placeholder="@{@drawable/ic_avatar_default}"
+                        android:imageView_source="@{item.avatar}"
+                        android:imageView_transformation="@{item.transformation}"
+                        android:onClick="@{() -> listener.onAvatarClick()}" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="23dp"
+                            android:clickable="@{item.signIn ? false : true}"
+                            android:onClick="@{() -> listener.onNameClick()}"
+                            android:text="@{item.name}"
+                            android:textColor="@color/text_333"
+                            android:textSize="13dp"
+                            android:textView_bold="@{true}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="@{item.desc}"
+                            android:textColor="@color/text_75"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:gridLayout_columnCount="@{3}"
+                    android:gridLayout_data="@{item.sets}" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:view_visible="@{item.visibility}">
+
+                <vector.widget.ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="17dp"
+                    android:imageView_placeholder="@{@drawable/ic_avatar_default}"
+                    android:imageView_source="@{item.avatar}"
+                    android:imageView_transformation="@{item.transformation}"
+                    android:onClick="@{() -> listener.onAvatarClick()}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:clickable="@{item.signIn ? false : true}"
+                    android:onClick="@{() -> listener.onNameClick()}"
+                    android:text="@{item.name}"
+                    android:textColor="@color/text_333"
+                    android:textSize="13dp"
+                    android:textView_bold="@{true}" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@{item.desc}"
+                    android:textColor="@color/text_75"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

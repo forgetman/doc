@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!--临时的-->
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin">
+
+        <LinearLayout
+            style="@style/View.Form.Policy"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Title"
+                android:text="社保VS商保" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="参保条件" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="费率标准" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="赔付规格" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/View.Form.Policy"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Title"
+                android:text="五险解析" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="养老、医疗" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="生育、工伤" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="失业" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/View.Form.Policy">
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Title"
+                android:text="常用工具" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="个税计算器" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="个税汇算清缴" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="定点医院查询" />
+
+            <TextView
+                style="@style/View.Text.Form.Policy.Content"
+                android:text="社保计算器" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.activity.WebViewActivity" />
+    </data>
+
+    <vector.widget.WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:webView_onLoadScheme="@{owner.onLoadingScheme}"
+        android:webView_onLoadingUrl="@{owner.onLoadingUrl}"
+        android:webView_onTitleChanged="@{owner.onTitleChanged}"
+        android:webView_url="@={owner.url}" />
+</layout>

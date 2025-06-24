@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="View.Text.MainTab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize" tools:ignore="SpUsage">10dp</item>
+        <item name="android:textColor">@color/selector_main_tab_text</item>
+        <item name="android:background">@drawable/selector_primary</item>
+    </style>
+
+    <style name="View.Text.Dialog">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize" tools:ignore="SpUsage">15dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/selector_primary</item>
+    </style>
+
+    <style name="View.Text.MenuPopup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize" tools:ignore="SpUsage">15dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:drawablePadding">17dp</item>
+        <item name="android:background">@drawable/selector_primary</item>
+    </style>
+
+    <style name="View.Text.LeaderboardTab">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/selector_leaderboard_tab_text</item>
+        <item name="android:background">@drawable/selector_leaderboard_tab</item>
+    </style>
+
+    <style name="View.Text.BookCity" />
+
+    <style name="View.Text.BookCity.TabLayout">
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+    </style>
+
+    <style name="View.Text.Read" />
+
+    <style name="View.Text.Read.NavigationBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/selector_read_navigation</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="View.Text.Read.Cache">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_read_cache_bg</item>
+    </style>
+
+    <style name="View.Text.Read.Theme">
+        <item name="android:layout_width">74dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="View.SeekBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">2.6dp</item>
+        <item name="android:minHeight">2.6dp</item>
+        <item name="android:max">255</item>
+        <item name="android:progressDrawable">@drawable/selector_seek_bar</item>
+        <item name="android:thumb">@drawable/selector_seek_bar_thumb</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="View.Text.Catalog" />
+
+    <style name="View.Text.Catalog.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">16dp</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="View.Button.ToggleButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="toggle_colorCheck">@color/blue</item>
+        <item name="toggle_colorUnCheck">#c1c1c1</item>
+    </style>
+
+</resources>

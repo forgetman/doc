@@ -1,0 +1,9 @@
+apply plugin: plugs.java
+apply plugin: plugs.kotlin.kotlin
+
+dependencies {
+    implementation deps.kotlin.runtime
+
+    implementation deps.google.auto.service
+    annotationProcessor deps.google.auto.service
+}

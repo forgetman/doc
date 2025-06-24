@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_level_1">16dp</dimen>
+    <dimen name="margin_level_2">20dp</dimen>
+    <dimen name="radius">3dp</dimen>
+
+    <!--bookshelf-->
+    <dimen name="book_shelf_margin">26dp</dimen>
+</resources>

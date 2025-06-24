@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="test.ui.activity.DiffActivity" />
+
+        <import type="vector.widget.scrollable.adapter.ItemCompare" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增加"
+            android:view_onClick="@{owner.onPlusClick}" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="减少"
+            android:view_onClick="@{owner.onReduceClick}" />
+
+        <vector.widget.scrollable.ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listView_itemBinder="@{owner.itemBinder}"
+            android:listView_itemBinderEmpty="@{owner.emptyItemBinder}"
+            android:listView_itemCompare="@{ItemCompare.DIFF}"
+            android:listView_itemData="@{owner.strings}"
+            android:listView_trigger="@{owner.positionTrigger}" />
+
+    </LinearLayout>
+</layout>

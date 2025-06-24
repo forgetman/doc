@@ -1,0 +1,38 @@
+//file:noinspection DependencyNotationArgument
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+
+android {
+    namespace 'cn.udesk'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+
+    compileOnly project(deps.lib.vector.core)
+
+    compileOnly deps.androidx.lifecycle.runtime
+    compileOnly deps.androidx.lifecycle.runtime_ktx
+    compileOnly deps.androidx.lifecycle.common
+    compileOnly deps.androidx.lifecycle.livedata
+    compileOnly deps.androidx.lifecycle.viewmodel
+
+    compileOnly deps.androidx.appcompat
+
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation group: 'org.ccil.cowan.tagsoup', name: 'tagsoup', version: '1.2.1'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}

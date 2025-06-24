@@ -1,0 +1,185 @@
+//file:noinspection GroovyConstructorNamedArguments
+apply plugin: plugs.android.app
+apply plugin: plugs.kotlin.android
+apply plugin: plugs.kotlin.kapt
+apply plugin: plugs.hilt
+
+android {
+    namespace 'dsb'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId "kyxd.dsb.app"
+
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+
+        versionCode 305000
+        versionName "3.0.5"
+
+        multiDexEnabled true
+
+        flavorDimensions configs.dimension
+
+        proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                rootProject.file("libs-databinding/vector/proguard-vector.pro"),
+                rootProject.file("libs/vector/vector-databinding/proguard-databinding.pro"),
+                rootProject.file("libs-databinding/eth/proguard-eth.pro"),
+                rootProject.file("libs-databinding/eth/proguard-coroutines.pro"),
+                rootProject.file("libs-databinding/eson/proguard-eson.pro"),
+                rootProject.file("libs-databinding/apt/compiler/proguard-injection.pro"),
+
+                // libs混淆
+                rootProject.file("workspace-kyxd/libs/lib_umeng/proguard-um.pro"),
+                rootProject.file("workspace-kyxd/libs/lib_udesk/proguard-udesk.pro"),
+                rootProject.file("workspace-kyxd/libs/lib_jg/proguard-jg.pro"),
+                rootProject.file("workspace-kyxd/libs/lib_baidu/proguard-baidu.pro"),
+                rootProject.file("workspace-kyxd/libs/lib_base/proguard-base.pro"),
+                rootProject.file("workspace-kyxd/libs/lib_sy253/proguard-sy253.pro"),
+
+                // 本身的混淆
+                'proguard-rules.pro'
+
+        manifestPlaceholders = [
+                app_name     : "大社宝",
+                logo         : "@mipmap/ic_launcher",
+                qqappid      : "1105889298",
+                channel      : "dsb",
+                baidu_api_key: "4p8n1kDG7j1aATGeP59bt1MGS5Mhk3it",
+
+                // jpush
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "9e403979e27a10566af339d3", // JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL: "developer-default", // 暂时填写默认值即可.
+
+                host         : "https://api.dashebao.com/dsbapi/",
+                host_h5      : "http://m.dashebao.com/dsbapi/",
+        ]
+    }
+
+    buildFeatures {
+        dataBinding true
+        buildConfig true
+    }
+
+    signingConfigs {
+        release {
+            keyAlias 'dsb'
+            keyPassword 'dsb2016'
+            storeFile file('./dsb.jks')
+            storePassword 'dsb2016'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "DEBUG_LOG", "true"
+            buildConfigField "boolean", "TEST", "true"
+
+            shrinkResources false
+            zipAlignEnabled false
+            minifyEnabled false
+
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField "boolean", "DEBUG_LOG", "false"
+            buildConfigField "boolean", "TEST", "false"
+
+            shrinkResources true
+            zipAlignEnabled true
+            minifyEnabled true
+
+            signingConfig signingConfigs.release
+
+            ndk {
+                abiFilters "armeabi"
+            }
+        }
+        // 带log的release包, 平时注释掉. 有需要再打开
+//        log_release.initWith(release)
+//        log_release {
+//            buildConfigField "boolean", "DEBUG_LOG", "true"
+//            matchingFallbacks = ['debug', 'release']
+//        }
+    }
+
+    productFlavors {
+        build {
+            applicationId "kyxd.dsb.app.debug"
+            manifestPlaceholders = [
+                    app_name     : "大社宝(B)",
+                    host         : "http://testapi.luobohr.com/dsbapi/",
+                    host_h5      : "http://testm.luobohr.com/dsbapi/",
+
+                    JPUSH_PKGNAME: applicationId,
+            ]
+        }
+        preview {
+            manifestPlaceholders = [
+                    app_name: "大社宝(P)",
+                    host    : "https://apipre.dashebao.com/dsbapi/",
+                    host_h5 : "https://mpre.dashebao.com/dsbapi/",
+            ]
+        }
+        dsb {}
+        cYingyongbao {}
+        c360 {}
+        cXiaomi {}
+        cVivo {}
+        cHuawei {}
+        cBaidu {}
+        cOppo {}
+        cMeizu {}
+        cSougou {}
+        cWandoujia {}
+    }
+
+    productFlavors.all { flavor ->
+        if (flavor.name != "build" && flavor.name != "preview") {
+            flavor.manifestPlaceholders = [channel: name]
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError configs.abortOnError
+    }
+
+    //在生成的apk文件，修改下命名
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "DSB(${variant.buildType.name})_v${variant.versionName}.apk"
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.java.srcDirs += 'src/main/kotlin-databinding'
+        main.res.srcDirs += 'src/main/res-form'
+    }
+}
+
+dependencies {
+    kapt project(deps.lib.apt.compiler)
+
+    implementation project(deps.lib.bus.flow)
+
+    implementation deps.androidx.cardview
+
+    implementation project(deps.dsb.lib.base)
+    implementation project(deps.dsb.lib.baidu)
+    implementation project(deps.dsb.lib.umeng)
+    implementation project(deps.dsb.lib.jg)
+    implementation project(deps.dsb.lib.udesk)
+    implementation project(deps.dsb.lib.sy253)
+
+    /**
+     * hilt
+     */
+    implementation deps.hilt.runtime
+    kapt deps.hilt.compiler
+
+    debugImplementation deps.square.leakcanary
+}

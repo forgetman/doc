@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecommandInfo>
+    <SinigleInfo
+        Logo="LaoYin2.0.png"
+        Name="烙印2.0"
+        Desc="经典的烙印样式(无时钟版)"
+        Url="LaoYin2.0.xys"
+        Detail="经典的烙印样式，无时钟版本。此样式的前景适用性很强，可以搭配大多数壁纸图片作为背景，得到很好的效果同时仍然可以看清日期文字。"
+        Version="1" />
+    <SinigleInfo
+        Logo="LaoYin_HengBan.png"
+        Name="烙印-横版"
+        Desc="经典的烙印样式(横版)"
+        Url="LaoYin_HengBan.xys"
+        Detail="经典的烙印样式，横屏版本。此样式的前景适用性很强，可以搭配大多数壁纸图片作为背景，得到很好的效果同时仍然可以看清日期文字。"
+        Version="1" />
+    <SinigleInfo
+        Logo="ShuiJing.png"
+        Name="水晶"
+        Desc="水晶样式的效果"
+        Url="ShuiJing.xys"
+        Detail="水晶样式的效果，很多人应该很熟悉，它复刻了曾经墨迹天气安卓初版的ui。由于透明度很高，这个前景搭配深色背景比较好"
+        Version="1" />
+    <SinigleInfo
+        Logo="ShuiJing_HengBan.png"
+        Name="水晶-横版"
+        Desc="水晶样式的效果(横版)"
+        Url="ShuiJing_HengBan.xys"
+        Detail="水晶样式的效果（横版），很多人应该很熟悉，它复刻了曾经墨迹天气安卓初版的ui。由于透明度很高，这个前景搭配深色背景比较好。"
+        Version="1" />
+    <SinigleInfo
+        Logo="Paper_heart.png"
+        Name="Paper heart"
+        Desc="!@#$%^*()"
+        Url="Paper_heart.xys"
+        Detail="这是一套线条感强的平面版本的皮肤，没有阴影，没有凹陷，没有透明感，而是很多便签组合在一起的感觉。为了保持尽可能多的线条感，很多元素都用了英文，所以名字也起成了英文，这个名字“Paper heart”是做出ui后自然而然的浮现出来的，和同名电影无关。"
+        Version="1" />
+    <SinigleInfo
+        Logo="DaYanJing.png"
+        Name="大眼睛"
+        Desc="可爱大眼睛卡通风格"
+        Url="DaYanJing.xys"
+        Detail="为了纪念我们永不失去的童心，致敬最快乐的青春"
+        Version="1" />
+</RecommandInfo>

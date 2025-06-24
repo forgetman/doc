@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#f5f5f5</color>
+
+    <drawable name="item_normal">#fff</drawable>
+    <drawable name="item_focus">#e8e8e8</drawable>
+
+    <color name="item_normal">#fff</color>
+    <color name="item_focus">#e8e8e8</color>
+
+    <color name="nav_bar_text">#fff</color>
+    <drawable name="nav_bar_bg_focus">#64000000</drawable>
+
+    <color name="blue">#5550FF</color>
+    <color name="blue_focus">#64000000</color>
+
+    <color name="purple">#8e88ff</color>
+    <color name="orange">#fd8a4a</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="text_75">#757575</color>
+    <color name="text_2B">#2b2b2b</color>
+    <color name="text_222">#222</color>
+    <color name="text_21">#212121</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.frag.InfoFrag" />
+
+        <variable
+            name="viewModel"
+            type="dsb.design.viewModel.InfoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/info_layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/nav_bar_bg"
+            android:tabLayout_attrs="@{owner.tabLayoutAttr}"
+            android:textSize="15dp" />
+
+        <vector.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:viewPager_fragAdapter="@{owner.adapter}"
+            android:viewPager_offscreenPageLimit="@{5}"
+            android:viewPager_fragPager="@{viewModel.pager}"
+            android:viewPager_tabLayoutId="@{@id/info_layout_tab}"
+            android:viewPager_useState="@{true}" />
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText,ContentDescription,SpUsage">
+
+    <data>
+
+        <variable
+            name="viewHolder"
+            type="reader.pattern.activity.ReadActivity.OptionThemeViewHolder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:view_visible="@{viewHolder.visible}">
+
+        <ImageView
+            android:id="@+id/iv_light_down"
+            style="@style/ConstraintLayout.Align.TopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/read_ic_theme_light_down" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            style="@style/View.SeekBar"
+            android:seekBar_enable="@{viewHolder.adjustable}"
+            android:seekBar_progress="@={viewHolder.brightness}"
+            app:layout_constraintBottom_toBottomOf="@id/iv_light_down"
+            app:layout_constraintEnd_toStartOf="@id/iv_light_up"
+            app:layout_constraintStart_toEndOf="@id/iv_light_down"
+            app:layout_constraintTop_toTopOf="@id/iv_light_down" />
+
+        <ImageView
+            android:id="@+id/iv_light_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/read_ic_theme_light_up"
+            app:layout_constraintBottom_toBottomOf="@id/iv_light_down"
+            app:layout_constraintEnd_toStartOf="@id/btn_toggle_follow_sys"
+            app:layout_constraintTop_toTopOf="@id/iv_light_down" />
+
+        <vector.widget.ToggleButton
+            android:id="@+id/btn_toggle_follow_sys"
+            style="@style/View.Button.ToggleButton"
+            android:layout_marginEnd="@dimen/margin_level_2"
+            android:toggleButton_checked="@={viewHolder.adjustable}"
+            app:layout_constraintBottom_toBottomOf="@id/iv_light_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_light_up" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_navigation_bar"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="@dimen/margin_level_2"
+            android:background="@drawable/bg_primary"
+            app:constraint_referenced_ids="btn_theme_1,btn_theme_2,btn_theme_3,btn_theme_4"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+
+        <TextView
+            android:id="@+id/btn_theme_1"
+            style="@style/View.Text.Read.Theme"
+            android:background="@drawable/shape_read_theme_bg_1"
+            android:text="白色"
+            android:textColor="@color/text_read_theme_1"
+            android:view_onClick="@{viewHolder.onTheme1Click}" />
+
+        <TextView
+            android:id="@+id/btn_theme_2"
+            style="@style/View.Text.Read.Theme"
+            android:background="@drawable/shape_read_theme_bg_2"
+            android:text="黄色"
+            android:textColor="@color/text_read_theme_2"
+            android:view_onClick="@{viewHolder.onTheme2Click}" />
+
+        <TextView
+            android:id="@+id/btn_theme_3"
+            style="@style/View.Text.Read.Theme"
+            android:background="@drawable/shape_read_theme_bg_3"
+            android:text="护眼"
+            android:textColor="@color/text_read_theme_3"
+            android:view_onClick="@{viewHolder.onTheme3Click}" />
+
+        <TextView
+            android:id="@+id/btn_theme_4"
+            style="@style/View.Text.Read.Theme"
+            android:background="@drawable/shape_read_theme_bg_4"
+            android:text="黑色"
+            android:textColor="@color/text_read_theme_4"
+            android:view_onClick="@{viewHolder.onTheme4Click}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

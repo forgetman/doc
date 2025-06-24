@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--对android原生view的属性重复声明, 因为无法获取到android.R.styleable.原生View的定义-->
+<resources>
+    <declare-styleable name="LibsVectorCoreRedeclare_View">
+        <attr name="android:alpha" />
+        <attr name="android:background" />
+        <attr name="android:backgroundTint" />
+        <attr name="android:backgroundTintMode" />
+        <attr name="android:clickable" />
+        <attr name="android:contentDescription" />
+        <attr name="android:elevation" />
+        <attr name="android:focusable" />
+        <attr name="android:foreground" />
+        <attr name="android:layout_width" />
+        <attr name="android:layout_height" />
+        <attr name="android:layout_gravity" />
+
+        <attr name="android:layout_margin" />
+
+        <attr name="android:layout_marginVertical" />
+        <attr name="android:layout_marginTop" />
+        <attr name="android:layout_marginBottom" />
+
+        <attr name="android:layout_marginHorizontal" />
+        <attr name="android:layout_marginStart" />
+        <attr name="android:layout_marginLeft" />
+        <attr name="android:layout_marginEnd" />
+        <attr name="android:layout_marginRight" />
+
+        <attr name="android:layout_weight" />
+        <attr name="android:minHeight" />
+        <attr name="android:minWidth" />
+        <attr name="android:padding" />
+        <attr name="android:paddingBottom" />
+        <attr name="android:paddingEnd" />
+        <attr name="android:paddingHorizontal" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingStart" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingVertical" />
+        <attr name="android:stateListAnimator" />
+        <attr name="android:visibility" />
+        <attr name="android:importantForAccessibility" />
+
+        <attr name="android:theme" />
+    </declare-styleable>
+
+    <declare-styleable name="LibsVectorCoreRedeclare_TextView">
+        <attr name="android:drawableBottom" />
+        <attr name="android:drawableLeft" />
+        <attr name="android:drawablePadding" />
+        <attr name="android:drawableRight" />
+        <attr name="android:drawableTop" />
+        <attr name="android:ellipsize" />
+        <attr name="android:hint" />
+        <attr name="android:inputType" />
+        <attr name="android:fontFamily" />
+        <attr name="android:gravity" />
+        <attr name="android:letterSpacing" />
+        <attr name="android:lineHeight" />
+        <attr name="android:lines" />
+        <attr name="android:lineSpacingExtra" />
+        <attr name="android:lineSpacingMultiplier" />
+        <attr name="android:maxLines" />
+        <attr name="android:maxWidth" />
+        <attr name="android:minLines" />
+        <attr name="android:minWidth" />
+        <attr name="android:singleLine" />
+        <attr name="android:text" />
+        <attr name="android:textAllCaps" />
+        <attr name="android:textAppearance" />
+        <attr name="android:textColor" />
+        <attr name="android:textColorHint" />
+        <attr name="android:textSize" />
+        <attr name="android:textStyle" />
+
+        <!--theme需要特殊多声明一次-->
+        <attr name="android:theme" />
+    </declare-styleable>
+
+    <declare-styleable name="LibsVectorCoreRedeclare_ImageView">
+        <attr name="android:scaleType" />
+        <attr name="android:src" />
+        <attr name="android:tint" />
+
+        <!--theme需要特殊多声明一次-->
+        <attr name="android:theme" />
+    </declare-styleable>
+</resources>

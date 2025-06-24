@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.Form40" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner3_height">
+
+        <vector.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:viewPager_autoScroll="@{true}"
+            android:viewPager_indicator="@{@id/form_40_indicator}"
+            android:viewPager_indicator_config_icon="@{item.config}"
+            android:viewPager_itemBinder="@{item.itemBinders}"
+            android:viewPager_itemCycle="@{true}"
+            android:viewPager_itemData="@{item.data}"
+            android:viewPager_scrollIntervalInMillis="@{5000}" />
+
+        <vector.pageindicator.widget.IconPageIndicator
+            android:id="@+id/form_40_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp" />
+    </RelativeLayout>
+</layout>

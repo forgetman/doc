@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.Form38" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <dsb.view.BannerBackground
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <vector.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner2_height"
+                android:background="@color/blue"
+                android:viewPager_autoScroll="@{true}"
+                android:viewPager_itemCycle="@{true}"
+                android:viewPager_itemBinder="@{item.itemBinders}"
+                android:viewPager_scrollIntervalInMillis="@{5000}" />
+        </dsb.view.BannerBackground>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="18dp">
+
+                <TextView
+                    style="@style/View.Text.Form.Main"
+                    android:drawableTop="@drawable/form_ic_fund"
+                    android:text="社保公积金" />
+
+                <TextView
+                    style="@style/View.Text.Form.Main"
+                    android:drawableTop="@drawable/form_ic_document"
+                    android:text="证件档案" />
+
+                <TextView
+                    style="@style/View.Text.Form.Main"
+                    android:drawableTop="@drawable/form_ic_law"
+                    android:text="法律咨询" />
+
+                <TextView
+                    style="@style/View.Text.Form.Main"
+                    android:drawableTop="@drawable/form_ic_insurance"
+                    android:text="社保补充险" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</layout>

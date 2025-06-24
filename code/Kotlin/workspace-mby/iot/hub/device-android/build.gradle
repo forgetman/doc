@@ -1,0 +1,27 @@
+plugins {
+    alias(conventionLibs.plugins.android.lib)
+}
+android {
+    namespace 'com.tencent.iot.hub.device.android.core'
+
+    defaultConfig {
+        versionCode 2
+        versionName "1.1"
+    }
+
+    buildFeatures {
+        aidl true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api(projects.workspaceMby.iot.hub.deviceJava)
+    api 'de.mindpipe.android:android-logging-log4j:1.0.3'
+
+    implementation(androidxLibs.annotation)
+}

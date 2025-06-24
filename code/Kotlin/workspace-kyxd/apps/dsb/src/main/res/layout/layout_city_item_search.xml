@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.City" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/city_item_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/selector_bg_item"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/margin"
+            android:text="@{item.name}"
+            android:textColor="@color/text_58"
+            android:textSize="15dp"
+            tools:text="名字" />
+
+    </LinearLayout>
+</layout>

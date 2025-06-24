@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.fragment.HomeMultiFrag" />
+
+        <import type="vector.widget.scrollable.adapter.ItemCompare" />
+    </data>
+
+    <vector.widget.scrollable.ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listView_decoration="@{owner.decoration}"
+        android:listView_itemBinder="@{owner.itemBinders}"
+        android:listView_itemCompare="@{ItemCompare.DATASET_CHANGED}"
+        android:listView_itemData="@{owner.data}" />
+
+</layout>

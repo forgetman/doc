@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="View.Text.Me" />
+
+    <style name="View.Text.Me.Item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">13dp</item>
+        <item name="android:drawablePadding">9dp</item>
+        <item name="android:gravity">center</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="View.Text.Info" />
+
+    <style name="View.Text.Info.LeadCopy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:text">@string/piece_lead_copy</item>
+        <item name="android:textColor">@color/blue_deep</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <style name="View.Text.Info.LeadCopy2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:text">@string/piece_lead_copy_2</item>
+        <item name="android:textColor">@color/red_deep</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <style name="View.Text.Info.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="View.Text.Info.Selection">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">46dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:hint">@string/choice</item>
+        <item name="android:background">@drawable/bg_stoke_corner_gray</item>
+        <item name="android:paddingHorizontal" tools:targetApi="o">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">13dp</item>
+        <item name="drawableEndCompat">@drawable/piece_ic_arrow</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="View.Text.Loan" />
+
+    <style name="View.Text.Loan.Detail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">13dp</item>
+    </style>
+
+    <style name="View.Text.Loan.Detail.Value">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+</resources>

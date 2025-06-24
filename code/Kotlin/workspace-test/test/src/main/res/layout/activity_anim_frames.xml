@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="test.ui.activity.anim.FrameActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{"预期帧率 = " + owner.frame}' />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="增加"
+                android:view_onClick="@{owner.onFrameIncreaseClick}" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减少"
+                android:view_onClick="@{owner.onFrameReduceClick}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{"计算量级 = " + owner.level}' />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="增加"
+                android:view_onClick="@{owner.onIncreaseClick}" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减少"
+                android:view_onClick="@{owner.onReduceClick}" />
+        </LinearLayout>
+
+        <test.ui.activity.anim.FrameView
+            android:id="@+id/frame_layout_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <test.ui.activity.anim.FrameView
+            android:id="@+id/frame_layout_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp" />
+
+        <test.ui.activity.anim.FrameView
+            android:id="@+id/frame_layout_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</layout>

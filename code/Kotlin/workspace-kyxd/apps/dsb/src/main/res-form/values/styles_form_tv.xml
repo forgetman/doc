@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="View.Text.Form">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="View.Text.Form.Name">
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="View.Text.Form.Text">
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="View.Text.Form.Text.AlignRight">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="View.Text.Form.Main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColor">@color/text_444</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/selector_bg_item_transparent</item>
+    </style>
+
+    <style name="View.Text.Form.Policy" />
+
+    <style name="View.Text.Form.Policy.Title">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">@color/text_444</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="View.Text.Form.Policy.Content">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/text_92</item>
+    </style>
+</resources>

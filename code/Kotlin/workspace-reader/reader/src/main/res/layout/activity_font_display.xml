@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.activity.FontDisplayActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_display"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:lineSpacingExtra="15dp"
+            android:text="念女娇丶赤壁怀古\n 大江东去，\n浪淘尽。\n千古风流人物，\n故垒西边。"
+            android:textColor="@color/text_primary"
+            android:textSize="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            app:layout_constraintTop_toBottomOf="@id/tv_display" />
+
+        <!--owner.itemBinder不能生成databinding, 比较奇怪, 原因暂时不管-->
+<!--        <vector.widget.scrollable.ListView-->
+<!--            style="@style/ConstraintLayout.Match.Horizontal"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:listView_itemBinder="@{owner.itemBinder}"-->
+<!--            android:listView_itemData="@{owner.data}"-->
+<!--            android:listView_onItemClick="@{owner.onItemClick}"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/divider" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

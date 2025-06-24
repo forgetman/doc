@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lib.ys.network.image.NetworkImageView
+        android:id="@+id/month_iv_fg"
+        android:layout_width="345dp"
+        android:layout_height="575dp"
+        android:layout_centerInParent="true" />
+
+    <AbsoluteLayout
+        android:id="@+id/month_layout_abs"
+        android:layout_width="345dp"
+        android:layout_height="575dp"
+        android:layout_centerInParent="true">
+
+        <GridView
+            android:id="@+id/month_gv_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:listSelector="@drawable/transparent"
+            android:numColumns="7"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+        <GridView
+            android:id="@+id/month_gv_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:listSelector="@drawable/transparent"
+            android:numColumns="7"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+        <lib.ys.network.image.NetworkImageView
+            android:id="@+id/month_iv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <lib.ys.network.image.NetworkImageView
+            android:id="@+id/month_iv_month_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/month_layout_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <lib.ys.network.image.NetworkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <lib.ys.network.image.NetworkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <lib.ys.network.image.NetworkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <lib.ys.network.image.NetworkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </AbsoluteLayout>
+
+</RelativeLayout>

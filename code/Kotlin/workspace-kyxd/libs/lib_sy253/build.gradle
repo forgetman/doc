@@ -1,0 +1,39 @@
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+
+android {
+    namespace 'lib.sy'
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.compileSdk
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-jg.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        main.jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+//    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation project(deps.dsb.lib.sy253_sdk)
+
+    /**
+     * kotlin
+     */
+    compileOnly deps.kotlin.runtime
+    compileOnly deps.kotlin.reflect
+
+    compileOnly project(deps.lib.vector.core)
+    compileOnly project(deps.lib.vector.databinding)
+}

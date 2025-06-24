@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="white" tools:ignore="ResourceName">#FFFFFF</color>
+    <color name="black" tools:ignore="ResourceName">#000000</color>
+    <color name="gray" tools:ignore="ResourceName">#ebebeb</color>
+    <color name="transparent" tools:ignore="ResourceName">#00000000</color>
+    <color name="translucent" tools:ignore="ResourceName">#50000000</color>
+    <color name="divider" tools:ignore="ResourceName">#eeeeee</color>
+
+    <drawable name="white" tools:ignore="ResourceName">#FFFFFF</drawable>
+    <drawable name="transparent" tools:ignore="ResourceName">#00000000</drawable>
+    <drawable name="translucent" tools:ignore="ResourceName">#50000000</drawable>
+    <drawable name="divider" tools:ignore="ResourceName">#cccccc</drawable>
+    <drawable name="item_focus" tools:ignore="ResourceName">#cccccc</drawable>
+
+    <!-- list -->
+    <color name="text_scrollable_header" tools:ignore="ResourceName">#929292</color>
+</resources>

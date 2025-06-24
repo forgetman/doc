@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.Form33" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_bg_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/margin"
+        android:paddingEnd="@dimen/margin">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/form_ic_alert" />
+
+        <dsb.view.AutoVerticalScrollTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:autoScrollTextView_texts="@{item.texts}"
+            android:autoScrollTextView_toggle="@{item.toggle}" />
+
+        <ImageView
+            style="@style/View.Image.Arrow"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+</layout>

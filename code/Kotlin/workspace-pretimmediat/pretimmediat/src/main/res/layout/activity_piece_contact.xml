@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.activity.inputpiece.ContactPieceActivity" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.inputpiece.ContactPieceViewModel" />
+
+        <import type="vector.ext.StringKt" />
+
+        <import type="pretimmediat.viewmodel.inputpiece.ContactPieceViewModel" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="Autofill,SpUsage,UselessParent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_horizontal"
+                android:splitMotionEvents="false">
+
+                <include layout="@layout/layout_item_piece_header" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/piece_emergency_contact_first"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_first_relationship"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_relationship" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@={viewModel.firstRelationshipDesc}"
+                        android:view_onDebounceClick="@{owner.onFirstRelationshipClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_first_relationship" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_first_phone_number_title"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_phone_number" />
+
+                    <TextView
+                        android:id="@+id/tv_first_phone_number"
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.firstPhoneNumber}"
+                        android:view_onDebounceClick="@{owner.onFirstPhoneNumberClick}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_SELECT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_first_phone_number_title"
+                        tools:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_first_phone_number"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.phoneNumberInputFilter}"
+                        android:text="@={viewModel.firstPhoneNumber}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_INPUT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_first_phone_number_title"
+                        tools:ignore="LabelFor,TextFields" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onFirstPhoneNumberClearClick}"
+                        android:view_visible="@{viewModel.firstNumberClearVisible}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_first_phone_number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_first_phone_number" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_first_name"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_name" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.firstName}"
+                        android:view_onDebounceClick="@{owner.onFirstPhoneNumberClick}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_SELECT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_first_name"
+                        tools:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_first_name"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.commonInputFilter}"
+                        android:text="@={viewModel.firstName}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_INPUT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_first_name"
+                        tools:ignore="LabelFor" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onFirstNameClearClick}"
+                        android:view_visible="@{viewModel.firstNameClearVisible}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_first_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_first_name" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/piece_emergency_contact_second"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_second_relationship"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_relationship" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@={viewModel.secRelationshipDesc}"
+                        android:view_onDebounceClick="@{owner.onSecRelationshipClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_second_relationship" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_second_phone_number"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_phone_number" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.secPhoneNumber}"
+                        android:view_onDebounceClick="@{owner.onSecPhoneNumberClick}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_SELECT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_second_phone_number"
+                        tools:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_second_phone_number"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.phoneNumberInputFilter}"
+                        android:text="@={viewModel.secPhoneNumber}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_INPUT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_second_phone_number"
+                        tools:ignore="LabelFor,TextFields" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onSecPhoneNumberClearClick}"
+                        android:view_visible="@{viewModel.secNumberClearVisible}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_second_phone_number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_second_phone_number" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_second_name"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_emergency_contact_name" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.secName}"
+                        android:view_onDebounceClick="@{owner.onSecPhoneNumberClick}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_SELECT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_second_name"
+                        tools:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_second_name"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.commonInputFilter}"
+                        android:text="@={viewModel.secName}"
+                        android:view_visible="@{viewModel.contactFrom == ContactPieceViewModel.CONTACT_FROM_INPUT}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_second_name"
+                        tools:ignore="LabelFor" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onSecNameClearClick}"
+                        android:view_visible="@{viewModel.secNameClearVisible}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_second_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_second_name" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include
+                    layout="@layout/layout_item_piece_next"
+                    bind:item="@{owner.nextStep}" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

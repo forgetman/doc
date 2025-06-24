@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SkinInformation
+    Name="3.0"
+    Author="rain"
+    Description="1"
+    SkinVersion="1"
+    Orientation="1"
+    SkinEnginVersion="1">
+    <OtherInfo
+        BgMode="ESingle"
+        BgAnimType="EMove"
+        ScrollAnimType="EGradient"
+        SwitchYearAnimType="EStack" />
+    <MvInfo
+        ShowShortInfo="True"
+        HasFg="True"
+        IsDrawNotCurDate="True"
+        SolarColor="b8dd7a"
+        FestivalColor="fc8e82"
+        LunarColor="ffffff"
+        OtherColor="808080"
+        WeekRowCount="1"
+        ShowHoliday="True"
+        ShowMonthDesc="True"
+        ShowDate="False"
+        HolidayAlign="EAuto"
+        DoubleDateOffsetX="0">
+        <EBmp
+            type="EBmpYear"
+            x="653"
+            y="29"
+            align="RIGHT"
+            degree="0"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpMonth"
+            x="60"
+            y="38"
+            align="LEFT"
+            degree="0"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpMonthDesp"
+            x="658"
+            y="98"
+            align="RIGHT"
+            degree="0"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpDate"
+            x="660"
+            y="95"
+            align="RIGHT"
+            degree="50"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpWeek"
+            x="32"
+            y="210"
+            align="LEFT"
+            degree="0"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpDateList"
+            x="92"
+            y="300"
+            align="RIGHT"
+            degree="0"
+            offsetX="0"
+            offsetY="0" />
+        <EBmp
+            type="EBmpHoliday"
+            x="55"
+            y="300"
+            align="CENTER"
+            degree="0"
+            offsetX="-78"
+            offsetY="-18" />
+        <EBmp
+            type="EBmpHighlight"
+            x="55"
+            y="300"
+            align="CENTER"
+            degree="0"
+            offsetX="-35"
+            offsetY="-17" />
+        <ESize
+            type="ESizeDateGap"
+            width="96"
+            height="144"
+            align="CENTER" />
+        <EText
+            type="ETextShortInfoStartPos"
+            x="57"
+            y="371"
+            align="CENTER"
+            size="29"
+            useShadow="False"
+            shadowColor="0"
+            shadowOffsetX="2"
+            shadowOffsetY="2" />
+    </MvInfo>
+    <YvInfo
+        HasLogo="True"
+        HasFg="True"
+        HasAnimal="True">
+        <EBmp
+            type="EMonth1"
+            x="12"
+            y="252"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth2"
+            x="182"
+            y="252"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth3"
+            x="352"
+            y="252"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth4"
+            x="522"
+            y="252"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth5"
+            x="12"
+            y="562"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth6"
+            x="182"
+            y="562"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth7"
+            x="352"
+            y="562"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth8"
+            x="522"
+            y="562"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth9"
+            x="12"
+            y="872"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth10"
+            x="182"
+            y="872"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth11"
+            x="352"
+            y="872"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EMonth12"
+            x="522"
+            y="872"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EAnimal"
+            x="408"
+            y="0"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="ELogo"
+            x="40"
+            y="109"
+            align="LEFT"
+            degree="0" />
+        <EBmp
+            type="EYear"
+            x="58"
+            y="30"
+            align="LEFT"
+            degree="0" />
+    </YvInfo>
+    <DvInfo
+        HasFg="True"
+        UseShadow="True"
+        TextColor="edf8f0"
+        ShadowColor="0"
+        ShadowOffsetX="1"
+        ShadowOffsetY="1">
+        <EText
+            type="EWholeDateExceptDay"
+            x="608"
+            y="180"
+            align="RIGHT"
+            size="78" />
+        <EText
+            type="EWeekNumber"
+            x="415"
+            y="300"
+            align="RIGHT"
+            size="50" />
+        <EText
+            type="EWeekDay"
+            x="608"
+            y="300"
+            align="RIGHT"
+            size="50" />
+        <EText
+            type="EDayNumber"
+            x="345"
+            y="390"
+            align="CENTER"
+            size="300" />
+        <EText
+            type="ELunar"
+            x="105"
+            y="775"
+            align="LEFT"
+            size="50" />
+        <EText
+            type="ESolar"
+            x="105"
+            y="850"
+            align="LEFT"
+            size="40" />
+        <EText
+            type="EFestival1"
+            x="105"
+            y="910"
+            align="LEFT"
+            size="38" />
+        <EText
+            type="EFestival2"
+            x="105"
+            y="970"
+            align="LEFT"
+            size="38" />
+    </DvInfo>
+    <ClockInfo
+        HasClock="False"
+        ClockType="EAnalog">
+        <EBmp
+            type="EAm"
+            x="250"
+            y="0" />
+        <EBmp
+            type="EPm"
+            x="250"
+            y="0" />
+        <EBmp
+            type="EHourTens"
+            x="0"
+            y="0" />
+        <EBmp
+            type="EHourUnits"
+            x="50"
+            y="0" />
+        <EBmp
+            type="EMinuteTens"
+            x="150"
+            y="0" />
+        <EBmp
+            type="EMinuteUnits"
+            x="200"
+            y="0" />
+        <EBmp
+            type="EColon"
+            x="100"
+            y="0" />
+        <EBmp
+            type="EAnalog"
+            x="241"
+            y="-7" />
+    </ClockInfo>
+    <SvInfo
+        TitleColor="dedede"
+        HighlightColor="1198ec"
+        DetailColor="999999" />
+</SkinInformation>

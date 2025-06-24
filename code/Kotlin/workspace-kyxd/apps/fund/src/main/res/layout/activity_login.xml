@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="fund.design.ui.activity.LoginActivity" />
+
+        <variable
+            name="input"
+            type="fund.model.InputInfo" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include
+            layout="@layout/layout_phone_input"
+            bind:input="@{input}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="23dp"
+            android:paddingEnd="23dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    style="@style/divider"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="#979797" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="第三方登录"
+                    android:textColor="@color/text_75"
+                    android:textSize="12dp" />
+
+                <View
+                    style="@style/divider"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:background="#979797" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_layout_wx"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_green_border_selector"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wx"
+                    android:drawablePadding="13dp"
+                    android:gravity="center"
+                    android:text="微信登录"
+                    android:textColor="#71c100"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

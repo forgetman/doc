@@ -1,0 +1,14 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1550559564,
+  "data": {
+    "customer": {
+      "created_at": "",
+      "title": "大社宝客服",
+      "content": "客服工作时间：周一到周五 9:30-18:30",
+      "icon_url": "http:\/\/img.dashebao.com\/icon_dashebao.jpeg",
+      "view_type": 36
+    }
+  }
+}

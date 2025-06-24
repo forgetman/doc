@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">@color/white</color>
+    <drawable name="app_bg">@color/white</drawable>
+
+    <color name="text_appbar_primary">#333</color>
+
+    <color name="text_primary">#333</color>
+    <color name="text_secondary">#666</color>
+    <color name="text_tertiary">#999</color>
+
+    <color name="cyan">#45DEF9</color>
+    <color name="blue">#4263EB</color>
+    <drawable name="blue">#4263EB</drawable>
+    <color name="blue_deep">#4E5EA1</color>
+    <color name="blue_middle">#EBEFFF</color>
+    <color name="blue_middle_deep">#BDCAFF</color>
+    <color name="blue_light">#F8F9FF</color>
+    <color name="gray">#EBEDF8</color>
+    <color name="gray_middle">#D7D7D7</color>
+    <color name="gray_deep">#AAA</color>
+    <color name="red">#E02020</color>
+    <color name="red_deep">#AF0000</color>
+    <color name="red_light">#FFBDBD</color>
+    <color name="yellow">#FFD101</color>
+    <color name="green">#CDFFBD</color>
+    <color name="orange">#FFDABD</color>
+
+    <!--date picker-->
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#59B29C</color>
+    <color name="date_picker_text_dark">#333333</color>
+</resources>

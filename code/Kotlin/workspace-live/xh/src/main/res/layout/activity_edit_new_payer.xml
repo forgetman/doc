@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="star.design.viewModel.edit.EditNewPayerViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/View.Condition.Layout">
+
+            <TextView
+                style="@style/View.Text.Condition"
+                android:text="专区有效付费转化" />
+
+            <EditText
+                style="@style/View.Edit.Condition"
+                android:inputType="number"
+                android:textView_intNumber="@={viewModel.input.zoneCount}" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/View.Condition.Layout">
+
+            <TextView
+                style="@style/View.Text.Condition"
+                android:text="平台有效付费转化" />
+
+            <EditText
+                style="@style/View.Edit.Condition"
+                android:inputType="number"
+                android:textView_intNumber="@={viewModel.input.platformCount}" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

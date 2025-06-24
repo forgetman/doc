@@ -1,0 +1,5 @@
+<resources>
+    <string name="auth_error">授权失败</string>
+    <string name="share_error">分享失败</string>
+    <string name="remove_auth_error">取消授权失败</string>
+</resources>

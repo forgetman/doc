@@ -1,0 +1,1 @@
+-keep class vector.widget.ext.WidthWrapper { *; }

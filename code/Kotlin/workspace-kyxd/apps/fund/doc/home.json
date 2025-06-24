@@ -1,0 +1,67 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1532782975,
+  "data": [
+    {
+      "view_type": 1,
+      "list": [
+        {
+          "title": "全国公积金一键查询",
+          "btn": "查询公积金",
+          "num": "2782975",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "view_type": 2,
+      "list": [
+        {
+          "title": "社保公积金代缴",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        },
+        {
+          "title": "公积金提取",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        },
+        {
+          "title": "公积金指南",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        }
+      ]
+    },
+    {
+      "view_type": 3,
+      "list": [
+        {
+          "title": "公积金贷款",
+          "desc": "有温度的人事服务",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        },
+        {
+          "title": "公积金贷款",
+          "desc": "有温度的人事服务",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        },
+        {
+          "title": "公积金贷款",
+          "desc": "有温度的人事服务",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        },
+        {
+          "title": "公积金贷款",
+          "desc": "有温度的人事服务",
+          "url": "https:\/\/m.dashebao.com\/dsbapi\/v2\/order\/paySocialSecurity_a\/city_id\/110100\/navbar\/1\/mobile\/",
+          "icon": "http:\/\/api.dashebao.com\/img\/app\/home\/icon_home_tax.png"
+        }
+      ]
+    }
+  ]
+}

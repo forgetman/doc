@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">@color/white</color>
+    <drawable name="app_bg">@color/white</drawable>
+
+    <color name="bg_primary">@color/white</color>
+    <drawable name="bg_primary">@drawable/white</drawable>
+    <color name="bg_primary_opposite">@color/black</color>
+    <color name="bg_secondary">#f5f6f8</color>
+
+    <color name="bg_focus_primary">#edf6fe</color>
+    <drawable name="bg_focus_primary">#edf6fe</drawable>
+
+    <color name="highlight_primary">#edf6fe</color>
+
+    <drawable name="nav_bar_bg_focus">#edf6fe</drawable>
+    <color name="nav_bar_text_focus">#edf6fe</color>
+    <color name="nav_bar_divider">#928d8a</color>
+
+    <color name="bottom_nav_bar_color">@color/white</color>
+
+    <color name="divider">#e8e8e8</color>
+    <drawable name="divider">#e8e8e8</drawable>
+
+    <color name="blue">#0050ff</color>
+
+    <color name="btn_bg_blue">#0882e7</color>
+    <color name="btn_bg_blue_focus">#0674cf</color>
+
+    <color name="btn_bg_red">#d14b4b</color>
+    <color name="btn_bg_red_focus">#b84242</color>
+
+    <color name="night_mode">#64000000</color>
+
+    <color name="text_f44">#f44</color>
+
+    <color name="text_primary">#0A0B13</color>
+    <color name="text_secondary">#8d8e93</color>
+    <color name="text_third">#979797</color>
+
+    <color name="text_read_theme_1">#0a0b13</color>
+    <color name="text_read_theme_2">#cf9739</color>
+    <color name="text_read_theme_3">#3a9c21</color>
+    <color name="text_read_theme_4">#bec4e2</color>
+
+</resources>

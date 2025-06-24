@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="vector.widget.viewpager2.ViewPager2" />
+
+        <variable
+            name="owner"
+            type="test.ui.activity.FragStateActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/info_layout_tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textSize="15dp"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/white"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            <vector.widget.viewpager2.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:viewPager_currentItem="@={owner.currentItem}"
+                android:viewPager_onPageIntent="@{owner.onPageIntent}"
+                android:viewPager_onPageScrolled="@{owner.onPageScrolled}"
+                android:viewPager_onPageSelected="@{owner.onPageSelected}"
+                android:viewPager_orientation="@{ViewPager2.ORIENTATION_HORIZONTAL}"
+                android:viewPager_fragPager="@{owner.pager}"
+                android:viewPager_scrollable="@{true}"
+                android:viewPager_smoothScroll="@{true}"
+                android:viewPager_tabLayoutId="@{@id/info_layout_tab}"
+                android:viewPager_transformer="@{owner.transformer}" />
+        </LinearLayout>
+
+        <test.view.AlphaView
+            android:id="@+id/dynamic_layout_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText,SpUsage">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/splash_iv"
+            style="@style/ConstraintLayout.Match.All"
+            android:scaleType="center"
+            android:src="@drawable/splash_ic_illustration"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/ConstraintLayout.Align.CenterHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.5dp"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="安 九 阅 读"
+            android:textColor="@color/text_primary"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/splash_ic_logo"
+            app:layout_constraintBottom_toTopOf="@id/tv_slogan" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            style="@style/ConstraintLayout.Align.CenterHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="阅 读 是 种 欲 望   安 九 就 是 力 量"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

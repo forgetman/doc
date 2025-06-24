@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText,SpUsage">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.activity.BookInfoActivity" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <vector.widget.scrollable.ListView
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:listView_decoration="@{owner.decoration}"
+            android:listView_itemBinder="@{owner.itemBinders}"
+            android:listView_itemData="@{owner.data}"
+            android:listView_layoutManager="@{owner.manager}"
+            android:listView_onItemClick="@{owner.onItemClick}"
+            app:layout_constraintBottom_toTopOf="@id/flow_bottom"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/layout_bookshelf_item_style_grid" />
+
+        <View
+            android:id="@+id/book_info_divider"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="@drawable/ic_shadow"
+            app:layout_constraintBottom_toTopOf="@id/flow_bottom" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_bottom"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:background="@color/btn_bg_blue"
+            android:view_visible="@{owner.optionVisible}"
+            app:constraint_referenced_ids="book_info_tv_read,divider,book_info_tv_add"
+            app:flow_maxElementsWrap="3"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/book_info_tv_read"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_blue_rectangle"
+            android:gravity="center"
+            android:text="开始阅读"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:view_onClick="@{owner.onClick}"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/book_info_tv_read"
+            app:layout_constraintTop_toTopOf="@id/book_info_tv_read" />
+
+        <TextView
+            android:id="@+id/book_info_tv_add"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_add_book"
+            android:enabled="@{owner.addEnable}"
+            android:gravity="center"
+            android:text='@{owner.addEnable ? "加入书架" : "已加入书架"}'
+            android:textColor="@color/selector_book_info_btn_text"
+            android:textSize="14dp"
+            android:view_onClick="@{owner.onAddClick}"
+            tools:enabled="true"
+            tools:text="加入书架" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

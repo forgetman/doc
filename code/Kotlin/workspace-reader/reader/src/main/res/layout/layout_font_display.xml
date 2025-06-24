@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,SpUsage">
+
+    <data>
+
+        <variable
+            name="item"
+            type="reader.model.FontDisplay" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_transparent"
+        android:padding="@dimen/margin_level_1">
+
+        <TextView
+            style="@style/ConstraintLayout.Align.CenterVertical"
+            android:text="@{item.type.desc}"
+            android:textColor="@color/text_primary"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="XXX字体" />
+
+        <TextView
+            style="@style/ConstraintLayout.Align.CenterVertical"
+            android:text='@{item.selected ? "使用中" : ""}'
+            android:textColor="@color/text_primary"
+            android:textSize="13dp"
+            android:view_isSelected="@{item.selected}"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="使用中" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="vector.widget.FileUploadActivity"
+            android:theme="@style/Theme.Dialog.DimUnable" />
+    </application>
+
+</manifest>

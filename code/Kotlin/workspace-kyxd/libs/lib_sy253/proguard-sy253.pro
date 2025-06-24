@@ -1,0 +1,5 @@
+-dontwarn com.cmic.sso.sdk.**
+-dontwarn com.sdk.**
+-keep class com.cmic.sso.sdk.**{*;}
+-keep class com.sdk.** { *;}
+-keep class cn.com.chinatelecom.account.api.**{*;}

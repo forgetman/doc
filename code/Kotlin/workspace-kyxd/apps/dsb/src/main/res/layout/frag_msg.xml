@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.frag.MsgFrag" />
+
+        <variable
+            name="viewModel"
+            type="dsb.design.viewModel.MsgViewModel" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:refresh_onSwipe="@{owner.onSwipe}"
+        android:refresh_trigger="@{owner.trigger}">
+
+        <vector.widget.scrollable.ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listView_itemBinder="@{owner.itemBinder}"
+            android:listView_itemData="@{viewModel.data}"
+            android:listView_onItemClick="@{owner.onItemClick}" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

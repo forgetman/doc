@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="View.Image.MainTab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="View.Image.Me" />
+
+    <style name="View.Image.Me.Arrow">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_marginEnd">19dp</item>
+        <item name="android:src">@drawable/me_ic_arrow</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+</resources>

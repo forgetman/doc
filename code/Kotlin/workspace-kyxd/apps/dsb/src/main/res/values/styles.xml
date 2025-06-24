@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.Default" parent="Theme.App">
+        <item name="android:windowBackground">@color/app_bg</item>
+    </style>
+
+    <style name="View.Text.Main" />
+
+    <style name="View.Text.Main.Tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+        <item name="android:textColor">@color/selector_text_main_tab</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="View.Text.Login" />
+
+    <style name="View.Text.Login.Name">
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="View.Edit.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:textColorHint">@color/text_ba</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:textCursorDrawable">@drawable/shape_edit_text_cursor</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="View.Login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/white</item>
+        <item name="android:paddingEnd">@dimen/margin</item>
+        <item name="android:paddingStart">@dimen/margin</item>
+    </style>
+
+    <style name="View.Me">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+        <item name="android:paddingStart">@dimen/margin</item>
+        <item name="android:paddingEnd">@dimen/margin</item>
+    </style>
+
+    <style name="View.Text.Me">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">@dimen/margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="View.Service" />
+
+    <style name="View.Service.Progress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">26dp</item>
+        <item name="android:paddingEnd">26dp</item>
+    </style>
+
+    <style name="View.Text.Service" />
+
+    <style name="View.Text.Service.Progress">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="View.Text.Service.Main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/selector_text_service</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+    </style>
+
+    <style name="View.Text.Service.Empty">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+        <item name="android:textColor">@color/text_444</item>
+        <item name="android:background">@drawable/selector_bg_item_transparent</item>
+    </style>
+</resources>

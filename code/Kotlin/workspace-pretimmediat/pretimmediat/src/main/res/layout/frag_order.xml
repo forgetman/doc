@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.fragment.OrderFrag" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.OrderViewModel" />
+
+        <import type="vector.widget.scrollable.adapter.ItemCompare" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/order_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:refresh_onSwipe="@{owner.refreshDelegate.onSwipe}"
+        android:refresh_trigger="@{owner.refreshDelegate.refreshTrigger}">
+
+        <vector.widget.scrollable.ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listView_decoration="@{owner.decoration}"
+            android:listView_itemBinder="@{owner.itemBinders}"
+            android:listView_itemBinderEmpty="@{owner.emptyBinder}"
+            android:listView_itemCompare="@{ItemCompare.DATASET_CHANGED}"
+            android:listView_itemData="@{viewModel.data}" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</layout>

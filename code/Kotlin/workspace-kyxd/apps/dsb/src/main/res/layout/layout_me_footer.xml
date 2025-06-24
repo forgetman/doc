@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="dsb.design.ui.itembinder.me.FormMe.ItemBinder.Footer.Listener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            style="@style/View.Divider"
+            android:layout_height="7dp" />
+
+        <RelativeLayout
+            style="@style/View.Me"
+            android:onClick="@{() -> listener.onShareClick()}">
+
+            <TextView
+                style="@style/View.Text.Me"
+                android:text="推荐app给好友"
+                app:drawableStartCompat="@drawable/me_ic_share" />
+
+            <ImageView style="@style/View.Image.Arrow.AlignRight" />
+        </RelativeLayout>
+
+        <View style="@style/View.Divider" />
+
+        <RelativeLayout
+            style="@style/View.Me"
+            android:onClick="@{() -> listener.onGoodClick()}">
+
+            <TextView
+                style="@style/View.Text.Me"
+                android:text="给我们好评"
+                app:drawableStartCompat="@drawable/me_ic_good" />
+
+            <ImageView style="@style/View.Image.Arrow.AlignRight" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

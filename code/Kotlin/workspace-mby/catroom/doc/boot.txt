@@ -1,0 +1,5 @@
+shell脚本: 循环检索当前显示的窗口是不是要保活的app
+
+设置检测是否启动(true/false): adb shell setprop persist.fanc.alive_app_on true
+设置检测包名(重启生效): adb shell setprop persist.fanc.alive_app_name com.miaomiaobuyi.miaomiaoservice/com.miaomiaobuyi.miaomiaoservice.MainActivity
+设置检测时间(单位秒): adb shell setprop persist.fanc.alive_check_time 10

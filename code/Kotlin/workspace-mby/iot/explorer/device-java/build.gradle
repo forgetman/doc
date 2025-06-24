@@ -1,0 +1,9 @@
+plugins {
+    alias conventionLibs.plugins.jvmLibrary
+}
+
+dependencies {
+    implementation 'net.iharder:base64:2.3.9'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    api(projects.workspaceMby.iot.hub.deviceJava)
+}

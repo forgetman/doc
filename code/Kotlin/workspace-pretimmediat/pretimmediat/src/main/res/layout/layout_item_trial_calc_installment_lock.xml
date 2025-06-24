@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner_gray"
+    tools:ignore="MissingConstraints,SpUsage"
+    tools:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/tv_plan"
+        style="@style/ConstraintLayout.Match.All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:textColor="#4C333333"
+        android:textSize="13dp"
+        tools:layout_width="match_parent"
+        tools:text="3 期\n(1 天)" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        style="@style/ConstraintLayout.Align.Center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loan_ic_lock" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

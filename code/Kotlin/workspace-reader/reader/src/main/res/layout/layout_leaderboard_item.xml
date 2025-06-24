@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="SpUsage">
+
+    <data>
+
+        <variable
+            name="item"
+            type="reader.model.Book" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_primary"
+        android:paddingStart="@dimen/margin_level_1"
+        android:paddingEnd="@dimen/margin_level_1">
+
+        <vector.widget.ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="69dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:imageView_placeholder="@{@drawable/book_ic_placeholder}"
+            android:imageView_source="@{item.img}"
+            android:imageView_transformation="@{item.ui.transformation}"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="17dp"
+            android:text="@{item.name}"
+            android:textColor="@color/text_primary"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="名字" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{@string/intro + item.intro}"
+            android:textColor="@color/text_secondary"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="介绍: 警察同志, 如果我说这是一款休闲治愈的游戏, 你们信吗" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/score + item.score}"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_author"
+            tools:ignore="RelativeOverlap"
+            tools:text="评分: 10" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="17dp"
+            android:text="@{@string/author + item.author}"
+            android:textColor="@color/text_secondary"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_cover"
+            tools:text="作者: xxx" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="lib.base.design.dialog.SourcePickDialog" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/View.Text.Dialog.Selector"
+            android:text="拍照"
+            android:view_onClick="@{owner.clickCamera}" />
+
+        <View style="@style/View.Divider" />
+
+        <TextView
+            style="@style/View.Text.Dialog.Selector"
+            android:text="相册"
+            android:view_onClick="@{owner.clickAlbum}" />
+
+        <View style="@style/View.Divider" />
+
+        <TextView
+            style="@style/View.Text.Dialog.Selector"
+            android:text="取消"
+            android:view_onClick="@{owner.clickCancel}" />
+    </LinearLayout>
+</layout>

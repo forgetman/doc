@@ -1,0 +1,7 @@
+//file:noinspection DependencyNotationArgument
+apply plugin: plugs.java
+apply plugin: plugs.kotlin.kotlin
+
+dependencies {
+    implementation deps.kotlin.runtime
+}

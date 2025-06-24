@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.fragment.MeFrag" />
+    </data>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:refresh_onSwipe="@{owner.refreshDelegate.onSwipe}"
+        android:refresh_trigger="@{owner.refreshDelegate.refreshTrigger}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="19dp"
+            tools:ignore="SpUsage,MissingConstraints">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/frag_me_iv_avatar"
+                android:layout_width="141dp"
+                android:layout_height="141dp"
+                android:layout_gravity="center_horizontal"
+                android:imageView_placeholder="@{@drawable/me_bg_face}"
+                android:imageView_source="@{owner.source}"
+                android:imageView_transformation="@{owner.transformation}"
+                tools:background="@drawable/me_bg_face" />
+
+            <TextView
+                android:id="@+id/frag_me_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@{owner.givenName}"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                tools:text="APPNAME" />
+
+            <TextView
+                android:id="@+id/frag_me_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@{owner.phoneNumber}"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                tools:text="12345678" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/View.Me.Item"
+                android:view_onClick="@{owner.onSetupClick}">
+
+                <TextView
+                    style="@style/View.Text.Me.Item"
+                    android:text="@string/me_setup"
+                    app:drawableStartCompat="@drawable/me_ic_setup" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/View.Image.Me.Arrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/View.Me.Item"
+                android:view_onClick="@{owner.onServiceClick}">
+
+                <TextView
+                    style="@style/View.Text.Me.Item"
+                    android:text="@string/me_custom_service"
+                    app:drawableStartCompat="@drawable/me_ic_service" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/View.Image.Me.Arrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/View.Me.Item"
+                android:view_onClick="@{owner.onProtocolClick}">
+
+                <TextView
+                    style="@style/View.Text.Me.Item"
+                    android:text="@string/me_policy"
+                    app:drawableStartCompat="@drawable/me_ic_protocol" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/View.Image.Me.Arrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/View.Me.Item"
+                android:view_onClick="@{owner.onComplaintClick}">
+
+                <TextView
+                    style="@style/View.Text.Me.Item"
+                    android:text="@string/me_complaint"
+                    app:drawableStartCompat="@drawable/me_ic_complaint" />
+
+                <androidx.appcompat.widget.AppCompatImageView style="@style/View.Image.Me.Arrow" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

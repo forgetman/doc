@@ -1,0 +1,21 @@
+plugins {
+    alias conventionLibs.plugins.android.lib
+}
+
+android {
+    namespace 'com.tencent.iot.explorer.device.android'
+
+    buildFeatures {
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api(projects.workspaceMby.iot.explorer.deviceJava)
+    api(projects.workspaceMby.iot.hub.deviceAndroid)
+
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.alibaba:fastjson:1.2.73'
+}

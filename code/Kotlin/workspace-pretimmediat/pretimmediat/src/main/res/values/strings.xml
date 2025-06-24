@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Prêt immédiat</string>
+
+    <!--splash-->
+    <string name="splash_tip_1" translatable="false">Vous n\'arrivez pas à joindre les deux bouts? Essayez cette application de remboursement échelonné</string>
+    <string name="splash_tip_2" translatable="false">Nous proposons les remboursements en 3 à 6 fois Des délais de remboursement plus longs et plus souples</string>
+    <string name="splash_tip_3" translatable="false">Prêt immédiat</string>
+
+    <!--login-->
+    <string name="login_head">立即登录去申请您的贷款</string>
+    <string name="login_hint_phone">请输入您的手机号</string>
+    <string name="login_hint_captcha">请输入四位验证码</string>
+    <string name="login_obtain_captcha">获取验证码</string>
+    <string name="login_obtain_captcha_countdown">倒计时\ </string>
+    <string name="login_obtain_captcha_countdown_part2" translatable="false">%1$sS</string>
+    <string name="login_obtain_captcha_again">重新获取验证码</string>
+    <string name="login_next_step">下一步</string>
+    <string name="login_tip_please_input_phone">请输入您的手机号</string>
+    <string name="login_tip_please_input_captcha">请输入四位验证码</string>
+    <string name="login_mark_as_read">标记已读(%1$d秒)</string>
+
+    <!--home single-->
+    <string name="home_single_title">立即准备</string>
+    <string name="home_single_max_money">最高金额</string>
+    <string name="home_single_length_of_loan">贷款期限</string>
+    <string name="home_single_apply_loan">现在申请贷款</string>
+    <string name="home_single_apply_loan_tip">我们提供3到6倍的退款，退款时间更长，条件更灵活。</string>
+    <string name="home_single_apply_loan_guide">贷款指南:</string>
+    <string name="home_single_apply_loan_step_user_info">填写您的个人信息</string>
+    <string name="home_single_apply_loan_step_provide_bank">请提供接收付款所需的银行账号。</string>
+    <string name="home_single_apply_loan_step_success">贷款成功了</string>
+    <string name="home_single_apply_loan_protocol_part1">请仔细阅读我们的</string>
+    <string name="home_single_apply_loan_protocol_part2">&lt;隐私协议&gt;</string>
+    <string name="home_single_in_review">在评估</string>
+    <string name="home_single_in_review_content">我们正在评估您的信用，所以请关注您的申请结果</string>
+    <string name="home_single_pay_failed_title">支付失败</string>
+    <string name="home_single_pay_failed_button">更新收款账户</string>
+    <string name="home_single_pay_failed_content">系统检测到您的收款帐户信息不正确，请重新填写。</string>
+    <string name="home_single_processing_title">在支付</string>
+    <string name="home_single_processing_content">一旦您获得批准，贷款将在几分钟内发送，但是，由于银行仅在营业时间内处理您的放款业务，因此可能需要一段时间才能反映在您的帐户中。不用担心！请及时验证您的帐户即可！</string>
+    <string name="home_single_reject_title">请求驳回</string>
+    <string name="home_single_reject_sub_title">对不起!</string>
+    <string name="home_single_reject_sub_title2">拒绝的理由可能是:</string>
+    <string name="home_single_reject_content1">-你提供了不正确的信息</string>
+    <string name="home_single_reject_content2">-你的照片不容易被认出来</string>
+    <string name="home_single_reject_content3">-你的信息需要仔细检查</string>
+    <string name="home_single_reject_content4_prefix">下一次贷款的时间</string>
+    <string name="home_single_loan_plan_repaying_title">等待还款</string>
+    <string name="home_single_loan_plan_overdue_title">耽搁了</string>
+    <string name="home_single_loan_plan_prepayment">提前还款</string>
+    <string name="home_single_loan_plan_copy_order_success">订单号复制成功</string>
+    <string name="home_single_loan_plan_recover">收回索赔</string>
+
+    <!--home multi-->
+    <string name="home_multi_in_review_title">在评估</string>
+    <string name="home_multi_in_review_button">请稍等</string>
+    <string name="home_multi_processing_title">在支付</string>
+    <string name="home_multi_processing_button">请稍等</string>
+    <string name="home_multi_repaying_title">等待还款</string>
+    <string name="home_multi_repaying_button">偿还</string>
+    <string name="home_multi_overdue_title">耽搁了</string>
+    <string name="home_multi_overdue_button">还款</string>
+    <string name="home_multi_reject_title">请求驳回</string>
+    <string name="home_multi_reject_button">现在问问</string>
+    <string name="home_multi_pay_failed_title">支付失败</string>
+    <string name="home_multi_pay_failed_button">更新</string>
+    <string name="home_multi_can_apply_title">可借产品</string>
+    <string name="home_multi_can_apply_button">现在问问</string>
+    <string name="home_multi_no_quota_button">用尽</string>
+    <string name="home_multi_no_quota_dialog_content">今日此产品额度已经用尽，请在还款后重新尝试借款</string>
+
+    <!--me-->
+    <string name="me_setup">设置</string>
+    <string name="me_custom_service">客服</string>
+    <string name="me_policy">隐私协议</string>
+    <string name="me_complaint">投诉书</string>
+
+    <!--language-->
+    <string name="language_title">设置</string>
+    <string name="french">法语</string>
+    <string name="chinese">中文</string>
+    <string name="logout">退出</string>
+
+    <!--user info-->
+    <string name="protocol_title">隐私协议</string>
+    <string name="protocol_part1">请查看我们的</string>
+    <string name="protocol_part2_link">隐私协议</string>
+
+    <!--piece-->
+    <string name="piece_lead_copy">我们将使用最专业的安全措施来保护您的隐私。</string>
+    <string name="piece_lead_copy_2">在过去的三天里，超过52K的用户成功申请了贷款。</string>
+    <string name="piece_next_tip_part1">完成后出价</string>
+    <string name="piece_next_tip_part2">美元</string>
+    <string name="piece_encrypt_processing">加密处理中</string>
+    <string name="piece_permission_content">为了给您提供良好的服务，请到手机设置里打开相应权限</string>
+
+    <!--piece info-->
+    <string name="piece_info_title">基本信息</string>
+    <string name="piece_info_family_name">姓</string>
+    <string name="piece_info_given_name">名</string>
+    <string name="piece_info_birthday">出生日期</string>
+    <string name="piece_info_sex">性别</string>
+    <string name="piece_info_e_mail">邮箱</string>
+    <string name="piece_info_choice_location">选择地区</string>
+    <string name="piece_info_choice_location_province">一级地址(省)</string>
+    <string name="piece_info_choice_location_city">二级地址(市)</string>
+
+    <!--piece emergency contact-->
+    <string name="piece_emergency_contact_title">联系人信息</string>
+    <string name="piece_emergency_contact_first">第一联系人</string>
+    <string name="piece_emergency_contact_second">第二联系人</string>
+    <string name="piece_emergency_contact_relationship">关系</string>
+    <string name="piece_emergency_contact_phone_number">电话号码</string>
+    <string name="piece_emergency_contact_name">姓名</string>
+
+    <!--piece idCard-->
+    <string name="piece_idcard_title">身份信息</string>
+    <string name="piece_idcard_upload_id">上传身份证</string>
+    <string name="piece_idcard_front">正面</string>
+    <string name="piece_idcard_back">反面</string>
+    <string name="piece_idcard_id_number">身份证号</string>
+    <string name="piece_idcard_id_number_tip">身份证号提示</string>
+    <string name="piece_idcard_sample_btn">示例按钮</string>
+    <string name="piece_idcard_upload_face">上传人脸照片</string>
+    <string name="piece_idcard_click_upload">点击上传</string>
+    <string name="piece_idcard_use_camera">使用相机拍照</string>
+    <string name="piece_idcard_use_album">从相册选择</string>
+
+    <!--piece bank-->
+    <string name="piece_bank_title">收款信息</string>
+    <string name="piece_bank_type">收款类型</string>
+    <string name="piece_bank_account">收款账号</string>
+    <string name="piece_bank_confirm">确认收款账号</string>
+    <string name="piece_bank_modify_confirm_content_part1">修改收款账户相关信息，需您本人亲自操作！任何要求您提供验证码和个人信息的人都是欺诈！</string>
+    <string name="piece_bank_modify_confirm_content_part2">我们已将验证码发送到您的登录手机号</string>
+    <string name="piece_bank_modify_confirm_content_part3">上，以验证是您本人操作，请查收并提交验证码。</string>
+    <string name="piece_bank_modify_confirm_content_part4">（验证码长期有效）</string>
+    <string name="piece_bank_modify_confirm_hint_captcha">输入验证码</string>
+    <string name="piece_bank_modify_confirm_obtain_captcha_again">重新获取验证码</string>
+    <string name="piece_bank_modify_confirm_enter_captcha">请先输入验证码</string>
+    <string name="piece_bank_modify_confirm_try_later">请稍后再试</string>
+
+    <!--trial calc-->
+    <string name="trial_calc_title">立即准备</string>
+    <string name="trial_calc_number_of_instalment_title">请选择分期还款期数</string>
+    <string name="trial_calc_number_of_instalment_content">%1$d 期\n(%2$d 天)</string>
+    <string name="trial_calc_number_of_instalment_lowest">分期偿还最低XOF%1$s</string>
+    <string name="trial_calc_number_of_instalment_plan">分期还款计划</string>
+    <string name="trial_calc_loan_detail">贷款详情</string>
+    <string name="trial_calc_loan_amount_repay">还款总额</string>
+    <string name="trial_calc_loan_amount_receive">到手金额</string>
+    <string name="trial_calc_loan_amount_int">利息</string>
+    <string name="trial_calc_loan_service_charge">服务费</string>
+    <string name="trial_calc_loan_tax">税费</string>
+    <string name="trial_calc_loan_passing_rate_part1">在</string>
+    <string name="trial_calc_loan_passing_rate_part3">分钟内申请, 通过率99%</string>
+    <string name="trial_calc_loan_apply">申请贷款</string>
+    <string name="trial_calc_loan_protocol_part1">我仔细阅读了</string>
+    <string name="trial_calc_loan_protocol_part2">贷款合同</string>
+    <string name="trial_calc_loan_success">您的请求已成功提交</string>
+    <string name="trial_calc_dialog_overdue_content">你目前存在暂未还款的逾期订单，请还款后申请。还款后可申请更高额度的贷款</string>
+    <string name="trial_calc_protocol_tips">请先检查并阅读合同</string>
+
+    <!--date picker-->
+    <string name="date_picker_select_date">选择日期</string>
+    <string name="date_picker_current_date">当前日期</string>
+
+    <!--permission-->
+    <string name="permission_title">权限声明</string>
+    <string name="permission_refuse">拒绝</string>
+    <string name="permission_accept">接受</string>
+    <string name="permission_protocol_part_icon" translatable="false">图标</string>
+    <string name="permission_protocol_part1">点击“接受”并“继续”，即表示您已审阅、阅读并同意我们的</string>
+    <string name="permission_protocol_part2">“隐私政策”</string>
+
+    <!--network-->
+    <string name="network_expired_title">网络连接错误</string>
+    <string name="network_expired_button">刷新</string>
+    <string name="network_error_title">单击“打开”按钮进入网络设置页面。</string>
+
+    <!--upgrade-->
+    <string name="upgrade_go_now">现在就去</string>
+    <string name="upgrade_ignore">跳过</string>
+
+    <!--order-->
+    <string name="order_title">我的订单</string>
+    <string name="order_in_review_title">在评估</string>
+    <string name="order_in_review_button">请稍等</string>
+    <string name="order_processing_title">在支付</string>
+    <string name="order_processing_button">请稍等</string>
+    <string name="order_complete_title">完成</string>
+    <string name="order_complete_content">这个订单已经完成了，你可以点击按钮再借一个。</string>
+    <string name="order_complete_button">现在问问</string>
+    <string name="order_pay_failed_title">支付失败</string>
+    <string name="order_pay_failed_content">系统检测到您的收款帐户信息不正确，请重新填写。</string>
+    <string name="order_pay_failed_button">更新收款账户</string>
+    <string name="order_reject_title">请求驳回</string>
+    <string name="order_reject_content">对不起，您的请求没有被批准，请稍后重试。</string>
+    <string name="order_reject_button">现在问问</string>
+    <string name="order_reject_reapply_date_prefix">"Heure du prochain prêt disponible "</string>
+    <string name="order_overdue_title">%1$s天延迟</string>
+    <string name="order_overdue_title2">耽搁了</string>
+    <string name="order_replaying_title">等待还款</string>
+    <string name="order_payment_info_part1">欠款总额分</string>
+    <string name="order_payment_info_part2">期，未偿还</string>
+    <string name="order_payment_info_part3">期</string>
+    <string name="order_empty_content">目前没有订单</string>
+
+    <string name="prepayment_title">建议</string>
+
+    <!--展期还款-->
+    <string name="installment_payment_title">警告!</string>
+    <string name="installment_payment_content">如果你一次性付款XOF %1$s,现在可以延长还款日期%2$s。如果你的贷款已经逾期，你必须先支付逾期费用。</string>
+    <string name="installment_payment_delayed_date_title">延期后的还款日期</string>
+    <string name="installment_payment_cost_title">延期费</string>
+    <string name="installment_payment_interest_title">利息</string>
+    <string name="installment_payment_penalty_title">延误罚款</string>
+    <string name="installment_payment_tax_title">税</string>
+    <string name="installment_payment_discount_title">打折</string>
+    <string name="installment_payment_should_pay">应支付金额</string>
+    <string name="installment_payment_channel">还款渠道</string>
+    <string name="installment_payment_repayment_date">退款日期已更改为%1$s</string>
+
+    <!--还款-->
+    <string name="repayment_title">计划之外</string>
+    <string name="repayment_content_check_all">点击“全部检查”，全额退款。</string>
+    <string name="repayment_dialog_content">你已经成功还清了贷款!</string>
+    <string name="repayment_dialog_button">重新获得贷款!</string>
+
+    <!--facebook-->
+    <string name="facebook_application_id" translatable="false">839400538210191</string>
+
+    <!--webview-->
+    <string name="webview_copy_success">复制成功</string>
+
+    <!--others-->
+    <string name="enter">输入</string>
+    <string name="choice">选择</string>
+    <string name="next_step">下一步</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="day">\ 天</string>
+    <string name="xof" translatable="false">XOF</string>
+    <string name="space" translatable="false">\ </string>
+    <string name="xof_prefix" translatable="false">XOF\ </string>
+    <string name="xof_empty" translatable="false">0</string>
+    <string name="loan_amount">贷款金额</string>
+    <string name="apply_date">申请日期</string>
+    <string name="complaint">投诉</string>
+    <string name="repaying">还款</string>
+    <string name="repaying_delay_by_days">将还款期限延长%1$s天</string>
+    <string name="order_number">订单号: </string>
+    <string name="back">返回</string>
+    <string name="open">打开</string>
+    <string name="withdraw">撤销</string>
+    <string name="commit">提交</string>
+    <string name="late_fee">滞纳金</string>
+    <string name="deduction_fee">抵扣金额</string>
+    <string name="id_card_alphabet_and_number" translatable="false">ciCI0123456789</string>
+</resources>

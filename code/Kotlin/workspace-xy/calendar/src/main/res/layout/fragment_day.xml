@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <vector.widget.ImageView
+        android:id="@+id/day_iv_fg"
+        android:layout_width="345dp"
+        android:layout_height="575dp"
+        android:layout_centerInParent="true" />
+
+    <AbsoluteLayout
+        android:id="@+id/day_layout_abs"
+        android:layout_width="345dp"
+        android:layout_height="575dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/day_tv_day_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_date_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_week_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_lunar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_solar_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_festival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/day_tv_festival_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.popup.ThemePopup" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="日间模式"
+                android:view_onClick="@{owner.onClickDay}"
+                app:drawableStartCompat="@drawable/menu_ic_day" />
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="夜间模式"
+                android:view_onClick="@{owner.onClickNight}"
+                app:drawableStartCompat="@drawable/menu_ic_night" />
+
+            <TextView
+                style="@style/View.Text.MenuPopup"
+                android:text="自动模式"
+                android:view_onClick="@{owner.onClickAuto}"
+                app:drawableStartCompat="@drawable/menu_ic_auto" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

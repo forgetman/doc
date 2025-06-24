@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <vector.image.NImageView
+        android:id="@+id/form_niv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/form_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="7dp"
+        android:text="社保代缴"
+        android:textColor="@color/text_2B"
+        android:textSize="14dp" />
+
+    <View style="@style/divider" />
+
+</LinearLayout>

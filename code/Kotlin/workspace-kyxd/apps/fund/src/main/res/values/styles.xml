@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="tv.main_tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/white</item>
+        <item name="android:textColor">@color/main_tab_text_selector</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <style name="View.Image.Arrow">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:src">@drawable/ic_arrow</item>
+    </style>
+
+    <style name="profile" />
+
+    <style name="profile.et">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/text_21</item>
+        <item name="android:textColorHint">@color/text_75</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="profile.line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">#d8d8d8</item>
+    </style>
+
+    <!--dialog-->
+    <style name="View.Text.Dialog">
+        <item name="android:textColor">@color/text_222</item>
+    </style>
+
+    <style name="View.Text.Dialog.Selector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_selector</item>
+    </style>
+</resources>

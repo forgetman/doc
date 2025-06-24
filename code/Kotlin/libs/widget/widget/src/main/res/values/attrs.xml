@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="LibsWidgetToggleButton">
+        <attr name="toggle_colorCheck" format="color" tools:ignore="ResourceName" />
+        <attr name="toggle_colorUnCheck" format="color" tools:ignore="ResourceName" />
+        <attr name="toggle_edgeStrokeWidth" format="dimension" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.activity.SearchActivity" />
+
+        <variable
+            name="viewModel"
+            type="reader.pattern.viewModel.SearchResultViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et"
+            style="@style/ConstraintLayout.Align.CenterVertical"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_search_edittext_bg"
+            android:gravity="center_vertical"
+            android:hint="@{viewModel.hint}"
+            android:imeOptions="actionSearch"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="38dp"
+            android:text="@={viewModel.keyword}"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14dp"
+            android:textView_editorAction="@{owner.onEditorAction}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:hint="这是提示"
+            tools:ignore="LabelFor,SpUsage" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/nav_bar_ic_close"
+            android:view_onClick="@{owner.onClearClick}"
+            android:view_visible="@{viewModel.showClear}"
+            app:layout_constraintBottom_toBottomOf="@id/et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/et"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

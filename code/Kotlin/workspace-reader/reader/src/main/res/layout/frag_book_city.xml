@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,MissingConstraints,SpUsage">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="reader.pattern.frag.main.BookCityFrag" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/layout_tab"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="39dp"
+            android:tabLayout_attrs="@{owner.tabLayoutAttr}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabTextAppearance="@style/View.Text.BookCity.TabLayout" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="2dp"
+            android:background="#e8e8e8"
+            app:layout_constraintTop_toBottomOf="@id/layout_tab" />
+
+        <vector.widget.viewpager2.ViewPager2
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:viewPager_fragAdapter="@{owner.adapter}"
+            android:viewPager_offscreenPageLimit="@{3}"
+            android:viewPager_fragPager="@{owner.pager}"
+            android:viewPager_tabLayoutId="@{@id/layout_tab}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

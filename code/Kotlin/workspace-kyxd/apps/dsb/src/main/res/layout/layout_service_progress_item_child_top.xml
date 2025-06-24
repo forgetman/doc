@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="item"
+            type="dsb.model.ServProgress" />
+    </data>
+
+    <LinearLayout style="@style/View.Service.Progress">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="#FFD0AB" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/layer_service_progress_complete" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/View.Text.Service.Progress"
+            android:text="订单支付成功" />
+
+    </LinearLayout>
+
+</layout>

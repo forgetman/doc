@@ -1,0 +1,37 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1548307801,
+  "data": {
+    "list": [
+      {
+        "category_id": 1,
+        "category_name": "推荐"
+      },
+      {
+        "category_id": 2,
+        "category_name": "公积金"
+      },
+      {
+        "category_id": 3,
+        "category_name": "医疗"
+      },
+      {
+        "category_id": 4,
+        "category_name": "养老"
+      },
+      {
+        "category_id": 5,
+        "category_name": "保险"
+      },
+      {
+        "category_id": 6,
+        "category_name": "贷款"
+      },
+      {
+        "category_id": 7,
+        "category_name": "信用卡"
+      }
+    ]
+  }
+}

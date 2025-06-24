@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.activity.city.CityActivity" />
+
+        <variable
+            name="viewModel"
+            type="dsb.design.viewModel.CityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/city_layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/bg_city_et"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:view_onClick="@{owner.onSearchClick}">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/city_ic_search" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入城市名或拼音" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <vector.scrollable.widget.GroupListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/city_layout_search"
+            android:groupListView_adapter="@{owner.adapter}"
+            android:groupListView_data="@{viewModel.data}"
+            android:groupListView_expandAllGroups="@{owner.expand}"
+            android:groupListView_onChildClick="@{owner.onChildClick}"
+            android:groupListView_scrollToGroup="@{viewModel.groupIndex}" />
+
+        <vector.widget.SideBar
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city_layout_search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:sideBar_onTouchLetter="@{viewModel.onTouchLetter}"
+            android:sideBar_selections="@{viewModel.sections}"
+            android:sideBar_textColor="@{@color/text_58}"
+            android:sideBar_textGap="@{11}"
+            android:sideBar_textSize="@{12}" />
+    </RelativeLayout>
+</layout>

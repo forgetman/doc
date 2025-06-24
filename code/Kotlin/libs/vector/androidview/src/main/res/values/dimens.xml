@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="divider_height">1px</dimen>
+
+    <!-- list -->
+    <dimen name="scrollable_extend_text">16dp</dimen>
+    <dimen name="scrollable_extend_loading_size">26dp</dimen>
+    <dimen name="scrollable_extend_height">45dp</dimen>
+
+    <!--loading-->
+    <dimen name="loading_icon_size">30dp</dimen>
+
+</resources>

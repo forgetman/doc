@@ -1,0 +1,17 @@
+//file:noinspection DependencyNotationArgument
+apply plugin: plugs.java
+apply plugin: plugs.kotlin.kotlin
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation project(deps.lib.apt.annotation)
+//    compileOnly project(deps.lib.apt.compiler_incremental)
+//    annotationProcessor project(deps.lib.apt.compiler_incremental)
+
+    implementation deps.square.javapoet
+    implementation deps.google.auto.service
+    annotationProcessor deps.google.auto.service
+
+    implementation deps.kotlin.runtime
+}

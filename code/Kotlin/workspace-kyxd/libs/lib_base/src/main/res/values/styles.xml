@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--dialog-->
+    <style name="View.Text.Dialog">
+        <item name="android:textColor">#222</item>
+    </style>
+
+    <style name="View.Text.Dialog.Selector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_bg_item</item>
+    </style>
+
+    <style name="View.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+plugins {
+    alias conventionLibs.plugins.android.lib
+    alias kotlinLibs.plugins.kapt
+}
+
+android {
+    namespace "image.glide"
+}
+
+dependencies {
+    implementation projects.libs.tool.sugar
+    implementation projects.libs.tool.compat
+    implementation projects.libs.image.api
+
+    /**
+     * pic
+     */
+    implementation(glideLibs.runtime) {
+        exclude group: "com.android.support"
+    }
+//    implementation glideLibs.webp
+//    implementation(glideLibs.okhttp3) {
+//        exclude group: "com.squareup.okhttp3", module: "okhttp"
+//    }
+    implementation glideLibs.okhttp3
+    kapt glideLibs.compiler
+
+    implementation androidxLibs.bundles.lifecycle
+}

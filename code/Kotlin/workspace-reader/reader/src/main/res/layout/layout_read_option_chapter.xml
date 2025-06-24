@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints,HardcodedText,SpUsage">
+
+    <data>
+
+        <variable
+            name="viewHolder"
+            type="reader.pattern.activity.ReadActivity.OptionChapterViewHolder" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_shadow_corner"
+        android:clickable="true"
+        android:focusable="true"
+        android:view_visible="@{viewHolder.visible}">
+
+        <TextView
+            android:id="@+id/tv_last_chapter"
+            style="@style/ConstraintLayout.Align.CenterVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="6dp"
+            android:text="上一章"
+            android:textSize="14dp"
+            android:view_onClick="@{viewHolder.onLastChapterClick}"
+            app:drawableStartCompat="@drawable/read_ic_last_chapter"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            style="@style/View.SeekBar"
+            app:layout_constraintBottom_toBottomOf="@id/tv_last_chapter"
+            app:layout_constraintEnd_toStartOf="@id/tv_next_chapter"
+            app:layout_constraintStart_toEndOf="@id/tv_last_chapter"
+            app:layout_constraintTop_toTopOf="@id/tv_last_chapter" />
+
+        <TextView
+            android:id="@+id/tv_next_chapter"
+            style="@style/ConstraintLayout.Align.CenterVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:drawablePadding="6dp"
+            android:text="下一章"
+            android:textSize="14dp"
+            android:view_onClick="@{viewHolder.onNextChapterClick}"
+            app:drawableEndCompat="@drawable/read_ic_next_chapter"
+            app:layout_constraintBottom_toBottomOf="@id/tv_last_chapter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_last_chapter" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

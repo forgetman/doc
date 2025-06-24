@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clipChildren="false">
+
+    <vector.view.viewPager.ViewPagerEx
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+    </vector.view.viewPager.ViewPagerEx>
+
+    <fund.view.Form1View
+        android:id="@+id/form_layout_form1view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/gap_horizontal"
+        android:layout_marginEnd="@dimen/gap_horizontal"
+        android:layout_marginTop="5dp"
+        android:clipChildren="false">
+
+        <vector.view.pager.AutoScrollViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"></vector.view.pager.AutoScrollViewPager>
+    </fund.view.Form1View>
+
+</FrameLayout>

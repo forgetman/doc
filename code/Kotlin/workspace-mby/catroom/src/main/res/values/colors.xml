@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">@color/white</color>
+    <drawable name="app_bg">@color/white</drawable>
+
+    <color name="text_primary">#0A0B13</color>
+</resources>

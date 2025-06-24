@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "891732978350",
+    "project_id": "pret-immediat-288-bj",
+    "storage_bucket": "pret-immediat-288-bj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891732978350:android:ad91e7d634740dd74d1b3f",
+        "android_client_info": {
+          "package_name": "com.bear.young.college"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo9iDwAXvymJsn09ElJx2c3rIPrDweTpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891732978350:android:ad91e7d634740dd74d1b3f",
+        "android_client_info": {
+          "package_name": "com.bear.young.college.demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo9iDwAXvymJsn09ElJx2c3rIPrDweTpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

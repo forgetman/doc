@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.activity.inputpiece.InfoPieceActivity" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.inputpiece.InfoPieceViewModel" />
+
+        <import type="vector.ext.StringKt" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="Autofill,SpUsage,UselessParent,MissingConstraints">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/margin_horizontal"
+                android:splitMotionEvents="false">
+
+                <include layout="@layout/layout_item_piece_header" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_family_name"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_family_name" />
+
+                    <EditText
+                        android:id="@+id/et_family_name"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.commonInputFilter}"
+                        android:hint="@string/enter"
+                        android:text="@={viewModel.familyName}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_family_name" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onFamilyNameClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.familyName)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_family_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_family_name" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_given_name"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_given_name" />
+
+                    <EditText
+                        android:id="@+id/et_given_name"
+                        style="@style/View.Edit.Info.Content"
+                        android:editText_inputFilter="@{owner.commonInputFilter}"
+                        android:text="@={viewModel.givenName}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_given_name" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onGivenNameClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.givenName)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_given_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_given_name" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_birthday"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_birthday" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.birthday}"
+                        android:view_onDebounceClick="@{owner.onBirthdayClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_birthday" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_sex" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.sexText}"
+                        android:view_onDebounceClick="@{owner.onSexClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_sex" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_e_mail" />
+
+                    <pretimmediat.widget.EmailAutoCompleteTextView
+                        android:id="@+id/et_email"
+                        style="@style/View.Edit.Info.Content"
+                        android:text="@={viewModel.email}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/piece_ic_clear"
+                        android:view_onClick="@{owner.onEmailClearClick}"
+                        android:view_visible="@{StringKt.isNotNullOrEmpty(viewModel.email)}"
+                        app:layout_constraintBottom_toBottomOf="@id/et_email"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/et_email" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    tools:ignore="MissingConstraints,SpUsage">
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/View.Text.Info.Title"
+                        android:text="@string/piece_info_choice_location" />
+
+                    <TextView
+                        style="@style/View.Text.Info.Selection"
+                        android:text="@{viewModel.regionText}"
+                        android:view_onDebounceClick="@{owner.onLocationClick}"
+                        app:layout_constraintTop_toBottomOf="@id/tv_location" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <include
+                    layout="@layout/layout_item_piece_next"
+                    bind:item="@{owner.nextStep}" />
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>
+
+</layout>

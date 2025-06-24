@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/app_bg"
+    tools:ignore="HardcodedText">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        style="@style/ConstraintLayout.Match.All"
+        app:constraint_referenced_ids="btn_permission,btn_permission2,btn_form_selection,btn_date,btn_loan_success,btn_style1,btn_bank_update_confirm,btn_list_selection,btn_piece_loading,btn_repayment,btn_installment_repayment"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_permission"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="权限" />
+
+    <Button
+        android:id="@+id/btn_permission2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="权限(二次)" />
+
+    <Button
+        android:id="@+id/btn_form_selection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="进件选项" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="日期" />
+
+    <Button
+        android:id="@+id/btn_loan_success"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="贷款成功" />
+
+    <Button
+        android:id="@+id/btn_style1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="style1" />
+
+    <Button
+        android:id="@+id/btn_bank_update_confirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="银行修改确认" />
+
+    <Button
+        android:id="@+id/btn_list_selection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="列表选项" />
+
+    <Button
+        android:id="@+id/btn_piece_loading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="加密loading" />
+
+    <Button
+        android:id="@+id/btn_repayment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="还款" />
+
+    <Button
+        android:id="@+id/btn_installment_repayment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="展期还款" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

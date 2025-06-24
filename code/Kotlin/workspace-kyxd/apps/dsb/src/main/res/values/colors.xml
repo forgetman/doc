@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#f9f9f9</color>
+
+    <color name="nav_bar_bg">#2196f3</color>
+    <color name="nav_bar_text">#fff</color>
+    <drawable name="nav_bar_bg_focus">#64000000</drawable>
+
+    <color name="question_content_bg">#e9f6ff</color>
+
+    <drawable name="item_normal">#fff</drawable>
+    <drawable name="item_focus">#e8e8e8</drawable>
+
+    <color name="item_normal">#fff</color>
+    <color name="item_focus">#e8e8e8</color>
+
+    <color name="blue">#2196f3</color>
+    <color name="blue_fade">#192196f3</color>
+    <color name="blue_focus">#64000000</color>
+    <color name="red">#fb6769</color>
+    <color name="green">#2cc495</color>
+    <color name="green_fade">#192cc495</color>
+    <color name="orange">#FB9D53</color>
+    <color name="purple">#718ff4</color>
+
+    <color name="divider">#eee</color>
+    <drawable name="divider">#eee</drawable>
+
+    <color name="text_75">#757575</color>
+    <color name="text_21">#212121</color>
+    <color name="text_58">#585858</color>
+    <color name="text_ba">#bababa</color>
+    <color name="text_2b">#2b2b2b</color>
+    <color name="text_74">#747474</color>
+    <color name="text_f00">#f00</color>
+    <color name="text_80">#808080</color>
+    <color name="text_888">#888</color>
+    <color name="text_df">#dfdfdf</color>
+    <color name="text_333">#333</color>
+
+    <color name="text_444">#444</color>
+    <color name="text_92">#929292</color>
+    <color name="text_97">#979797</color>
+
+    <!--hospital-->
+    <color name="hospital_indicator_bg">#f5f5f5</color>
+
+</resources>

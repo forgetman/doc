@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--DecorView-->
+    <item name="flat_bar" type="id" />
+    <item name="app_bar" type="id" />
+    <item name="app_bar_left" type="id" />
+    <item name="app_bar_mid" type="id" />
+    <item name="app_bar_mid_align" type="id" />
+    <item name="app_bar_right" type="id" />
+    <item name="app_bar_divider" type="id" />
+
+    <item name="view_window_insets" type="id" />
+    <item name="view_window_insets_list" type="id" />
+
+    <item name="view_on_swipe" type="id" />
+
+    <item name="view_attach_state_scope" type="id" />
+</resources>

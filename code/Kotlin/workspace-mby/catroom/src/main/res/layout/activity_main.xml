@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="com.miaomiaobuyi.miaomiaoservice.MainActivity" />
+
+        <variable
+            name="viewModel"
+            type="catroom.viewmodel.MainViewModel" />
+
+        <import type="vector.util.PackageUtil" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        tools:context="catroom.com.miaomiaobuyi.miaomiaoservice.MainActivity"
+        tools:ignore="MissingConstraints,HardcodedText,SpUsage">
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:constraint_referenced_ids="tv_light_state,tv_environment,tv_induced_state,tv_food,tv_freeze_dried,tv_ble_state,tv_iot_state,tv_speed"
+            app:flow_maxElementsWrap="3"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintBottom_toBottomOf="@id/flow_2"
+            app:layout_constraintEnd_toStartOf="@id/flow_2"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/flow_2" />
+
+        <TextView
+            android:id="@+id/tv_light_state"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/light_state + viewModel.roomStateWrapper.state.lightStateDesc}"
+            tools:text="照明: 关闭" />
+
+        <TextView
+            android:id="@+id/tv_environment"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/environment + viewModel.roomStateWrapper.state.environmentDesc}"
+            tools:text="环境: 黑夜" />
+
+        <TextView
+            android:id="@+id/tv_induced_state"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/induced_state + viewModel.roomStateWrapper.state.inducedStateDesc}"
+            tools:text="感应状态: 未感应" />
+
+        <TextView
+            android:id="@+id/tv_food"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/food + viewModel.roomStateWrapper.state.foodDesc}"
+            tools:text="猫粮: 10%" />
+
+        <TextView
+            android:id="@+id/tv_freeze_dried"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/freeze_dried + viewModel.roomStateWrapper.state.freezeDriedDesc}"
+            tools:text="冻干: 10%" />
+
+        <TextView
+            android:id="@+id/tv_ble_state"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/ble_state + viewModel.ble.connectState}"
+            tools:text="蓝牙: 已连接" />
+
+        <TextView
+            android:id="@+id/tv_iot_state"
+            style="@style/View.Text.MainState"
+            android:text="@{@string/iot_state + viewModel.iotState}"
+            tools:text="IOT: 已连接" />
+
+        <TextView
+            android:id="@+id/tv_speed"
+            style="@style/View.Text.MainState"
+            android:text="@{viewModel.speed}"
+            tools:text="速度: xxxM/S" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:constraint_referenced_ids="btn_open_light,btn_close_light,btn_food,btn_freeze_dried,btn_upload_log,btn_upload_log_all,btn_check_network_speed"
+            app:flow_horizontalGap="5dp"
+            app:flow_maxElementsWrap="3"
+            app:flow_verticalGap="-10dp"
+            app:flow_wrapMode="aligned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/flow_1" />
+
+        <Button
+            android:id="@+id/btn_open_light"
+            style="@style/View.Button.Main"
+            android:text="开灯"
+            android:view_onClick="@{owner.onOpenLightClick}" />
+
+        <Button
+            android:id="@+id/btn_close_light"
+            style="@style/View.Button.Main"
+            android:text="关灯"
+            android:view_onClick="@{owner.onCloseLightClick}" />
+
+        <Button
+            android:id="@+id/btn_food"
+            style="@style/View.Button.Main"
+            android:text="喂猫粮"
+            android:view_onClick="@{owner.onFeedFoodClick}" />
+
+        <Button
+            android:id="@+id/btn_freeze_dried"
+            style="@style/View.Button.Main"
+            android:text="喂冻干"
+            android:view_onClick="@{owner.onFeedFreezeDriedClick}" />
+
+        <Button
+            android:id="@+id/btn_upload_log"
+            style="@style/View.Button.Main"
+            android:text="传日志"
+            android:view_onClick="@{owner.onUploadLogClick}" />
+
+        <Button
+            android:id="@+id/btn_upload_log_all"
+            style="@style/View.Button.Main"
+            android:text="传全部日志"
+            android:view_onClick="@{owner.onUploadLogAllClick}" />
+
+        <Button
+            android:id="@+id/btn_check_network_speed"
+            style="@style/View.Button.Main"
+            android:text="测速"
+            android:view_onClick="@{owner.onCheckSpeedClick}" />
+
+        <LinearLayout
+            android:id="@+id/layout_camera_label"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/flow_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="前摄像头"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:text="@{viewModel.frontEnabled ? @string/camera_state_open : @string/camera_state_close}"
+                    android:textSize="8dp"
+                    android:view_onClick="@{owner.onFrontToggleClick}"
+                    tools:text="开关: 开" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:radioGroup_checked="@={viewModel.frontIndex}">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="240P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="480P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="720P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="1080P"
+                        android:textSize="6dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="后摄像头"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:text="@{viewModel.backEnabled ? @string/camera_state_open : @string/camera_state_close}"
+                    android:textSize="8dp"
+                    android:view_onClick="@{owner.onBackToggleClick}"
+                    tools:text="开关: 开" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:radioGroup_checked="@={viewModel.backIndex}">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="240P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="480P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="720P"
+                        android:textSize="6dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="1080P"
+                        android:textSize="6dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/layout_bottom_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_camera_label">
+
+            <com.serenegiant.widget.AspectRatioSurfaceView
+                android:id="@+id/layout_camera_front"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.serenegiant.widget.AspectRatioSurfaceView
+                android:id="@+id/layout_camera_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom_info"
+            style="@style/ConstraintLayout.Match.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/version + PackageUtil.INSTANCE.appVersionName}"
+                android:textSize="8dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_horizontal">19dp</dimen>
+    <dimen name="radius">8dp</dimen>
+
+    <dimen name="item_height">52dp</dimen>
+
+    <!--date picker-->
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18dp</dimen>
+</resources>

@@ -1,0 +1,24 @@
+# https://github.com/ReactiveX/RxJava
+# https://github.com/ReactiveX/RxAndroid
+# https://github.com/ReactiveX/RxKotlin
+[versions]
+rx2-java = '2.2.21'
+rx2-android = '2.1.1'
+rx2-kotlin = '2.4.0'
+
+rx3-java = '3.1.10'
+rx3-android = '3.0.2'
+rx3-kotlin = '3.0.1'
+rx3-relay = '3.0.1'
+
+
+# ====libraries====
+[libraries]
+rx2-java = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rx2-java" }
+rx2-android = { module = "io.reactivex.rxjava2:rxandroid", version.ref = "rx2-android" }
+rx2-kotlin = { module = "io.reactivex.rxjava2:rxkotlin", version.ref = "rx2-kotlin" }
+
+rx3-java = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rx3-java" }
+rx3-android = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rx3-android" }
+rx3-kotlin = { module = "io.reactivex.rxjava3:rxkotlin", version.ref = "rx3-kotlin" }
+rx3-relay = { module = "com.jakewharton.rxrelay3:rxrelay", version.ref = "rx3-relay" }

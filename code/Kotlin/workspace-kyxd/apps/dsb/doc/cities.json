@@ -1,0 +1,251 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1548140479,
+  "data": {
+    "热门": [
+      {
+        "city_id": 310100,
+        "city_name": "上海",
+        "pinyin": "shanghai"
+      },
+      {
+        "city_id": 440100,
+        "city_name": "广州",
+        "pinyin": "guangzhou"
+      },
+      {
+        "city_id": 440300,
+        "city_name": "深圳",
+        "pinyin": "shenzhen"
+      },
+      {
+        "city_id": 110100,
+        "city_name": "北京",
+        "pinyin": "beijing"
+      },
+      {
+        "city_id": 330100,
+        "city_name": "杭州",
+        "pinyin": "hangzhou"
+      },
+      {
+        "city_id": 510100,
+        "city_name": "成都",
+        "pinyin": "chengdu"
+      },
+      {
+        "city_id": 120100,
+        "city_name": "天津",
+        "pinyin": "tianjin"
+      }
+    ],
+    "S": [
+      {
+        "city_id": 310100,
+        "city_name": "上海",
+        "pinyin": "shanghai"
+      },
+      {
+        "city_id": 320500,
+        "city_name": "苏州（市区）",
+        "pinyin": "suzhou_shiqu_"
+      },
+      {
+        "city_id": 320501,
+        "city_name": "苏州（园区）",
+        "pinyin": "suzhou_yuanqu_"
+      },
+      {
+        "city_id": 440500,
+        "city_name": "汕头",
+        "pinyin": "shantou"
+      },
+      {
+        "city_id": 440300,
+        "city_name": "深圳",
+        "pinyin": "shenzhen"
+      },
+      {
+        "city_id": 130100,
+        "city_name": "石家庄",
+        "pinyin": "shijiazhuang"
+      }
+    ],
+    "H": [
+      {
+        "city_id": 340100,
+        "city_name": "合肥",
+        "pinyin": "hefei"
+      },
+      {
+        "city_id": 441300,
+        "city_name": "惠州",
+        "pinyin": "huizhou"
+      },
+      {
+        "city_id": 330100,
+        "city_name": "杭州",
+        "pinyin": "hangzhou"
+      },
+      {
+        "city_id": 330500,
+        "city_name": "湖州",
+        "pinyin": "huzhou"
+      },
+      {
+        "city_id": 150100,
+        "city_name": "呼和浩特",
+        "pinyin": "huhehaote"
+      }
+    ],
+    "K": [
+      {
+        "city_id": 320583,
+        "city_name": "昆山",
+        "pinyin": "kunshan"
+      }
+    ],
+    "N": [
+      {
+        "city_id": 320100,
+        "city_name": "南京",
+        "pinyin": "nanjing"
+      },
+      {
+        "city_id": 330200,
+        "city_name": "宁波",
+        "pinyin": "ningbo"
+      }
+    ],
+    "C": [
+      {
+        "city_id": 320400,
+        "city_name": "常州",
+        "pinyin": "changzhou"
+      },
+      {
+        "city_id": 510100,
+        "city_name": "成都",
+        "pinyin": "chengdu"
+      }
+    ],
+    "W": [
+      {
+        "city_id": 320200,
+        "city_name": "无锡",
+        "pinyin": "wuxi"
+      },
+      {
+        "city_id": 420100,
+        "city_name": "武汉",
+        "pinyin": "wuhan"
+      }
+    ],
+    "G": [
+      {
+        "city_id": 440100,
+        "city_name": "广州",
+        "pinyin": "guangzhou"
+      }
+    ],
+    "Z": [
+      {
+        "city_id": 441200,
+        "city_name": "肇庆",
+        "pinyin": "zhaoqing"
+      },
+      {
+        "city_id": 442000,
+        "city_name": "中山",
+        "pinyin": "zhongshan"
+      },
+      {
+        "city_id": 440400,
+        "city_name": "珠海",
+        "pinyin": "zhuhai"
+      },
+      {
+        "city_id": 440800,
+        "city_name": "湛江",
+        "pinyin": "zhanjiang"
+      }
+    ],
+    "Y": [
+      {
+        "city_id": 441700,
+        "city_name": "阳江",
+        "pinyin": "yangjiang"
+      },
+      {
+        "city_id": 330782,
+        "city_name": "义乌",
+        "pinyin": "yiwu"
+      }
+    ],
+    "D": [
+      {
+        "city_id": 441900,
+        "city_name": "东莞",
+        "pinyin": "dongwan"
+      },
+      {
+        "city_id": 210200,
+        "city_name": "大连",
+        "pinyin": "dalian"
+      }
+    ],
+    "B": [
+      {
+        "city_id": 110100,
+        "city_name": "北京",
+        "pinyin": "beijing"
+      }
+    ],
+    "J": [
+      {
+        "city_id": 330700,
+        "city_name": "金华",
+        "pinyin": "jinhua"
+      },
+      {
+        "city_id": 370100,
+        "city_name": "济南",
+        "pinyin": "jinan"
+      },
+      {
+        "city_id": 440700,
+        "city_name": "江门(新会区)",
+        "pinyin": "jiangmen"
+      }
+    ],
+    "T": [
+      {
+        "city_id": 120100,
+        "city_name": "天津",
+        "pinyin": "tianjin"
+      }
+    ],
+    "F": [
+      {
+        "city_id": 350100,
+        "city_name": "福州",
+        "pinyin": "fuzhou"
+      }
+    ],
+    "X": [
+      {
+        "city_id": 350200,
+        "city_name": "厦门",
+        "pinyin": "xiamen"
+      }
+    ],
+    "Q": [
+      {
+        "city_id": 441800,
+        "city_name": "清远",
+        "pinyin": "qingyuan"
+      }
+    ]
+  }
+}

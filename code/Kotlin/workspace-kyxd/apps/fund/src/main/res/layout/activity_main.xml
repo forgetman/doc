@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="fund.design.ui.activity.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <vector.view.viewPager.ViewPagerEx
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:viewPager_fragAdapter="@{owner.adapter}"
+            android:viewPager_currPosition="@{owner.currPosition}"
+            android:viewPager_itemData="@{owner.data}"
+            android:viewPager_offscreenPageLimit="@{owner.data.size()}"
+            android:viewPager_onPageSelected="@{owner.onPageSelected}"
+            android:viewPager_scrollable="@{false}"
+            android:viewPager_smoothScroll="@{false}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_weight="0"
+            android:background="#eaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tv.main_tab"
+                android:drawableTop="@drawable/main_tab_selector_home"
+                android:text="首页"
+                android:view_onClick="@{owner.onHomeClick}" />
+
+            <TextView
+                style="@style/tv.main_tab"
+                android:drawableTop="@drawable/main_tab_selector_msg"
+                android:text="消息"
+                android:view_onClick="@{owner.onMsgClick}" />
+
+            <TextView
+                style="@style/tv.main_tab"
+                android:drawableTop="@drawable/main_tab_selector_me"
+                android:text="我的"
+                android:view_onClick="@{owner.onMeClick}" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,34 @@
+apply plugin: plugs.android.lib
+apply plugin: plugs.kotlin.android
+
+android {
+    compileSdk versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        minSdk versions.minSdk
+        targetSdk versions.targetSdk
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    implementation project(deps.lib.tool.sugar)
+    api project(deps.lib.bus.api)
+
+    /**
+     * rx
+     */
+    implementation deps.rx.android
+    implementation deps.rx.relay
+
+    /**
+     * lifecycle
+     */
+    implementation deps.androidx.lifecycle.runtime
+    implementation deps.androidx.lifecycle.runtime_ktx
+    implementation deps.androidx.lifecycle.common
+}

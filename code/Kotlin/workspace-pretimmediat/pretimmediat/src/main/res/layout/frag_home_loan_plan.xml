@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidUnknownAttribute -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="pretimmediat.fragment.status.BaseRepayingOrOverdueFrag" />
+
+        <variable
+            name="viewModel"
+            type="pretimmediat.viewmodel.RepayingOrOverdueViewModel" />
+
+        <import type="vector.widget.scrollable.adapter.ItemCompare" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <vector.widget.scrollable.ListView
+            style="@style/ConstraintLayout.Match.All"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:listView_decoration="@{owner.decoration}"
+            android:listView_itemBinder="@{owner.itemBinders}"
+            android:listView_itemCompare="@{ItemCompare.DATASET_CHANGED}"
+            android:listView_itemData="@{viewModel.data}" />
+
+        <TextView
+            android:id="@+id/tv_prepayment"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/home_repaying_bg_prepayment"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingStart="18dp"
+            android:paddingEnd="5dp"
+            android:text="@string/home_single_loan_plan_prepayment"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:view_onDebounceClick="@{owner.onPrepaymentClick}"
+            android:view_visible="@{viewModel.prepaymentVisible}"
+            app:drawableStartCompat="@drawable/home_ic_repay_card"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpUsage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

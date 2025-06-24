@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="owner"
+            type="dsb.design.ui.dialog.HomeMsgDialog" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <vector.widget.ImageView
+            android:layout_width="267dp"
+            android:layout_height="381dp"
+            android:imageView_source="@{owner.icon}"
+            android:view_onClick="@{owner.onClick}" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home_tips_ic_close"
+            android:view_onClick="@{owner.onCloseClick}" />
+
+    </LinearLayout>
+</layout>

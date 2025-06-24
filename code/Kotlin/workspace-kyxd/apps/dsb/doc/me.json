@@ -1,0 +1,47 @@
+{
+  "error_code": 0,
+  "msg": "ok",
+  "server_time": 1548748021,
+  "data": [
+    {
+      "view_type": 41,
+      "title": "我的订单",
+      "track": "my_order",
+      "icon": "http:\/\/testapi.luobohr.com\/img\/app\/home\/order_1.png",
+      "url": "http:\/\/testm.luobohr.com\/dsbapi\/v2\/order\/orderState",
+      "need_login": "true"
+    },
+    {
+      "view_type": 41,
+      "title": "补差额",
+      "track": "recharge",
+      "icon": "http:\/\/testapi.luobohr.com\/img\/app\/home\/order_chae.png",
+      "url": "http:\/\/testm.luobohr.com\/dsbapi\/v1\/compensate\/revisionDetail",
+      "need_login": "true"
+    },
+    {
+      "view_type": 41,
+      "title": "我的参保人",
+      "track": "my_insured",
+      "icon": "http:\/\/testapi.luobohr.com\/img\/app\/home\/order_2.png",
+      "url": "http:\/\/testm.luobohr.com\/dsbapi\/v2\/user\/canbaorenList?alter=1",
+      "need_login": "true"
+    },
+    {
+      "view_type": 41,
+      "title": "我的优惠券",
+      "track": "my_coupon",
+      "icon": "http:\/\/testapi.luobohr.com\/img\/app\/home\/order_perfer.png",
+      "url": "http:\/\/testm.luobohr.com\/dsbapi\/v2\/user\/getMyCoupon",
+      "need_login": "true"
+    },
+    {
+      "view_type": 41,
+      "title": "我上传的资料",
+      "track": "my_upload",
+      "icon": "http:\/\/testapi.luobohr.com\/img\/app\/home\/order_upload.png",
+      "url": "http:\/\/testm.luobohr.com\/dsbapi\/v2\/upload\/index",
+      "need_login": "true"
+    }
+  ]
+}

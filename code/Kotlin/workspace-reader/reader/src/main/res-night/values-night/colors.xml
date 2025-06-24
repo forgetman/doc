@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_bg">@color/black</color>
+    <drawable name="app_bg">@color/black</drawable>
+
+    <color name="bg_primary">#333</color>
+    <drawable name="bg_primary">#333</drawable>
+    <color name="bg_primary_opposite">@color/white</color>
+
+    <drawable name="nav_bar_bg_focus">#64ffffff</drawable>
+    <color name="nav_bar_text_focus">#64ffffff</color>
+    <color name="nav_bar_divider">#928d8a</color>
+
+    <color name="bottom_nav_bar_color">@color/black</color>
+
+    <color name="highlight_primary">@color/blue</color>
+
+    <color name="divider">#dbdbdb</color>
+    <drawable name="divider">#dbdbdb</drawable>
+
+    <color name="bg_focus_primary">#64ffffff</color>
+    <drawable name="bg_focus_primary">#64ffffff</drawable>
+
+    <color name="text_primary">@color/white</color>
+    <color name="text_secondary">#8d8e93</color>
+    <color name="text_third">#979797</color>
+</resources>
