@@ -1,0 +1,855 @@
+================================================================================
+共找到 126 组有效数据（按仓库文件路径分组）
+================================================================================
+第1组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/pre-logon.xml
+文本1: <string name="logon_ellipse_policy_cta_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/policy_id.html</string>
+文本2: <string name="logon_ellipse_policy_privacy_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/disclaimerAndInternetPrivacy_id.html</string>
+================================================================================
+第2组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/pre-logon.xml
+文本1: <string name="logon_ellipse_policy_cta_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/policy.html</string>
+文本2: <string name="logon_ellipse_policy_privacy_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/disclaimerAndInternetPrivacy.html</string>
+文本3: "logon_ellipse_policy_cta_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/policy_id.html";
+文本4: "logon_ellipse_policy_privacy_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/disclaimerAndInternetPrivacy_id.html";
+文本5: "logon_ellipse_policy_cta_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/policy.html";
+文本6: "logon_ellipse_policy_privacy_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_ services/html/disclaimerAndInternetPrivacy.html";
+================================================================================
+第3组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/important_info.xml
+文本1: <string name="imp_info_url_terms">https:// www.hsbc.co.id/1/2/ALL_SITE_PAGES/MISC_SERV/terms-and-conditions</string>
+文本2: <string name="imp_info_url_hyperlink_policy">https:// www.hsbc.co.id/1/2/en/about-us/hyperlink-policy</string>
+================================================================================
+第4组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/important_info.xml
+文本1: <string name="imp_info_url_terms">https:// www.hsbc.co.id/1/2/ALL_SITE_PAGES/MISC_SERV/terms-and-conditions#bipers</string>
+文本2: <string name="imp_info_url_privacy">https:// www.hsbc.co.id/1/2/id/tentang-kami/privasi-dan-keamanan</string>
+文本3: "osa_product_feature_interest_rate_url_sv5" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本4: "osa_product_feature_interest_rate_url_sv5" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本5: "osa_product_feature_interest_rate_url_sv1" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本6: "osa_product_feature_interest_rate_url_sv2" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本7: "imp_info_url_terms" = "https:// www.hsbc.co.id/1/2/ALL_SITE_PAGES/MISC_SERV/terms-and-conditions";
+文本8: "imp_info_url_privacy" = "https:// www.hsbc.co.id/1/2/en/about-us/privacy-and-security";
+文本9: "imp_info_url_terms" = "https:// www.hsbc.co.id/1/2/ALL_SITE_PAGES/MISC_SERV/terms-and-conditions#bipers";
+文本10: "imp_info_url_hyperlink_policy" = "https:// www.hsbc.co.id/1/2/id/tentang-kami/kebijakan-hyperlink";
+================================================================================
+第5组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/open_savings_account.xml
+文本1: <string name="osa_product_feature_interest_rate_url_sv5">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+文本2: <string name="osa_product_feature_interest_rate_url_sv1">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+================================================================================
+第6组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/open_savings_account.xml
+文本1: <string name="osa_product_feature_interest_rate_url_sv5">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+文本2: <string name="osa_product_feature_interest_rate_url_sv1">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+文本3: "osa_product_feature_interest_rate_url_sv5" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本4: "osa_product_feature_interest_rate_url_sv1" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+文本5: "osa_product_feature_interest_rate_url_sv2" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107";
+================================================================================
+第7组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesiaProduction/assets/apiConfig.json
+文本1: "en": "https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange",
+文本2: "id": "https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange"
+================================================================================
+第8组：
+仓库名字：mobile/bonds-android-lib
+文件路径：sample-app/src/indonesiaStub/assets/apiConfig.json
+文本1: "en_ID": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds",
+文本2: "in_ID": "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds"
+文本3: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+文本4: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+文本5: "mauth_non_secure_hardware_info_url_android" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html";
+文本6: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本7: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+================================================================================
+第9组：
+仓库名字：mobile/bonds-android-lib
+文件路径：sample-app/src/indonesiaCert/assets/apiConfig.json
+文本1: "en_ID": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds",
+文本2: "in_ID": "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds"
+文本3: "en_ID": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/documents/TnC-Bond-Pasar-Sekunder.pdf",
+================================================================================
+第10组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/mAuth.xml
+文本1: <string name="mauth_forgot_password_url">https:// www.hsbc.co.id/1/2/en/contact-us</string>
+文本2: <string name="mauth_forgot_username_url">https:// www.hsbc.co.id/1/2/en/contact-us</string>
+================================================================================
+第11组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/mAuth.xml
+文本1: <string name="mauth_forgot_password_url">https:// www.hsbc.co.id/1/2/id/hubungi-kami</string>
+文本2: <string name="mauth_forgot_username_url">https:// www.hsbc.co.id/1/2/id/hubungi-kami</string>
+================================================================================
+第12组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesiaCert/assets/apiConfig.json
+文本1: "en": "https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange",
+文本2: "id": "https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange"
+文本3: "en": "https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange",
+文本4: "id": "https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange"
+文本5: "en": "https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange",
+文本6: "id": "https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange"
+文本7: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本8: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本9: "mauth_non_secure_hardware_info_url_android" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions_id.html";
+文本10: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本11: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本12: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+文本13: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+文本14: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本15: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/id/hubungi-kami";
+文本16: "mauth_forgot_password_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+文本17: "mauth_forgot_username_url" = "https:// www.hsbc.co.id/1/2/en/contact-us";
+================================================================================
+第13组：
+仓库名字：billpay/src/test/java/com/hsbc/mobile/billpay/validator/WebLinkPresenterTest.kt
+文件路径：private var baseWebLink = "https://www.hsbc.co.id/test.html?productCode=%s&currencyCode=%s"
+文本1: "en": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html",
+文本2: "id": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions_id.html",
+文本3: "en": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html",
+文本4: "id": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions_id.html",
+================================================================================
+第14组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/open_term_deposit.xml
+文本1: <string name="otd_product_feature_interest_rate_url_tma">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本2: <string name="otd_product_feature_interest_rate_url_td3">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+================================================================================
+第15组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/open_term_deposit.xml
+文本1: <string name="otd_product_feature_interest_rate_url_tma">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本2: <string name="otd_product_feature_interest_rate_url_td3">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本3: "otd_product_feature_interest_rate_url_tma" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本4: "otd_product_feature_interest_rate_url_tma" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本5: "otd_product_feature_interest_rate_url_td3" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+================================================================================
+第16组：
+仓库名字：mobile/wealth-account-opening-android-lib
+文件路径：sample-app/src/indonesia/res/values/mAuth.xml
+文本1: <string name="mauth_forgot_password_url">https:// www.hsbc.co.id/1/2/en/contact-us</string>
+文本2: <string name="mauth_forgot_username_url">https:// www.hsbc.co.id/1/2/en/contact-us</string>
+文本3: <string name="mauth_non_secure_hardware_info_url_android">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html</string>
+================================================================================
+第17组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/global_view_management.xml
+文本1: <string name="global_view_management_term_and_condition_pdf_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_id.pdf</string>
+文本2: <string name="global_view_management_pdf_hint_accessibility">Anda dapat mengunduh PDF syarat dan ketentuan pada tautan https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_id.pdf</string>
+================================================================================
+第18组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/global_view_management.xml
+文本1: <string name="global_view_management_term_and_condition_pdf_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+文本2: <string name="global_view_management_pdf_hint_accessibility">You can download the PDF via https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+文本3: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_id.pdf";
+文本4: "global_view_management_pdf_hint_accessibility" = "Anda dapat mengunduh PDF syarat dan ketentuan pada tautan https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_id.pdf";
+================================================================================
+第19组：
+仓库名字：mobile/global-view-management-android-lib
+文件路径：globalviewmanagement/src/main/res/values/global_view_management.xml
+文本1: <string name="global_view_management_term_and_condition_pdf_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+文本2: <string name="global_view_management_pdf_hint_accessibility">You can download the PDF via https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+文本3: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf";
+文本4: "global_view_management_pdf_hint_accessibility" = "You can download the PDF via https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf";
+文本5: "otd_product_feature_interest_rate_url_tma" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本6: "otd_input_disclaimer_link_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本7: "otd_product_feature_interest_rate_url_tma" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本8: "otd_product_feature_interest_rate_url_td3" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+================================================================================
+第20组：
+仓库名字：mobile/global-view-management-android-lib
+文件路径：sample-app/src/main/res/values/global_view_management.xml
+文本1: <string name="global_view_management_term_and_condition_pdf_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+文本2: <string name="global_view_management_pdf_hint_accessibility">You can download the PDF via https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf</string>
+================================================================================
+第21组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/credit_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+文本3: "otd_product_feature_interest_rate_url_tmd" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+文本4: "otd_product_feature_interest_rate_url_hda" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf";
+================================================================================
+第22组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/credit_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第23组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/malware_detection.xml
+文本1: <string name="side_load_risky_learn_more_body_1">For further information, please visit https:// www.hsbc.co.id/1/2/en/misc/customer-education#Mobile-Malware</string>
+文本2: <string name="rat_risky_learn_more_body_1">For further assistance, please visit https:// www.hsbc.co.id/1/2/en/misc/customer-education#Mobile-Malware</string>
+================================================================================
+第24组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/malware_detection.xml
+文本1: <string name="side_load_risky_learn_more_body_1">Untuk informasilebih lanjut, silakan kunjungi https:// www.hsbc.co.id/1/2/id/misc/edukasi-nasabah#Mobile-Malware</string>
+文本2: <string name="rat_risky_learn_more_body_1">Untuk bantuan lebih lanjut, silakan kunjungi https:// www.hsbc.co.id/1/2/id/misc/edukasi-nasabah#Mobile-Malware</string>
+================================================================================
+第25组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/indonesia/insurance/insurance_hub_config_null.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本3: XCTAssertEqual(model1?.link, "https://www.hsbc.co.id/1/3/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDdyNQ_1CDQ2CXQx8PUI8zf2djA0gQD8cqwJfC0OYgihy9PuQqh8FOBo4BRmBlLj7G5GjH9kk8tzvR7T7g1Pz4kOD9QtyQ4EgohwAZNLUHQ!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzBHM1VOVTEwU0QwTUhUSTdBUUQwMDAwMDAw/")
+文本4: XCTAssertEqual(model3?.link, "https://www.hsbc.co.id/1/3/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDdyNQ_1CDQ2CXQx8PUI8zf2djA0gQD8cqwJfC0OYgihy9PuQqh8FOBo4BRmBlLj7G5GjH9kk8tzvR7T7g1Pz4kOD9QtyQ4EgohwAZNLUHQ!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzBHM1VOVTEwU0QwTUhUSTdBUUQwMDAwMDAw/")
+文本5: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON",
+文本6: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON",
+文本7: "cards_activation_important_information_href_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf";
+文本8: "cards_activation_button_call_us_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html";
+================================================================================
+第26组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesiaProduction/assets/network-augmentation-config.json
+文本1: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+文本2: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第27组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/mexico/insurance/insurance_hub_config_null.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本3: "cards_activation_important_information_href_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf";
+文本4: "cards_activation_button_call_us_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html";
+================================================================================
+第28组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/support.xml
+文本1: <string name="support_lp_faq_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/faq.html</string>
+================================================================================
+第29组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/contact_us.xml
+文本1: <string name="contact_us_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第30组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/support.xml
+文本1: <string name="support_lp_faq_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/faq_id.html</string>
+================================================================================
+第31组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/contact_us.xml
+文本1: <string name="contact_us_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+文本2: "contact_us_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html";
+================================================================================
+第32组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/indonesia/insurance/insurance_hub_config_empty.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+================================================================================
+第33组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/mexico/insurance/insurance_hub_config_empty.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+================================================================================
+第34组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/m2md.xml
+文本1: <string name="m2m_verify_disclaimer_now">Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit</string>
+文本2: <string name="mm_input_disclaimer_external_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$s‬&amp;currencyCode=‪%2$s‬</string>
+================================================================================
+第35组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/m2md.xml
+文本1: <string name="mm_input_disclaimer_external_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=‪%1$s‬&amp;currencyCode=‪%2$s‬</string>
+文本2: <string name="m2m_input_disclaimer_external_url"><![CDATA[https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=%s&currencyCode=%s]]>&amp;</string>
+================================================================================
+第36组：
+仓库名字：mobile/manage-cards-android-lib
+文件路径：sample-app/src/main/res/values-ba-rID/credit_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+================================================================================
+第37组：
+仓库名字：mobile/manage-cards-android-lib
+文件路径：sample-app/src/main/res/values-en-rID/credit_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+文本3: "contact_us_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html";
+文本4: static let pdf = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本5: let urlTypePDF = UrlCheck.getType(url: URL(string: "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"))
+文本6: "support_lp_faq_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/faq.html";
+文本7: "support_lp_faq_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/faq_id.html";
+================================================================================
+第38组：
+仓库名字：mobile/ipo-bonds-android-lib
+文件路径：sample/src/main/assets/mAuthConfig.json
+文本1: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON"
+文本2: let urlTypePDF = UrlCheck.getType(url: URL(string: "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"))
+================================================================================
+第39组：
+仓库名字：mobile/insurance-android-lib
+文件路径：sample-app/src/indonesia/assets/mAuthConfig.json
+文本1: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON"
+================================================================================
+第40组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/mexico/insurance/insurance_hub_config_no_currency.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+================================================================================
+第41组：
+仓库名字：mobile/unittrust-android-lib
+文件路径：sampleapp/src/indonesia/assets/mAuthConfig.json
+文本1: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON"
+文本2: let url = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪\u{202a}%1$@\u{202c}‬&currencyCode=‪\u{202a}%2$@‬\u{202c}"
+================================================================================
+第42组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesia/assets/insurance/insurance_hub_config.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本3: let url = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪\u{202a}%1$@\u{202c}‬&currencyCode=‪\u{202a}%2$@‬\u{202c}"
+================================================================================
+第43组：
+仓库名字：mobile/insurance-android-lib
+文件路径：insurance/src/androidTest/assets/indonesia/insurance/insurance_hub_config.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+================================================================================
+第44组：
+仓库名字：mobile/insurance-android-lib
+文件路径：sample-app/src/indonesia/assets/insurance/insurance_hub_config.json
+文本1: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本2: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本3: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本4: "description": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance"
+文本5: "cbm_disclaimer_disclosure_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/cross_border_disclamiers_id.html";
+文本6: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本7: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本8: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本9: XCTAssertEqual(configuration?.externalDisclaimerLink, "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=&currencyCode=")
+================================================================================
+第45组：
+仓库名字：mobile/wealthdashboard-android-lib
+文件路径：commonresource/src/main/assets/indonesia/apiConfig.json
+文本1: "m2m_verify_disclaimer_now" = "Tarif dan batas transfer dapat berubah dan harus diperiksa setiap kali Anda melakukan pembayaran.\n\n\n\n\nUntuk informasi lebih lanjut, silakan kunjungi: https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/internet-banking/overview#tarif-batas";
+文本2: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本3: "cbm_disclaimer_disclosure_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/cross_border_disclamiers.html";
+文本4: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/important-notice/tnc/General-Banking-Terms-and-Condition-HSBC-2019.pdf";
+================================================================================
+第46组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/cross_border_marketing.xml
+文本1: <string name="cbm_disclaimer_disclosure_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/cross_border_disclamiers.html</string>
+================================================================================
+第47组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/cross_border_marketing.xml
+文本1: <string name="cbm_disclaimer_disclosure_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/cross_border_disclamiers_id.html</string>
+================================================================================
+第48组：
+仓库名字：mobile/ipo-bonds-android-lib
+文件路径：sample/src/main/assets/entity/indonesia/cert/apiConfig.json
+文本1: "tncPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf",
+================================================================================
+第49组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第50组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+================================================================================
+第51组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第52组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+================================================================================
+第53组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf",
+================================================================================
+第54组：
+仓库名字：mobile/open-savings-direct-deposit-account-android-lib
+文件路径：sample-app/src/main/res/values-en-rID/productfeature.xml
+文本1: <string name="osa_product_feature_interest_rate_url_sv1">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+文本2: <string name="osa_product_feature_interest_rate_url_sv2">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/home/doc/Interest-Rate.pdf?v=2107</string>
+文本3: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_id.pdf";
+================================================================================
+第55组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第56组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第57组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本2: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf";
+文本3: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf";
+文本4: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本5: "m2m_input_disclaimer_external_url" = "<![CDATA[https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%s&currencyCode=%s]]>&amp;";
+文本6: XCTAssertEqual(configuration?.externalDisclaimerLink, "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=OSB&currencyCode=GBP")
+文本7: "global_view_management_term_and_condition_pdf_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf";
+================================================================================
+第58组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第59组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第60组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesiaMock/assets/apiConfig.json
+文本1: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+================================================================================
+第61组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本2: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/international-transfer";
+文本3: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本4: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/international-transfer#global-view-global-transfer";
+文本5: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本6: let description = "<p>Secure your money by locking it away for a fixed term and grow it with great rates</p><br/><ul><li>Choose from 19 currencies</li><li>Choose a fixed term between 1 month and 3 years (some currency terms and minimum balances may vary)</li><li>Interest is calculated daily and paid at maturity.</li></ul><br/><p>A monthly interest Fixed Term Deposit is also available. Please visit our <a href='https://www.hsbc.com'>website</a> for more information.</p><br/><p>Your existing bank account terms and conditions apply to fixed term deposits, the latest terms can be found on our website.</p><br/><p><a href='https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf'>Charges</a> apply if you make a withdrawal prior to the maturity of your Fixed Term Deposit. No partial withdrawals are permitted and please note, you may get back less than you originally deposited if you withdraw early.</p>"
+================================================================================
+第62组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第63组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第64组：
+仓库名字："mockAemHeaderImgUrl": "https://www.hsbc.co.uk/content/dam/hsbc/gb/mobile/header/6453-header-image-1680x840-mass-aos.jpg",
+文件路径："mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+文本1: "mockPdfUrl": "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf"
+================================================================================
+第65组：
+仓库名字：mobile/open-term-deposit-android-lib
+文件路径：sample-app/src/main/res/values-en-rPH/open_term_deposit.xml
+文本1: <string name="otd_product_feature_interest_rate_url_tmd">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本2: <string name="otd_product_feature_interest_rate_url_hda">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本3: "discover_product_link" = "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/insurance";
+文本4: "discover_product_link" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/asuransi";
+================================================================================
+第66组：
+仓库名字：mobile/unittrust-android-lib
+文件路径：sampleapp/src/indonesia/resources/fund_details_response.json
+文本1: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+================================================================================
+第67组：
+仓库名字：mobile/unittrust-android-lib
+文件路径：sampleapp/src/indonesia/resources/sg_fund_details.json
+文本1: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+文本2: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+文本3: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+================================================================================
+第68组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/reset_pin.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+================================================================================
+第69组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/reset_pin.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第70组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/international_payments.xml
+文本1: <string name="m2nmi_input_weblink_url">https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/international-transfer</string>
+文本2: <string name="m2nmi_input_label_disclaimer_web_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&amp;currencyCode=IDRUSD</string>
+================================================================================
+第71组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/international_payments.xml
+文本1: <string name="m2nmi_input_weblink_url">https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/international-transfer#global-view-global-transfer</string>
+文本2: <string name="m2nmi_input_label_disclaimer_web_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&amp;currencyCode=IDRUSD</string>
+文本3: "wealth_insights_url" = "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/best-wealth-manager-award";
+文本4: "foreign_exchange_url" = "https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange";
+文本5: "wealth_insights_url" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/best-wealth-manager-award";
+文本6: "foreign_exchange_url" = "https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange";
+文本7: "m2m_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+文本8: "m2nm_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+================================================================================
+第72组：
+仓库名字：mobile/wealthdashboard-android-lib
+文件路径：commonresource/src/main/res/values-in-rID/wealth_dashboard.xml
+文本1: <string name="wealth_insights_url">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/best-wealth-manager-award</string>
+文本2: <string name="foreign_exchange_url">https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange</string>
+================================================================================
+第73组：
+仓库名字：mobile/movemoney-prejourney-android-lib
+文件路径：whirlpool/src/main/res/values-en-rID/m2md.xml
+文本1: <string name="m2m_verify_disclaimer_now">Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit</string>
+================================================================================
+第74组：
+仓库名字：mobile/cards-activation-android-lib
+文件路径：sample-app/src/main/res/values-ba-rID/physical_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+================================================================================
+第75组：
+仓库名字：mobile/cards-activation-android-lib
+文件路径：sample-app/src/main/res/values-en-rID/physical_card_activation.xml
+文本1: <string name="cards_activation_important_information_href_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/credit-cards/Syarat-dan-Ketentuan-Kartu-Kredit-HSBC.pdf</string>
+文本2: <string name="cards_activation_button_call_us_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+文本3: "otd_verify_screen_tnc_link_fx_tnc" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本4: "otd_verify_screen_tnc_link_gt_tnc" = "https://www.hsbc.co.id/1/3/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDdyNQ_1CDQ2CXQx8PUI8zf2djA0gQD8cqwJfC0OYgihy9PuQqh8FOBo4BRmBlLj7G5GjH9kk8tzvR7T7g1Pz4kOD9QtyQ4EgohwAZNLUHQ!!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzBHM1VOVTEwU0QwTUhUSTdBUUQwMDAwMDAw/";
+================================================================================
+第76组：
+仓库名字：movemoneydomestic/src/test/java/com/hsbc/mobile/movemoneydomestic/common/components/acceptdisclaimer/AcceptDisclaimerValidatorImplTest.kt
+文件路径：private lateinit var resource: Resources
+文本1: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本2: "m2m_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+================================================================================
+第77组：
+仓库名字：mobile/manage-cards-android-lib
+文件路径：sample-app/src/main/res/values-ba-rID/reset_pin.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+================================================================================
+第78组：
+仓库名字：mobile/manage-cards-android-lib
+文件路径：sample-app/src/main/res/values-en-rID/reset_pin.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第79组：
+仓库名字：mobile/wealth-documents-android-lib
+文件路径：sample/src/main/assets/mAuthConfig.json
+文本1: "action": "https:// www.hsbc.co.id/1/2/HUB_IDV2/IDV_EPP?__Destination=HUB_IDV_REGISTRATION&__registrationType=PIB-Registration&__IWLang=en&__IWCountry=US&__menuType=__LOGON"
+================================================================================
+第80组：
+仓库名字：mobile/wealthdashboard-android-lib
+文件路径：commonresource/src/main/res/values-en-rID/wealth_dashboard.xml
+文本1: <string name="wealth_insights_url">https:// www.hsbc.co.id/1/2/en/personal/wealth-management/best-wealth-manager-award</string>
+文本2: <string name="foreign_exchange_url">https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange</string>
+文本3: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本4: "m2m_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+================================================================================
+第81组：
+仓库名字：mobile/gma-aws-dev
+文件路径：privacypolicy/privacypolicy.html
+文本1: window.location.href="https:// www.hsbc.co.id/1/2/id/tentang-kami/privasi-dan-keamanan";
+================================================================================
+第82组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/wealth_dashboard.xml
+文本1: <string name="wealth_insights_url">https:// www.hsbc.co.id/1/2/en/personal/wealth-management/best-wealth-manager-award</string>
+文本2: <string name="foreign_exchange_url">https:// www.hsbc.co.id/1/2/en/personal/foreign-exchange</string>
+================================================================================
+第83组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/wealth_dashboard.xml
+文本1: <string name="wealth_insights_url">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/best-wealth-manager-award</string>
+文本2: <string name="foreign_exchange_url">https:// www.hsbc.co.id/1/2/id/personal/foreign-exchange</string>
+================================================================================
+第84组：
+仓库名字：mobile/open-savings-direct-deposit-account-android-lib
+文件路径：sample-app/src/main/res/values/strings.xml
+文本1: <string name="osa_verify_screen_tnc_link_fx_and_hrsa_tnc">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&amp;currencyCode=IDRUSD</string>
+文本2: <string name="osa_verify_screen_tnc_link_hrsa_tnc">https:// www.hsbc.co.id/1/2/en/personal/accounts/highrate</string>
+================================================================================
+第85组：
+仓库名字：mobile/reset-pin-android-lib
+文件路径：sample-app/src/main/res/values-ba-rID/reset_PIN.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html</string>
+================================================================================
+第86组：
+仓库名字：mobile/reset-pin-android-lib
+文件路径：sample-app/src/main/res/values-en-rID/reset_PIN.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html</string>
+================================================================================
+第87组：
+仓库名字：mobile/unittrust-android-lib
+文件路径：sampleapp/src/taiwan/resources/fund_details_response.json
+文本1: "finDocURL_PROFEATURE": "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/mutual-funds#range-of-fund",
+文本2: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本3: "m2nm_verify_disclaimer_now" = "Tarif dan batas transfer dapat berubah dan harus diperiksa setiap kali Anda melakukan pembayaran.\n\n\n\n\nUntuk informasi lebih lanjut, silakan kunjungi: https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/internet-banking/overview#tarif-batas";
+文本4: let url = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪\u{202a}%1$@\u{202c}‬&currencyCode=‪\u{202a}%2$@‬\u{202c}"
+================================================================================
+第88组：
+仓库名字：mobile/gma-aws-dev
+文件路径：demisePage/IMO/mobileAppDemiseStatusThree_android.html
+文本1: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+文本2: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+文本3: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本4: "m2m_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+文本5: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本6: "m2nm_verify_disclaimer_now" = "Tarif dan batas transfer dapat berubah dan harus diperiksa setiap kali Anda melakukan pembayaran.\n\n\n\n\nUntuk informasi lebih lanjut, silakan kunjungi: https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/internet-banking/overview#tarif-batas";
+文本7: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+文本8: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+文本9: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+文本10: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+文本11: "m2m_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+文本12: let url = "https://www.hsbc.co.id/1/PA_esOf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪\u{202a}%1$@\u{202c}‬&currencyCode=‪\u{202a}%2$@‬\u{202c}"
+文本13: XCTAssertEqual(configuration?.externalDisclaimerLink, "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=PRU&currencyCode=GBPIDR")
+文本14: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+================================================================================
+第89组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/m2c.xml
+文本1: <string name="ebpp_input_disclaimer_link"><![CDATA[https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%s&currencyCode=%s]]>&amp;</string>
+================================================================================
+第90组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/m2c.xml
+文本1: <string name="ebpp_input_disclaimer_link"><![CDATA[https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=%s&currencyCode=%s]]>&amp;</string>
+文本2: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf</string>
+================================================================================
+第91组：
+仓库名字：mobile/movemoney-international-android-lib
+文件路径：sample-app/src/main/res/values/strings.xml
+文本1: <string name="m2nmi_input_label_disclaimer_web_link">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-1.5/json_services/html/FycDisclaimer.html?productCode=%1$s&amp;currencyCode=%2$s</string>
+================================================================================
+第92组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/m2nmd.xml
+文本1: <string name="m2nm_verify_disclaimer_now">Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit</string>
+================================================================================
+第93组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/m2nmd.xml
+文本1: <string name="m2nm_verify_disclaimer_now">Tarif dan batas transfer dapat berubah dan harus diperiksa setiap kali Anda melakukan pembayaran.\n\n\n\n\nUntuk informasi lebih lanjut, silakan kunjungi: https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/internet-banking/overview#tarif-batas</string>
+文本2: let description = "<p>Secure your money by locking it away for a fixed term and grow it with great rates</p><br/><ul><li>Choose from 19 currencies</li><li>Choose a fixed term between 1 month and 3 years (some currency terms and minimum balances may vary)</li><li>Interest is calculated daily and paid at maturity.</li></ul><br/><p>A monthly interest Fixed Term Deposit is also available. Please visit our <a href='https://www.hsbc.com'>website</a> for more information.</p><br/><p>Your existing bank account terms and conditions apply to fixed term deposits, the latest terms can be found on our website.</p><br/><p><a href='https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/express-banking/mobile-banking/docs/tnc-gv_en.pdf'>Charges</a> apply if you make a withdrawal prior to the maturity of your Fixed Term Deposit. No partial withdrawals are permitted and please note, you may get back less than you originally deposited if you withdraw early.</p>"
+文本3: "reset_pin_button_contact_us" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus_id.html";
+================================================================================
+第94组：
+仓库名字：mobile/movemoney-prejourney-android-lib
+文件路径：whirlpool/src/main/res/values-en-rID/add_payee.xml
+文本1: <string name="addpayee_payeedetails_fraud_alert">FRAUD ALERT: Don\'t fall victim to a scam. Criminals pretend to be people you trust, like a company you\'d pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our &lt;a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"&gt;&lt;span&gt;   Security Centre&lt;/span&gt;&lt;/a&gt;</string>
+文本2: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/international-transfer";
+文本3: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本4: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/id/personal/layanan-express-banking/international-transfer#global-view-global-transfer";
+文本5: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本6: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/international-transfer";
+文本7: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+文本8: "reset_pin_button_contact_us" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html";
+文本9: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+文本10: "addpayee_payeedetails_fraud_alert" = "PERINGATAN PENIPUAN: Jangan sampai menjadi korban penipuan. Penjahat berpura-pura menjadi orang yang Anda percayai, seperti perusahaan tempat Anda membayar tagihan, HSBC, atau bahkan polisi. HSBC tidak akan pernah meminta Anda untuk mengirimkan uang, tetapi para penjahat akan melakukannya. Untuk informasi lebih lanjut mohon kunjungi <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+================================================================================
+第95组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-en-rID/add_payee.xml
+文本1: <string name="addpayee_payeedetails_fraud_alert">FRAUD ALERT: Don\'t fall victim to a scam. Criminals pretend to be people you trust, like a company you\'d pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our &lt;a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"&gt;&lt;span&gt;   Security Centre&lt;/span&gt;&lt;/a&gt;</string>
+================================================================================
+第96组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/values-in-rID/add_payee.xml
+文本1: <string name="addpayee_payeedetails_fraud_alert">PERINGATAN PENIPUAN: Jangan sampai menjadi korban penipuan. Penjahat berpura-pura menjadi orang yang Anda percayai, seperti perusahaan tempat Anda membayar tagihan, HSBC, atau bahkan polisi. HSBC tidak akan pernah meminta Anda untuk mengirimkan uang, tetapi para penjahat akan melakukannya. Untuk informasi lebih lanjut mohon kunjungi &lt;a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"&gt;&lt;span&gt;   Security Centre&lt;/span&gt;&lt;/a&gt;</string>
+文本2: "m2nmi_input_weblink_url" = "https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/international-transfer";
+文本3: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDRUSD";
+================================================================================
+第97组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/configuration/src/indonesia/assets/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第98组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/raw-en-rID/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第99组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/raw/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第100组：
+仓库名字：mobile/transmit-android-lib
+文件路径：app/src/indonesia/assets/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第101组：
+仓库名字：mobile/transmit-android-lib
+文件路径：app/src/indonesia/res/raw-en-rID/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第102组：
+仓库名字：mobile/transmit-android-lib
+文件路径：app/src/indonesia/res/raw/mauth_registration_default_tnc.html
+文本1: <!-- saved from url=(0104)https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/terms_conditions.html -->
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+文本3: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+文本4: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+文本5: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span> Security Centre</span></a>";
+================================================================================
+第103组：
+仓库名字：mobile/open-term-deposit-android-lib
+文件路径：sample-app/src/main/res/values/strings.xml
+文本1: <string name="otd_product_feature_interest_rate_url_hda">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/accounts/doc/Suku_Bunga_Deposito_Berjangka_HSBC_Indonesia.pdf</string>
+文本2: <string name="otd_verify_screen_tnc_link_fx_tnc">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&amp;currencyCode=IDRUSD</string>
+================================================================================
+第104组：
+仓库名字：mobile/mobiler-android
+文件路径：app/src/main/assets/legal/privacyAndSecurity.html
+文本1: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf</string>
+文本2: fullTermsConditionLink: "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf",
+文本3: "identifier": "https:// www.hsbc.co.id/1/2/?idv_cmd=idv.SSOLaunch&nextPage=piblite.logon"
+文本4: "identifier": "https:// www.hsbc.co.id/1/2/?idv_cmd=idv.SSOLaunch&nextPage=hub2g.gp.GlobalAccountView"
+文本5: "bcd_overview_featured_products_link" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds/primary-market-bonds";
+文本6: "bcd_pd_feature_document_link" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds";
+================================================================================
+第105组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.30/Android/checksum-1.5.30-Android5.xml
+文本1: XCTAssertEqual(termsAndConditionsConfig.externalDisclaimerLink, "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=SV5&currencyCode=IDR")
+文本2: "addpayee_payeedetails_fraud_alert" = "FRAUD ALERT: Don't fall victim to a scam. Criminals pretend to be people you trust, like a company you'd pay bills to, HSBC or even the police. HSBC will never ask you to move money, but criminals will. For more information please visit our <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+文本3: "addpayee_payeedetails_fraud_alert" = "PERINGATAN PENIPUAN: Jangan sampai menjadi korban penipuan. Penjahat berpura-pura menjadi orang yang Anda percayai, seperti perusahaan tempat Anda membayar tagihan, HSBC, atau bahkan polisi. HSBC tidak akan pernah meminta Anda untuk mengirimkan uang, tetapi para penjahat akan melakukannya. Untuk informasi lebih lanjut mohon kunjungi <a href = \\\"https:// www.hsbc.co.id/1/2/miscellaneous_in_ID/online-security\"><span>   Security Centre</span></a>";
+文本4: "bcd_overview_featured_products_link" = "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds/primary-market-bonds";
+================================================================================
+第106组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/raw-in-rID/mauth_registration_default_tnc.html
+文本1: <p>Nasabah dapat menyampaikan pengaduan antara lain melalui layanan contact centre Bank, mengunjungi kantor cabang terdekat, mengirimkan pesan melalui aplikasi HSBC Mobile Banking, dan memberikan masukan secara online melalui sosial media yang dikelola oleh Bank. Pengaduan yang disampaikan akan diproses oleh Bank sesuai dengan Peraturan Otoritas Jasa Keuangan Republik Indonesia NOMOR 18 /POJK.07/2018. Jangka waktu penanganan pengaduan paling lama 20 (dua puluh) hari kerja, dan dalam kondisi tertentu dapat diperpanjang hingga 20 (dua puluh) hari kerja berikutnya, dengan pemberitahuan tertulis kepada Nasabah. Nasabah akan mendapatkan informasi atas pengaduan yang disampaikan melalui sarana komunikasi yang ditentukan oleh Bank. Untuk informasi lebih lanjut perihal prosedur singkat penanganan pengaduan, nasabah dapat merujuk kepada situs Bank yaitu <a href="https:// www.hsbc.co.id/1/2/id/hubungi-kami">http:// www.hsbc.co.id/1/2/id/hubungi-kami</a></p>
+================================================================================
+第107组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/raw-in-rID/terms_and_condition.html
+文本1: <p>Nasabah dapat menyampaikan pengaduan antara lain melalui layanan contact centre Bank, mengunjungi kantor cabang terdekat, mengirimkan pesan melalui aplikasi HSBC Mobile Banking, dan memberikan masukan secara online melalui sosial media yang dikelola oleh Bank. Pengaduan yang disampaikan akan diproses oleh Bank sesuai dengan Peraturan Otoritas Jasa Keuangan Republik Indonesia NOMOR 18 /POJK.07/2018. Jangka waktu penanganan pengaduan paling lama 20 (dua puluh) hari kerja, dan dalam kondisi tertentu dapat diperpanjang hingga 20 (dua puluh) hari kerja berikutnya, dengan pemberitahuan tertulis kepada Nasabah. Nasabah akan mendapatkan informasi atas pengaduan yang disampaikan melalui sarana komunikasi yang ditentukan oleh Bank. Untuk informasi lebih lanjut perihal prosedur singkat penanganan pengaduan, nasabah dapat merujuk kepada situs Bank yaitu <a href="https:// www.hsbc.co.id/1/2/id/hubungi-kami">http:// www.hsbc.co.id/1/2/id/hubungi-kami</a></p>
+================================================================================
+第108组：
+仓库名字：mobile/transmit-android-lib
+文件路径：app/src/indonesia/res/raw-in-rID/mauth_registration_default_tnc.html
+文本1: <p>Nasabah dapat menyampaikan pengaduan antara lain melalui layanan contact centre Bank, mengunjungi kantor cabang terdekat, mengirimkan pesan melalui aplikasi HSBC Mobile Banking, dan memberikan masukan secara online melalui sosial media yang dikelola oleh Bank. Pengaduan yang disampaikan akan diproses oleh Bank sesuai dengan Peraturan Otoritas Jasa Keuangan Republik Indonesia NOMOR 18 /POJK.07/2018. Jangka waktu penanganan pengaduan paling lama 20 (dua puluh) hari kerja, dan dalam kondisi tertentu dapat diperpanjang hingga 20 (dua puluh) hari kerja berikutnya, dengan pemberitahuan tertulis kepada Nasabah. Nasabah akan mendapatkan informasi atas pengaduan yang disampaikan melalui sarana komunikasi yang ditentukan oleh Bank. Untuk informasi lebih lanjut perihal prosedur singkat penanganan pengaduan, nasabah dapat merujuk kepada situs Bank yaitu <a href="https:// www.hsbc.co.id/1/2/id/hubungi-kami">http:// www.hsbc.co.id/1/2/id/hubungi-kami</a></p>
+================================================================================
+第109组：
+仓库名字：mobile/movemoney-prejourney-android-lib
+文件路径：whirlpool/src/main/res/values-en-rID/m2nmd.xml
+文本1: <string name="m2nm_verify_disclaimer_now">Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit</string>
+文本2: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+================================================================================
+第110组：
+仓库名字：mobile/gma-aws-dev
+文件路径：mobi/es/pages/mobile-banking.html
+文本1: <p>Nasabah dapat menyampaikan pengaduan antara lain melalui layanan contact centre Bank, mengunjungi kantor cabang terdekat, mengirimkan pesan melalui aplikasi HSBC Mobile Banking, dan memberikan masukan secara online melalui sosial media yang dikelola oleh Bank. Pengaduan yang disampaikan akan diproses oleh Bank sesuai dengan Peraturan Otoritas Jasa Keuangan Republik Indonesia NOMOR 18 /POJK.07/2018. Jangka waktu penanganan pengaduan paling lama 20 (dua puluh) hari kerja, dan dalam kondisi tertentu dapat diperpanjang hingga 20 (dua puluh) hari kerja berikutnya, dengan pemberitahuan tertulis kepada Nasabah. Nasabah akan mendapatkan informasi atas pengaduan yang disampaikan melalui sarana komunikasi yang ditentukan oleh Bank. Untuk informasi lebih lanjut perihal prosedur singkat penanganan pengaduan, nasabah dapat merujuk kepada situs Bank yaitu <a href="https:// www.hsbc.co.id/1/2/id/hubungi-kami">http:// www.hsbc.co.id/1/2/id/hubungi-kami</a></p>
+文本2: "bcd_overview_featured_products_link" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds/primary-market-bonds";
+文本3: "bcd_pd_feature_document_link" = "https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds";
+文本4: <p>Nasabah dapat menyampaikan pengaduan antara lain melalui layanan contact centre Bank, mengunjungi kantor cabang terdekat, mengirimkan pesan melalui aplikasi HSBC Mobile Banking, dan memberikan masukan secara online melalui sosial media yang dikelola oleh Bank. Pengaduan yang disampaikan akan diproses oleh Bank sesuai dengan Peraturan Otoritas Jasa Keuangan Republik Indonesia NOMOR 18 /POJK.07/2018. Jangka waktu penanganan pengaduan paling lama 20 (dua puluh) hari kerja, dan dalam kondisi tertentu dapat diperpanjang hingga 20 (dua puluh) hari kerja berikutnya, dengan pemberitahuan tertulis kepada Nasabah. Nasabah akan mendapatkan informasi atas pengaduan yang disampaikan melalui sarana komunikasi yang ditentukan oleh Bank. Untuk informasi lebih lanjut perihal prosedur singkat penanganan pengaduan, nasabah dapat merujuk kepada situs Bank yaitu <a href="https:// www.hsbc.co.id/1/2/id/hubungi-kami">http:// www.hsbc.co.id/1/2/id/hubungi-kami</a></p>
+文本5: "identifier": "https:// www.hsbc.co.id/1/2/?idv_cmd=idv.SSOLaunch&nextPage=piblite.logon"
+文本6: "identifier": "https:// www.hsbc.co.id/1/2/?idv_cmd=idv.SSOLaunch&nextPage=hub2g.gp.GlobalAccountView"
+================================================================================
+第111组：
+仓库名字：mobile/mobilebanking-global-android
+文件路径：Android/copy/src/indonesia/res/raw-en-rID/terms_and_condition.html
+文本1: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+================================================================================
+第112组：
+仓库名字：mobile/movemoney-prejourney-android-lib
+文件路径：whirlpool/src/main/res/values-en-rEG/m2nmd.xml
+文本1: <string name="m2nm_verify_disclaimer_now">Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit</string>
+================================================================================
+第113组：
+仓库名字：mobile/gma-aws-dev
+文件路径：mobileSupport/en/mobile-banking.html
+文本1: "bcd_overview_featured_products_link" = "https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds/primary-market-bonds";
+文本2: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+文本3: <p>Customers can submit complaints through the Bank's contact center service, visit the nearest branch office, send messages through HSBC Mobile Banking app, and provide input online through social media managed by the Bank. Complaints submitted will be processed by the Bank in accordance with the Indonesian Financial Services Authority Regulation NUMBER 18 /POJK.07/2018. The period of handling complaints is no later than 20 (twenty) working days, and under certain conditions can be extended up to the next 20 (twenty) working days, with written notification to the Customer. The Customer will receive information on complaints submitted through the communication means determined by the Bank. For further information regarding the brief procedure for handling complaints, customers can refer to the Bank's website, <a href="https:// www.hsbc.co.id/1/2/en/contact-us">http:// www.hsbc.co.id/1/2/en/contact-us</a></p>
+文本4: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf</string>
+================================================================================
+第114组：
+仓库名字：mobile/bonds-android-lib
+文件路径：bonds/src/main/res/values-en-rID/ID.xml
+文本1: <string name="bcd_overview_featured_products_link">https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds/primary-market-bonds</string>
+文本2: <string name="bcd_pd_feature_document_link">https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds</string>
+================================================================================
+第115组：
+仓库名字：mobile/bonds-android-lib
+文件路径：bonds/src/main/res/values-in-rID/ID.xml
+文本1: <string name="bcd_overview_featured_products_link">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds/primary-market-bonds</string>
+文本2: <string name="bcd_pd_feature_document_link">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds</string>
+================================================================================
+第116组：
+仓库名字：mobile/bonds-android-lib
+文件路径：bonds/src/main/res/values-id-rID/ID.xml
+文本1: <string name="bcd_overview_featured_products_link">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds/primary-market-bonds</string>
+文本2: <string name="bcd_pd_feature_document_link">https:// www.hsbc.co.id/1/2/id/personal/wealth-management/investasi/bonds</string>
+================================================================================
+第117组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/Dev/1.5.28/iOS/checksum-1.5.28-ios-test.xml
+文本1: "m2nmi_fee_selector_learn_more_url" = "https:// www.hsbc.co.id/1/2/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziDdyNQ_1CDQ2CXQx8PUI8zQPdDA0gQD8cqwJfC7iCKHL0-5CqHwU4GjgFGTkZGxi4-xuRox_ZJEL6g1Pz4kOD9QtyQ0NDI8oVAaGAkVc!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzBHM1VOVTEwU0QwTUhUSTdURzMwMDAwMDAw/";
+================================================================================
+第118组：
+仓库名字：mobile/manage-cards-android-lib
+文件路径：manage-cards/src/main/res/values/strings.xml
+文本1: <string name="reset_pin_button_contact_us">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/contactus.html </string>
+文本2: "m2nm_verify_disclaimer_now" = "Transfer tariff and limits are subject to change and should be checked each time you make a payment.\n\nFor more details, please visit: https:// www.hsbc.co.id/1/2/en/personal/express-banking-services/internet-banking/overview#tariff-limit";
+文本3: "m2nmi_input_label_disclaimer_web_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+================================================================================
+第119组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.25/iOS/EntityList-1.5.25.xml
+文本1: <configurl>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/tablet/1.5.29/config/Prod/tablet_config_prod.json</configurl>
+================================================================================
+第120组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.27/iOS/EntityList-1.5.27.xml
+文本1: <configurl>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/tablet/1.5.29/config/Prod/tablet_config_prod.json</configurl>
+================================================================================
+第121组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.28/iOS/EntityList-1.5.28.xml
+文本1: <configurl>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/tablet/1.5.29/config/Prod/tablet_config_prod.json</configurl>
+================================================================================
+第122组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.29/iOS/EntityList-1.5.29.xml
+文本1: <configurl>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/tablet/1.5.29/config/Prod/tablet_config_prod.json</configurl>
+================================================================================
+第123组：
+仓库名字：mobile/gma-aws-dev
+文件路径：entitylist/PreProd/1.5.30/Android/EntityList-1.5.30-Android5.xml
+文本1: <configurl>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-1.5/1.5.29/config/Prod/android_config_prod.json</configurl>
+================================================================================
+第124组：
+仓库名字：mobile/movemoney-domestic-android-lib
+文件路径：sample-app/src/main/res/values/move_money.xml
+文本1: <string name="m2m_input_disclaimer_external_url">https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-1.5/json_services/html/FycDisclaimer.html?productCode=%1$s&amp;currencyCode=%2$s</string>
+================================================================================
+第125组：
+仓库名字：mobile/bonds-android-lib
+文件路径：bonds/src/main/res/values/strings.xml
+文本1: <string name="bcd_pd_feature_document_link">https:// www.hsbc.co.id/1/2/en/personal/wealth-management/investment/bonds</string>
+================================================================================
+第126组：
+仓库名字：mobile/certificate-pinning
+文件路径：current_pins_cert.json
+文本1: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%1$@&currencyCode=%2$@";
+文本2: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer_id.html?productCode=%1$@&currencyCode=%2$@";
+文本3: <string>https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/indonesia/personal/wealth-management/investment/bonds/primary-market-bonds/doc/tnc.pdf</string>
+文本4: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%1$@&currencyCode=%2$@";
+文本5: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%1$@&currencyCode=%2$@";
+文本6: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%1$@&currencyCode=%2$@";
+文本7: "ebpp_input_disclaimer_link" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=%1$@&currencyCode=%2$@";
+文本8: "mm_input_disclaimer_external_url" = "https://www.hsbc.co.id/1/PA_esf-ca-app-content/content/mobile-x/json_services/html/FycDisclaimer.html?productCode=‪%1$@‬&currencyCode=‪%2$@‬";
+================================================================================
